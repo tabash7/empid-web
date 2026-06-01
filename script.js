@@ -553,7 +553,9 @@ function addBreadcrumbs() {
 
   const current = normalizePath(pathName);
   const title = pageLabels[current] || document.querySelector("h1")?.textContent?.trim() || "EMPID";
-  const parent = current.startsWith("/blog/")
+  const parent = current === "/blog/"
+    ? null
+    : current.startsWith("/blog/")
     ? ["المدونة", "/blog/"]
     : current.includes("construction") || current.includes("security") || current.includes("healthcare") || current.includes("school") || current.includes("logistics")
       ? ["القطاعات", "/#industries"]
@@ -567,7 +569,7 @@ function addBreadcrumbs() {
     <div class="container">
       <ol class="breadcrumb-list">
         <li><a href="/">الرئيسية</a></li>
-        <li><a href="${parent[1]}">${parent[0]}</a></li>
+        ${parent ? `<li><a href="${parent[1]}">${parent[0]}</a></li>` : ""}
         <li aria-current="page">${title}</li>
       </ol>
     </div>

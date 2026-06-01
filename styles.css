@@ -870,6 +870,62 @@ p {
   min-height: auto;
 }
 
+#comparisons .comparison-grid,
+#comparisons .roi-grid {
+  align-items: stretch;
+  gap: 18px;
+}
+
+#comparisons .feature-card,
+#comparisons .pricing-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+}
+
+#comparisons .feature-card {
+  gap: 10px;
+}
+
+#comparisons .feature-card > span {
+  justify-self: end;
+}
+
+#comparisons .feature-card h3,
+#comparisons .pricing-card h3 {
+  margin-top: 0;
+}
+
+#comparisons .feature-card p,
+#comparisons .pricing-card p {
+  min-height: 0;
+  margin: 0;
+  overflow: visible;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+#comparisons .feature-card p .lang-content,
+#comparisons .pricing-card p .lang-content {
+  display: inline;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+}
+
 .feature-page .feature-hero {
   background:
     linear-gradient(135deg, rgba(6, 26, 49, 0.97), rgba(11, 47, 102, 0.92)),
@@ -926,6 +982,24 @@ p {
   background: rgba(255, 255, 255, 0.09);
   color: rgba(255, 255, 255, 0.86);
   font-weight: 800;
+}
+
+main:not(.feature-page) .feature-summary-card {
+  border-color: rgba(216, 229, 244, 0.92);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+main:not(.feature-page) .feature-summary-card h2 {
+  color: var(--navy);
+}
+
+main:not(.feature-page) .feature-summary-card li {
+  background: #f3f8ff;
+  color: #29435c;
+}
+
+main:not(.feature-page) .feature-hero .hero-text {
+  color: var(--muted);
 }
 
 .english-note {
@@ -1675,7 +1749,7 @@ html.js .reveal.visible {
   font-family: var(--font-latin);
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1179px) {
   .nav-panel {
     position: fixed;
     inset: var(--header-height) 0 auto 0;
@@ -1744,14 +1818,6 @@ html.js .reveal.visible {
 }
 
 @media (min-width: 900px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-  }
-
   .hero-grid,
   .feature-hero-grid,
   .split-layout,
@@ -1819,7 +1885,15 @@ html.js .reveal.visible {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1180px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
   .nav-links a {
     padding-inline: 12px;
   }
