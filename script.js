@@ -1,7 +1,7 @@
 const translations = {
   ar: {
-    "meta.title": "EMPID | نظام إدارة الموظفين والحضور والرواتب للشركات المتوسطة",
-    "meta.description": "EMPID منصة لإدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير للشركات المتوسطة في السعودية والخليج والشرق الأوسط.",
+    "meta.title": "EMPID | نظام موارد بشرية وإدارة موظفين وحضور ورواتب للشركات المتوسطة",
+    "meta.description": "EMPID نظام موارد بشرية ومنصة إدارة القوى العاملة للشركات المتوسطة في السعودية والخليج، لإدارة الموظفين والحضور والانصراف والإجازات والرواتب والوثائق والتقارير من مكان واحد.",
     "nav.openMenu": "فتح القائمة",
     "brand.tagline": "نظام تشغيل القوى العاملة",
     "nav.home": "الرئيسية",
@@ -12,6 +12,7 @@ const translations = {
     "nav.security": "الأمان",
     "nav.pricing": "الأسعار",
     "nav.faq": "الأسئلة",
+    "nav.blog": "المدونة",
     "nav.demo": "احجز عرضاً",
     "hero.eyebrow": "EMPID - نظام تشغيل إدارة القوى العاملة",
     "hero.title": "أوقف إدارة الموظفين عبر Excel وWhatsApp",
@@ -73,6 +74,7 @@ const translations = {
     "modules.expenses": "المصروفات",
     "modules.reports": "التقارير والتحليلات",
     "modules.portal": "بوابة الخدمة الذاتية",
+    "modules.workforce": "إدارة القوى العاملة",
     "industries.eyebrow": "القطاعات",
     "industries.title": "مصمم للشركات التي لديها فرق ميدانية وإدارية",
     "industries.construction": "شركات المقاولات",
@@ -144,8 +146,8 @@ const translations = {
     "footer.linkedin": "LinkedIn"
   },
   en: {
-    "meta.title": "EMPID | Employee, Attendance, and Payroll Platform for Growing Companies",
-    "meta.description": "EMPID helps growing companies manage employees, attendance, leave, payroll, documents, approvals, and reports from one secure workforce platform.",
+    "meta.title": "EMPID | HRMS, HR Software, Attendance and Payroll for Growing Companies",
+    "meta.description": "EMPID is HR software and a Workforce Management System for employee management, attendance, leave, payroll, documents, approvals, and reports in the Middle East.",
     "nav.openMenu": "Open menu",
     "brand.tagline": "Workforce Operating System",
     "nav.home": "Home",
@@ -156,6 +158,7 @@ const translations = {
     "nav.security": "Security",
     "nav.pricing": "Pricing",
     "nav.faq": "FAQ",
+    "nav.blog": "Blog",
     "nav.demo": "Book Demo",
     "hero.eyebrow": "EMPID - Workforce Operating System",
     "hero.title": "Stop managing your workforce with Excel and WhatsApp",
@@ -217,6 +220,7 @@ const translations = {
     "modules.expenses": "Expenses",
     "modules.reports": "Reports & Analytics",
     "modules.portal": "Self-Service Portal",
+    "modules.workforce": "Workforce Management",
     "industries.eyebrow": "Industries",
     "industries.title": "Built for companies with field and office teams",
     "industries.construction": "Construction companies",
@@ -299,7 +303,7 @@ const formError = document.querySelector("#form-error");
 const formSuccess = document.querySelector("#form-success");
 const formSubject = document.querySelector("#form-subject");
 const metaDescription = document.querySelector('meta[name="description"]');
-const submitButton = contactForm.querySelector('button[type="submit"]');
+const submitButton = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
 
 let currentLang = localStorage.getItem("empid-language") || "ar";
 
@@ -311,7 +315,9 @@ function translatePage(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   document.title = dictionary["meta.title"];
-  metaDescription.setAttribute("content", dictionary["meta.description"]);
+  if (metaDescription) {
+    metaDescription.setAttribute("content", dictionary["meta.description"]);
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
@@ -327,19 +333,28 @@ function translatePage(lang) {
     }
   });
 
+  document.querySelectorAll(".lang-content").forEach((element) => {
+    const shouldShow = element.classList.contains(`lang-${lang}`);
+    element.hidden = !shouldShow;
+  });
+
   langButtons.forEach((button) => {
     const isActive = button.dataset.lang === lang;
     button.classList.toggle("active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  formSubject.value = dictionary["form.subject"];
+  if (formSubject) {
+    formSubject.value = dictionary["form.subject"];
+  }
   localStorage.setItem("empid-language", lang);
 }
 
 function closeMobileMenu() {
   document.body.classList.remove("nav-open");
-  menuToggle.setAttribute("aria-expanded", "false");
+  if (menuToggle) {
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
 }
 
 langButtons.forEach((button) => {
@@ -349,10 +364,12 @@ langButtons.forEach((button) => {
   });
 });
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = document.body.classList.toggle("nav-open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.toggle("nav-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -368,51 +385,55 @@ navLinks.forEach((link) => {
   });
 });
 
-contactForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  formError.textContent = "";
-  formSuccess.textContent = "";
+if (contactForm && submitButton && formError && formSuccess) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    formError.textContent = "";
+    formSuccess.textContent = "";
 
-  if (!contactForm.checkValidity()) {
-    formError.textContent = translations[currentLang]["form.error"];
-    contactForm.reportValidity();
-    return;
-  }
-
-  const originalButtonText = submitButton.textContent;
-  submitButton.disabled = true;
-  submitButton.textContent = translations[currentLang]["form.sending"];
-
-  try {
-    const response = await fetch(contactForm.action, {
-      method: "POST",
-      body: new FormData(contactForm),
-      headers: {
-        Accept: "application/json"
-      }
-    });
-    const result = await response.json().catch(() => ({}));
-
-    if (!response.ok || result.ok === false) {
-      const errorMessage = result.errors?.map((item) => item.message).join(" ");
-      if (errorMessage) {
-        throw new Error(errorMessage);
-      }
-      throw new Error("Formspree submission failed");
+    if (!contactForm.checkValidity()) {
+      formError.textContent = translations[currentLang]["form.error"];
+      contactForm.reportValidity();
+      return;
     }
 
-    contactForm.reset();
-    formSubject.value = translations[currentLang]["form.subject"];
-    formSuccess.textContent = translations[currentLang]["form.success"];
-  } catch (error) {
-    formError.textContent = error.message === "Formspree submission failed"
-      ? translations[currentLang]["form.submitError"]
-      : error.message;
-  } finally {
-    submitButton.disabled = false;
-    submitButton.textContent = originalButtonText;
-  }
-});
+    const originalButtonText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = translations[currentLang]["form.sending"];
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json"
+        }
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || result.ok === false) {
+        const errorMessage = result.errors?.map((item) => item.message).join(" ");
+        if (errorMessage) {
+          throw new Error(errorMessage);
+        }
+        throw new Error("Formspree submission failed");
+      }
+
+      contactForm.reset();
+      if (formSubject) {
+        formSubject.value = translations[currentLang]["form.subject"];
+      }
+      formSuccess.textContent = translations[currentLang]["form.success"];
+    } catch (error) {
+      formError.textContent = error.message === "Formspree submission failed"
+        ? translations[currentLang]["form.submitError"]
+        : error.message;
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+}
 
 // Lightweight reveal effect; content remains accessible without animation.
 if ("IntersectionObserver" in window) {
@@ -434,4 +455,36 @@ if ("IntersectionObserver" in window) {
   });
 }
 
-translatePage(currentLang);
+if (document.querySelector("[data-i18n], [data-lang]")) {
+  translatePage(currentLang);
+}
+
+const blogSearch = document.querySelector("#blog-search");
+const blogCards = [...document.querySelectorAll(".blog-card")];
+const blogFilters = [...document.querySelectorAll(".blog-filter")];
+
+function filterBlogCards() {
+  if (!blogCards.length) return;
+  const query = (blogSearch?.value || "").trim().toLowerCase();
+  const activeCategory = document.querySelector(".blog-filter.active")?.dataset.category || "الكل";
+
+  blogCards.forEach((card) => {
+    const title = (card.dataset.title || card.textContent).toLowerCase();
+    const category = card.dataset.category || "";
+    const matchesSearch = !query || title.includes(query) || card.textContent.toLowerCase().includes(query);
+    const matchesCategory = activeCategory === "الكل" || category === activeCategory;
+    card.hidden = !(matchesSearch && matchesCategory);
+  });
+}
+
+if (blogSearch && blogCards.length) {
+  blogSearch.addEventListener("input", filterBlogCards);
+}
+
+blogFilters.forEach((button) => {
+  button.addEventListener("click", () => {
+    blogFilters.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    filterBlogCards();
+  });
+});
