@@ -488,3 +488,253 @@ blogFilters.forEach((button) => {
     filterBlogCards();
   });
 });
+
+const pathName = window.location.pathname;
+const isHomePage = pathName === "/" || pathName.endsWith("/index.html") && !pathName.includes("/blog/") && pathName.split("/").length <= 2;
+const isBlogIndex = pathName === "/blog/" || pathName.endsWith("/blog/index.html");
+const isBlogArticle = document.querySelector(".blog-article");
+const isFeatureLikePage = document.querySelector(".feature-page");
+
+const pageLabels = {
+  "/employee-management/": "نظام إدارة الموظفين",
+  "/attendance-management/": "نظام الحضور والانصراف",
+  "/payroll-management/": "نظام إدارة الرواتب",
+  "/leave-management/": "برنامج إدارة الإجازات",
+  "/workforce-management-system/": "نظام إدارة القوى العاملة",
+  "/employee-self-service/": "بوابة الخدمة الذاتية للموظفين",
+  "/construction-hr-software/": "شركات المقاولات",
+  "/security-workforce-management/": "شركات الأمن والحراسة",
+  "/healthcare-hr-software/": "القطاع الصحي",
+  "/private-school-hr-software/": "المدارس الخاصة",
+  "/logistics-workforce-management/": "الخدمات اللوجستية",
+  "/hrms-saudi-arabia/": "السعودية",
+  "/blog/": "المدونة",
+  "/privacy.html": "سياسة الخصوصية",
+  "/terms.html": "الشروط والأحكام"
+};
+
+const solutionLinks = [
+  ["/employee-management/", "إدارة الموظفين"],
+  ["/attendance-management/", "الحضور والانصراف"],
+  ["/leave-management/", "الإجازات"],
+  ["/payroll-management/", "الرواتب"],
+  ["/workforce-management-system/", "إدارة القوى العاملة"],
+  ["/employee-self-service/", "الخدمة الذاتية"]
+];
+
+const industryLinks = [
+  ["/construction-hr-software/", "شركات المقاولات"],
+  ["/security-workforce-management/", "شركات الأمن"],
+  ["/healthcare-hr-software/", "القطاع الصحي"],
+  ["/private-school-hr-software/", "المدارس الخاصة"],
+  ["/logistics-workforce-management/", "الخدمات اللوجستية"],
+  ["/hrms-saudi-arabia/", "السعودية"]
+];
+
+function createElement(tag, className, html) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (html) element.innerHTML = html;
+  return element;
+}
+
+function normalizePath(path) {
+  if (!path) return "/";
+  if (path === "/") return path;
+  if (path.endsWith("/index.html")) return path.replace("index.html", "");
+  return path.endsWith("/") || path.includes(".") ? path : `${path}/`;
+}
+
+function addBreadcrumbs() {
+  if (isHomePage || document.querySelector(".breadcrumb-shell")) return;
+
+  const main = document.querySelector("main");
+  if (!main) return;
+
+  const current = normalizePath(pathName);
+  const title = pageLabels[current] || document.querySelector("h1")?.textContent?.trim() || "EMPID";
+  const parent = current.startsWith("/blog/")
+    ? ["المدونة", "/blog/"]
+    : current.includes("construction") || current.includes("security") || current.includes("healthcare") || current.includes("school") || current.includes("logistics")
+      ? ["القطاعات", "/#industries"]
+      : current.includes("saudi")
+        ? ["الأسواق", "/#local-seo"]
+        : current.includes("privacy") || current.includes("terms")
+          ? ["EMPID", "/"]
+          : ["المميزات", "/#modules"];
+
+  const breadcrumb = createElement("nav", "breadcrumb-shell", `
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="/">الرئيسية</a></li>
+        <li><a href="${parent[1]}">${parent[0]}</a></li>
+        <li aria-current="page">${title}</li>
+      </ol>
+    </div>
+  `);
+  main.parentNode.insertBefore(breadcrumb, main);
+}
+
+function addTrustStrip() {
+  if (!isFeatureLikePage || document.querySelector(".product-trust-strip")) return;
+  const hero = document.querySelector(".feature-hero");
+  if (!hero) return;
+
+  const strip = createElement("section", "product-trust-strip", `
+    <div class="container trust-strip-inner">
+      <span>إدارة الموظفين</span>
+      <span>الحضور والانصراف</span>
+      <span>الرواتب</span>
+      <span>الإجازات</span>
+      <span>التقارير</span>
+      <span>الأمان</span>
+      <span>الفروع المتعددة</span>
+    </div>
+  `);
+  hero.insertAdjacentElement("afterend", strip);
+}
+
+function normalizeDemoCtas() {
+  if (document.querySelector("[data-lang]")) return;
+  document.querySelectorAll('a.btn-primary[href="/#contact"], a.btn-primary[href="#contact"]').forEach((button) => {
+    button.textContent = "احجز عرضاً تجريبياً";
+  });
+  document.querySelectorAll('a.btn-secondary[href="/#modules"], a.btn-secondary[href="#features"], a.btn-secondary[href="#solution"]').forEach((button) => {
+    button.textContent = "استكشف المميزات";
+  });
+}
+
+function enhanceBlogIndex() {
+  if (!isBlogIndex || document.querySelector(".resource-center-system")) return;
+  const hero = document.querySelector(".feature-hero");
+  if (!hero) return;
+
+  const resource = createElement("section", "section resource-center-system", `
+    <div class="container">
+      <div class="resource-featured">
+        <div>
+          <p class="eyebrow">مركز موارد EMPID</p>
+          <h2>أدلة عملية لتشغيل الموارد البشرية مثل منتج SaaS واحد</h2>
+          <p>استخدم هذه المقالات لفهم إدارة الموظفين والحضور والإجازات والرواتب حسب القطاع، ثم اربطها بصفحات الحلول المناسبة داخل EMPID.</p>
+        </div>
+        <div class="resource-topic-grid">
+          <a href="/employee-management/">إدارة الموظفين</a>
+          <a href="/attendance-management/">الحضور والانصراف</a>
+          <a href="/payroll-management/">الرواتب</a>
+          <a href="/construction-hr-software/">المقاولات</a>
+          <a href="/security-workforce-management/">الأمن والحراسة</a>
+          <a href="/hrms-saudi-arabia/">السعودية</a>
+        </div>
+      </div>
+    </div>
+  `);
+  hero.insertAdjacentElement("afterend", resource);
+}
+
+function slugifyHeading(text, index) {
+  return `section-${index}-${text.trim().replace(/\s+/g, "-").replace(/[^\u0600-\u06FF\w-]/g, "").slice(0, 42)}`;
+}
+
+function addArticleCallouts(article) {
+  if (!article || article.dataset.calloutsEnhanced) return;
+  article.dataset.calloutsEnhanced = "true";
+  const firstH2 = article.querySelector("h2");
+  const firstParagraph = firstH2?.nextElementSibling?.tagName === "P" ? firstH2.nextElementSibling : article.querySelector("p");
+  if (firstParagraph) {
+    firstParagraph.insertAdjacentElement("afterend", createElement("div", "article-callout takeaways", `
+      <h2>نقاط سريعة</h2>
+      <ul>
+        <li>ابدأ بتحديد العملية التي تسبب أكبر ضغط تشغيلي.</li>
+        <li>اربط بيانات الموظفين بالحضور والإجازات والرواتب بدلاً من إدارتها كملفات منفصلة.</li>
+        <li>استخدم الصلاحيات والتقارير لتقليل الاعتماد على الرسائل اليدوية.</li>
+      </ul>
+    `));
+  }
+
+  const secondH2 = article.querySelectorAll("h2")[2];
+  if (secondH2) {
+    secondH2.insertAdjacentElement("beforebegin", createElement("div", "article-callout tip", `
+      <h2>ملاحظة تطبيقية</h2>
+      <p>أفضل تجربة لا تأتي من إضافة أداة جديدة فقط، بل من توحيد طريقة العمل بين الموارد البشرية والعمليات والرواتب داخل مسار واحد واضح.</p>
+    `));
+  }
+}
+
+function addArticleSidebar() {
+  if (!isBlogArticle) return;
+  const layout = document.querySelector(".blog-article .article-layout");
+  const article = layout?.querySelector("article");
+  if (!layout || !article || layout.querySelector(".article-sidebar")) return;
+
+  const headings = [...article.querySelectorAll("h2")].slice(0, 8);
+  headings.forEach((heading, index) => {
+    if (!heading.id) heading.id = slugifyHeading(heading.textContent, index + 1);
+  });
+
+  const tocLinks = headings.map((heading) => `<li><a href="#${heading.id}">${heading.textContent}</a></li>`).join("");
+  const sidebar = createElement("aside", "article-sidebar", `
+    <div class="article-sidebar-card">
+      <h2>محتويات المقال</h2>
+      <ul>${tocLinks}</ul>
+    </div>
+    <div class="article-sidebar-card">
+      <h3>تطبيق عملي</h3>
+      <p>شاهد كيف يمكن تحويل هذه الأفكار إلى تدفق عمل واضح داخل EMPID.</p>
+      <a class="btn btn-primary btn-small" href="/#contact">احجز عرضاً تجريبياً</a>
+    </div>
+    <div class="article-sidebar-card">
+      <h3>صفحات مرتبطة</h3>
+      <ul>
+        ${solutionLinks.slice(0, 4).map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join("")}
+      </ul>
+    </div>
+    <div class="article-sidebar-card">
+      <h3>قطاعات مرتبطة</h3>
+      <ul>
+        ${industryLinks.slice(0, 4).map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join("")}
+      </ul>
+    </div>
+  `);
+  layout.appendChild(sidebar);
+  addArticleCallouts(article);
+}
+
+function addRelatedContentSystem() {
+  if (!isBlogArticle) return;
+  const article = document.querySelector(".blog-article article");
+  if (!article || document.querySelector(".related-content-system")) return;
+
+  const cards = createElement("section", "related-content-system", `
+    <div class="mid-cta">
+      <h2>حوّل القراءة إلى خطوة تشغيلية</h2>
+      <p>احجز عرضاً تجريبياً لمراجعة وضع شركتك الحالي وربط الموظفين والحضور والإجازات والرواتب في نظام واحد.</p>
+      <a class="btn btn-primary" href="/#contact">احجز عرضاً تجريبياً</a>
+    </div>
+    <div class="related-content-grid">
+      <div class="related-content-card">
+        <h2>مقالات مرتبطة</h2>
+        <ul>
+          <li><a href="/blog/how-to-choose-hrms.html">كيف تختار نظام موارد بشرية مناسب؟</a></li>
+          <li><a href="/blog/hrms-vs-excel.html">بديل Excel لإدارة الموظفين</a></li>
+          <li><a href="/blog/payroll-errors.html">أخطاء الرواتب الشائعة</a></li>
+        </ul>
+      </div>
+      <div class="related-content-card">
+        <h2>حلول EMPID</h2>
+        <ul>${solutionLinks.slice(0, 5).map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join("")}</ul>
+      </div>
+      <div class="related-content-card">
+        <h2>حسب القطاع</h2>
+        <ul>${industryLinks.slice(0, 5).map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join("")}</ul>
+      </div>
+    </div>
+  `);
+  article.insertAdjacentElement("afterend", cards);
+}
+
+addBreadcrumbs();
+addTrustStrip();
+normalizeDemoCtas();
+enhanceBlogIndex();
+addArticleSidebar();
+addRelatedContentSystem();
