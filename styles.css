@@ -676,7 +676,7 @@ p {
   padding: 20px;
 }
 
-.feature-card span {
+.feature-card > span {
   display: grid;
   place-items: center;
   width: 34px;
@@ -721,7 +721,7 @@ p {
   display: block;
 }
 
-.industry-card span {
+.industry-card > span {
   color: var(--teal-dark);
   font-weight: 900;
 }
