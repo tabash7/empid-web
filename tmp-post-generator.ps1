@@ -28,16 +28,16 @@ $related=ConvertFrom-Json -InputObject $RelatedJson
 
 function Escape-Xml([string]$v){if([string]::IsNullOrWhiteSpace($v)){''}else{$v.Replace('&','&amp;').Replace('<','&lt;').Replace('>','&gt;').Replace('"','&quot;').Replace("'",'&apos;')}}
 function RenderList([array]$arr){if(-not $arr){''}; return (($arr|ForEach-Object{'<li>'+[System.Net.WebUtility]::HtmlEncode($_)+'</li>'}) -join '')}
-function RenderFaq([array]$items){$a=@();for($i=0;$i -lt $items.Count;$i++){ $o=if($i -eq 0){' open'}else{''};$a += "<details$o><summary>$([System.Net.WebUtility]::HtmlEncode($items[$i].q))</summary><p>$([System.Net.WebUtility]::HtmlEncode($items[$i].a))</p></details>" }; return "<h2>??????? ???????</h2><div class='faq-list compact-faq'>"+($a -join '')+'</div>'}
-function RenderRelated([array]$items){$a=@();foreach($i in $items){$a += "<a href='$([System.Net.WebUtility]::HtmlEncode($i.url))'>$([System.Net.WebUtility]::HtmlEncode($i.text))</a>"}; return "<h2>????? ??????</h2><div class='related-links'>"+($a -join '')+'</div>'}
+function RenderFaq([array]$items){$a=@();for($i=0;$i -lt $items.Count;$i++){ $o=if($i -eq 0){' open'}else{''};$a += "<details$o><summary>$([System.Net.WebUtility]::HtmlEncode($items[$i].q))</summary><p>$([System.Net.WebUtility]::HtmlEncode($items[$i].a))</p></details>" }; return "<h2>الأسئلة الشائعة</h2><div class='faq-list compact-faq'>"+($a -join '')+'</div>'}
+function RenderRelated([array]$items){$a=@();foreach($i in $items){$a += "<a href='$([System.Net.WebUtility]::HtmlEncode($i.url))'>$([System.Net.WebUtility]::HtmlEncode($i.text))</a>"}; return "<h2>روابط ذات صلة</h2><div class='related-links'>"+($a -join '')+'</div>'}
 function BuildLd([string]$url,[string]$title,[string]$desc,[string]$image,[array]$faqItems){
   $faqNodes=@(); foreach($f in $faqItems){$faqNodes += @{ '@type'='Question'; name=$f.q; acceptedAnswer=@{ '@type'='Answer'; text=$f.a } }}
   $ld=@{
     '@context'='https://schema.org'
     '@graph'=@(
       @{ '@type'='BreadcrumbList'; '@id'="$url#breadcrumb"; itemListElement=@(
-          @{ '@type'='ListItem'; position=1; name='????????'; item='https://empid.com/' },
-          @{ '@type'='ListItem'; position=2; name='???????'; item='https://empid.com/blog/' },
+          @{ '@type'='ListItem'; position=1; name='الرئيسية'; item='https://empid.com/' },
+          @{ '@type'='ListItem'; position=2; name='المدونة'; item='https://empid.com/blog/' },
           @{ '@type'='ListItem'; position=3; name=$title; item=$url }
       )},
       @{ '@type'='Article'; '@id'="$url#article"; headline=$title; description=$desc; inLanguage='ar'; datePublished='2026-06-13'; dateModified='2026-06-13'; author=@{ '@type'='Organization'; name='EMPID' }; publisher=@{ '@type'='Organization'; name='EMPID'; logo=@{ '@type'='ImageObject'; url='https://empid.com/assets/EMPID_Arabic_Transparent.png' } }; image=@{ '@type'='ImageObject'; url=$image }; mainEntityOfPage=$url },
@@ -49,7 +49,7 @@ function BuildLd([string]$url,[string]$title,[string]$desc,[string]$image,[array
 
 $canonical="$baseUrl/blog/$Slug.html"; $ogImage="$baseUrl/assets/blog/$Slug.svg"
 $sectionHtml=@(); for($i=0;$i -lt 4;$i++){ if($i -lt $sections.Count){ $sectionHtml += "<h2>$([System.Net.WebUtility]::HtmlEncode($sections[$i].h))</h2><p>$([System.Net.WebUtility]::HtmlEncode($sections[$i].b))</p>" } else { $sectionHtml += '' } }
-$nextHtml=''; if($NextSlug -and $NextTitle){ $n=[System.Net.WebUtility]::HtmlEncode($NextTitle); $nextHtml="<div class='mid-cta'><h2>?????? ??????</h2><p>????: <a href='/blog/$NextSlug.html'>$n</a>.</p></div>" }
+$nextHtml=''; if($NextSlug -and $NextTitle){ $n=[System.Net.WebUtility]::HtmlEncode($NextTitle); $nextHtml="<div class='mid-cta'><h2>ملاحظة سريعة</h2><p>تطبيق: <a href='/blog/$NextSlug.html'>$n</a>.</p></div>" }
 
 $ldJson=BuildLd -url $canonical -title $Title -desc $Description -image $ogImage -faqItems $faqs
 
@@ -76,7 +76,7 @@ $html=$html.Replace('{{RELATED}}',$relHtml)
 
 Set-Content -Path (Join-Path $blogDir "$Slug.html") -Value $html -Encoding utf8
 $aliasDir=Join-Path $blogDir $Slug; New-Item -ItemType Directory -Path $aliasDir -Force | Out-Null
-$redirect="<!DOCTYPE html>`n<html lang='ar' dir='rtl'>`n<head>`n  <meta charset='UTF-8'>`n  <meta http-equiv='refresh' content='0; url=/blog/$Slug.html'>`n  <link rel='canonical' href='$canonical'>`n  <meta name='robots' content='index, follow'>`n  <title>????? ????? | EMPID</title>`n  <script>window.location.replace('/blog/$Slug.html');</script>`n</head>`n<body>`n  <p>????? ????? ??? <a href='/blog/$Slug.html'>?????? ???????</a>.</p>`n</body>`n</html>`n"
+$redirect="<!DOCTYPE html>`n<html lang='ar' dir='rtl'>`n<head>`n  <meta charset='UTF-8'>`n  <meta http-equiv='refresh' content='0; url=/blog/$Slug.html'>`n  <link rel='canonical' href='$canonical'>`n  <meta name='robots' content='index, follow'>`n  <title>إعادة توجيه | EMPID</title>`n  <script>window.location.replace('/blog/$Slug.html');</script>`n</head>`n<body>`n  <p>تمت إعادة توجيهك الآن إلى <a href='/blog/$Slug.html'>صفحة المقال</a>.</p>`n</body>`n</html>`n"
 Set-Content -Path (Join-Path $aliasDir 'index.html') -Value $redirect -Encoding utf8
 
 $palette=@('2563EB','0EA5E9','059669','DB2777','D97706','0E7490','4C1D95','0F766E','0284C7','4A5568'); $color=$palette[[Math]::Abs($Slug.GetHashCode()) % $palette.Count]
