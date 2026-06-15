@@ -1395,6 +1395,48 @@ details {
   background: linear-gradient(135deg, #ffffff, #fff8ea);
 }
 
+.app-screenshot-card {
+  max-width: var(--container-article);
+  margin: 28px 0 34px;
+  padding: 12px;
+  border: 1px solid rgba(1, 112, 249, 0.18);
+  border-radius: calc(var(--radius) + 6px);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(238, 246, 255, 0.96)),
+    radial-gradient(circle at top left, rgba(23, 199, 255, 0.16), transparent 36%);
+  box-shadow: var(--shadow);
+}
+
+.app-screenshot-kicker {
+  width: max-content;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  background: rgba(1, 112, 249, 0.1);
+  color: var(--teal-dark);
+  font-size: var(--text-xs);
+  font-weight: 900;
+}
+
+.app-screenshot-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid rgba(216, 229, 244, 0.92);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 18px 44px rgba(8, 36, 63, 0.1);
+}
+
+.app-screenshot-card figcaption {
+  margin: 12px 4px 2px;
+  color: #425a74;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1.8;
+}
+
 .article-sidebar {
   display: grid;
   gap: 14px;
