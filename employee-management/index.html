@@ -20,45 +20,116 @@
   <meta name="twitter:description" content="إدارة بيانات وملفات الموظفين والحضور والإجازات والرواتب من منصة واحدة.">
   <meta name="twitter:image" content="https://empid.com/assets/EMPID_Arabic_Transparent.png">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://empid.com/employee-management/#breadcrumb",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://empid.com/"},
-          {"@type": "ListItem", "position": 2, "name": "نظام إدارة الموظفين", "item": "https://empid.com/employee-management/"}
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://empid.com/#software",
-        "name": "EMPID",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "url": "https://empid.com/",
-        "description": "EMPID نظام موارد بشرية عربي أولاً لإدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير."
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://empid.com/employee-management/#faq",
-        "mainEntity": [
-          {"@type": "Question", "name": "ما هو نظام إدارة الموظفين؟", "acceptedAnswer": {"@type": "Answer", "text": "هو نظام يساعد الشركة على تنظيم بيانات الموظفين والوظائف والوثائق والصلاحيات والحضور والإجازات من مكان واحد."}},
-          {"@type": "Question", "name": "هل يغني EMPID عن ملفات Excel؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يقلل الاعتماد على ملفات Excel المتفرقة عبر ملف موظف مركزي وسجلات قابلة للتتبع."}},
-          {"@type": "Question", "name": "هل يدعم النظام العربية والإنجليزية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، تم تصميم EMPID للشركات التي تحتاج استخدام العربية والإنجليزية."}},
-          {"@type": "Question", "name": "هل يمكن تنظيم الموظفين حسب الفروع؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والأقسام والفرق."}},
-          {"@type": "Question", "name": "هل يمكن إدارة وثائق الموظفين؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد EMPID على تنظيم الوثائق والتنبيهات المتعلقة بها."}},
-          {"@type": "Question", "name": "هل يناسب الشركات المتوسطة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، EMPID مناسب خصوصا للشركات من 50 إلى 300 موظف."}},
-          {"@type": "Question", "name": "هل يرتبط ملف الموظف بالحضور والإجازات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، قيمة EMPID تظهر في ربط ملف الموظف بالحضور والإجازات والرواتب والتقارير."}},
-          {"@type": "Question", "name": "هل يدعم الصلاحيات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن تحديد من يرى بيانات الموظفين ومن يعتمد الطلبات ومن يصل إلى التقارير."}},
-          {"@type": "Question", "name": "هل يساعد المديرين؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمنح المديرين رؤية أوضح للفريق والطلبات والحضور والوثائق."}},
-          {"@type": "Question", "name": "كيف أبدأ؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكنك حجز عرض تجريبي من صفحة EMPID الرئيسية لمراجعة احتياجات شركتك."}}
-        ]
-      }
-    ]
-  }
-  </script>
+{
+    "@context":  "https://schema.org",
+    "@graph":  [
+                   {
+                       "@type":  "BreadcrumbList",
+                       "@id":  "https://empid.com/employee-management/#breadcrumb",
+                       "itemListElement":  [
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  1,
+                                                   "name":  "الرئيسية",
+                                                   "item":  "https://empid.com/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  2,
+                                                   "name":  "نظام إدارة الموظفين",
+                                                   "item":  "https://empid.com/employee-management/"
+                                               }
+                                           ]
+                   },
+                   {
+                       "@type":  "FAQPage",
+                       "@id":  "https://empid.com/employee-management/#faq",
+                       "mainEntity":  [
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "ما هو نظام إدارة الموظفين؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "هو نظام يساعد الشركة على تنظيم بيانات الموظفين والوظائف والوثائق والصلاحيات والحضور والإجازات من مكان واحد."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يغني EMPID عن ملفات Excel؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يقلل الاعتماد على ملفات Excel المتفرقة عبر ملف موظف مركزي وسجلات قابلة للتتبع."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم النظام العربية والإنجليزية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، تم تصميم EMPID للشركات التي تحتاج استخدام العربية والإنجليزية."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن تنظيم الموظفين حسب الفروع؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والأقسام والفرق."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن إدارة وثائق الموظفين؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد EMPID على تنظيم الوثائق والتنبيهات المتعلقة بها."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب الشركات المتوسطة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، EMPID مناسب خصوصا للشركات من 50 إلى 300 موظف."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يرتبط ملف الموظف بالحضور والإجازات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، قيمة EMPID تظهر في ربط ملف الموظف بالحضور والإجازات والرواتب والتقارير."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم الصلاحيات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن تحديد من يرى بيانات الموظفين ومن يعتمد الطلبات ومن يصل إلى التقارير."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يساعد المديرين؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمنح المديرين رؤية أوضح للفريق والطلبات والحضور والوثائق."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "كيف أبدأ؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "يمكنك حجز عرض تجريبي من صفحة EMPID الرئيسية لمراجعة احتياجات شركتك."
+                                                                 }
+                                          }
+                                      ]
+                   }
+               ]
+}
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -196,4 +267,5 @@
   </footer>
 <script src="/script.js?v=20260601-blog-polish"></script></body>
 </html>
+
 

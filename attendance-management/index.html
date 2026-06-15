@@ -20,29 +20,116 @@
   <meta name="twitter:description" content="إدارة الحضور والتأخير والغياب وربطها بالإجازات والرواتب.">
   <meta name="twitter:image" content="https://empid.com/assets/EMPID_Arabic_Transparent.png">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {"@type": "BreadcrumbList", "@id": "https://empid.com/attendance-management/#breadcrumb", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://empid.com/"},
-        {"@type": "ListItem", "position": 2, "name": "نظام الحضور والانصراف", "item": "https://empid.com/attendance-management/"}
-      ]},
-      {"@type": "SoftwareApplication", "@id": "https://empid.com/#software", "name": "EMPID", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://empid.com/", "description": "EMPID نظام موارد بشرية عربي أولاً لإدارة الحضور والإجازات والرواتب والموظفين والوثائق والموافقات والتقارير."},
-      {"@type": "FAQPage", "@id": "https://empid.com/attendance-management/#faq", "mainEntity": [
-        {"@type": "Question", "name": "ما هو نظام الحضور والانصراف؟", "acceptedAnswer": {"@type": "Answer", "text": "هو نظام يساعد الشركة على تسجيل ومتابعة حضور الموظفين وانصرافهم والتأخير والغياب والتقارير المرتبطة بالدوام."}},
-        {"@type": "Question", "name": "هل يدعم EMPID الفرق الميدانية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، EMPID مناسب للشركات التي لديها فرق ميدانية ومكتبية وفروع متعددة."}},
-        {"@type": "Question", "name": "هل يرتبط الحضور بالرواتب؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن ربط بيانات الحضور بالإجازات والرواتب لتقليل أخطاء نهاية الشهر."}},
-        {"@type": "Question", "name": "هل يمكن معرفة المتأخرين والغائبين؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد النظام الإدارة على متابعة حالة الحضور اليومية والتأخير والغياب."}},
-        {"@type": "Question", "name": "هل يناسب شركات الأمن؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يناسب شركات الأمن والحراسة التي تحتاج متابعة مواقع وفرق وشفتات."}},
-        {"@type": "Question", "name": "هل يناسب شركات المقاولات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يناسب شركات المقاولات التي تدير موظفين في مشاريع ومواقع متعددة."}},
-        {"@type": "Question", "name": "هل يقلل استخدام WhatsApp؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يقلل الاعتماد على رسائل الحضور اليدوية والمحادثات غير المنظمة."}},
-        {"@type": "Question", "name": "هل يدعم التقارير؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن استخدام بيانات الحضور في تقارير الموارد البشرية والإدارة."}},
-        {"@type": "Question", "name": "هل يحتاج النظام إلى تطبيق معقد؟", "acceptedAnswer": {"@type": "Answer", "text": "EMPID مصمم للشركات المتوسطة التي تحتاج حلا واضحا وسهل التطبيق."}},
-        {"@type": "Question", "name": "كيف أطلب عرضا؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكنك حجز عرض تجريبي من نموذج التواصل في الصفحة الرئيسية."}}
-      ]}
-    ]
-  }
-  </script>
+{
+    "@context":  "https://schema.org",
+    "@graph":  [
+                   {
+                       "@type":  "BreadcrumbList",
+                       "@id":  "https://empid.com/attendance-management/#breadcrumb",
+                       "itemListElement":  [
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  1,
+                                                   "name":  "الرئيسية",
+                                                   "item":  "https://empid.com/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  2,
+                                                   "name":  "نظام الحضور والانصراف",
+                                                   "item":  "https://empid.com/attendance-management/"
+                                               }
+                                           ]
+                   },
+                   {
+                       "@type":  "FAQPage",
+                       "@id":  "https://empid.com/attendance-management/#faq",
+                       "mainEntity":  [
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "ما هو نظام الحضور والانصراف؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "هو نظام يساعد الشركة على تسجيل ومتابعة حضور الموظفين وانصرافهم والتأخير والغياب والتقارير المرتبطة بالدوام."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم EMPID الفرق الميدانية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، EMPID مناسب للشركات التي لديها فرق ميدانية ومكتبية وفروع متعددة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يرتبط الحضور بالرواتب؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن ربط بيانات الحضور بالإجازات والرواتب لتقليل أخطاء نهاية الشهر."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن معرفة المتأخرين والغائبين؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد النظام الإدارة على متابعة حالة الحضور اليومية والتأخير والغياب."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب شركات الأمن؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يناسب شركات الأمن والحراسة التي تحتاج متابعة مواقع وفرق وشفتات."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب شركات المقاولات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يناسب شركات المقاولات التي تدير موظفين في مشاريع ومواقع متعددة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يقلل استخدام WhatsApp؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يقلل الاعتماد على رسائل الحضور اليدوية والمحادثات غير المنظمة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم التقارير؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن استخدام بيانات الحضور في تقارير الموارد البشرية والإدارة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يحتاج النظام إلى تطبيق معقد؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "EMPID مصمم للشركات المتوسطة التي تحتاج حلا واضحا وسهل التطبيق."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "كيف أطلب عرضا؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "يمكنك حجز عرض تجريبي من نموذج التواصل في الصفحة الرئيسية."
+                                                                 }
+                                          }
+                                      ]
+                   }
+               ]
+}
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -125,4 +212,5 @@
   <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-logo-mark" aria-hidden="true"><img src="/assets/EMPID_Icon.png" alt=""></span><span><strong>EMPID</strong><small>نظام تشغيل إدارة القوى العاملة</small></span></a><p>منصة لإدارة الموظفين والحضور والإجازات والرواتب للشركات المتوسطة في الشرق الأوسط.</p></div><div class="footer-links"><a href="/">الرئيسية</a><a href="/#contact">تواصل</a><a href="/blog/">المقالات</a></div></div></footer>
 <script src="/script.js?v=20260601-blog-polish"></script></body>
 </html>
+
 

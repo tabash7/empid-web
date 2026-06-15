@@ -27,114 +27,328 @@
   <link rel="alternate" hreflang="en" href="https://empid.com/?lang=en">
   <link rel="alternate" hreflang="x-default" href="https://empid.com/">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://empid.com/#organization",
-        "name": "EMPID",
-        "url": "https://empid.com/",
-        "logo": "https://empid.com/assets/EMPID_Arabic_Transparent.png",
-        "sameAs": ["https://www.linkedin.com/"],
-        "areaServed": ["Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait", "Oman", "Middle East"]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://empid.com/#software",
-        "name": "EMPID",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "url": "https://empid.com/",
-        "image": "https://empid.com/assets/EMPID_Arabic_Transparent.png",
-        "description": "EMPID نظام موارد بشرية عربي أولاً لإدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير.",
-        "featureList": [
-          "إدارة الموظفين",
-          "إدارة الحضور والانصراف",
-          "إدارة الإجازات",
-          "إدارة الرواتب",
-          "Document Management",
-          "Approvals",
-          "التقارير والتحليلات",
-          "الخدمة الذاتية للموظفين"
-        ],
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Request pricing based on company size."
-        },
-        "publisher": {
-          "@id": "https://empid.com/#organization"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://empid.com/#product",
-        "name": "EMPID نظام تشغيل إدارة القوى العاملة",
-        "brand": {
-          "@id": "https://empid.com/#organization"
-        },
-        "category": "نظام موارد بشرية",
-        "image": "https://empid.com/assets/EMPID_Arabic_Transparent.png",
-        "description": "نظام تشغيل لإدارة القوى العاملة يساعد الشركات المتنامية في الشرق الأوسط على إدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير.",
-        "offers": {
-          "@type": "Offer",
-          "availability": "https://schema.org/InStock",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Flexible plans are available by company size. Exact prices are provided on request."
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://empid.com/#breadcrumb",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://empid.com/"},
-          {"@type": "ListItem", "position": 2, "name": "نظام موارد بشرية", "item": "https://empid.com/#hr-software"},
-          {"@type": "ListItem", "position": 3, "name": "FAQ", "item": "https://empid.com/#faq"}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://empid.com/#faq-schema",
-        "mainEntity": [
-          {"@type": "Question", "name": "هل EMPID مناسب للشركات أقل من 50 موظف؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكن استخدامه، لكن القيمة الأكبر تظهر عادة عند الشركات التي لديها 50 موظفا أو أكثر."}},
-          {"@type": "Question", "name": "هل يدعم النظام اللغة العربية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، تم تصميم EMPID ليكون مناسبا للشركات العربية مع دعم العربية والإنجليزية."}},
-          {"@type": "Question", "name": "هل يمكن إدارة أكثر من فرع؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن إدارة الفرق والفروع والصلاحيات من مكان واحد."}},
-          {"@type": "Question", "name": "هل يشمل الرواتب؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يحتوي EMPID على مسارات عمل خاصة بالرواتب وقسائم الرواتب والموافقات."}},
-          {"@type": "Question", "name": "هل يستطيع الموظف تقديم طلب إجازة بنفسه؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، من خلال بوابة الخدمة الذاتية للموظف."}},
-          {"@type": "Question", "name": "هل النظام آمن؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يعتمد على صلاحيات وسجلات تدقيق وعزل بيانات وتشفير للبيانات الحساسة."}},
-          {"@type": "Question", "name": "كم يستغرق الإعداد؟", "acceptedAnswer": {"@type": "Answer", "text": "يعتمد على حجم الشركة، لكن يمكن بدء تجربة أولية بسرعة بعد تجهيز بيانات الموظفين."}},
-          {"@type": "Question", "name": "ما هو أفضل نظام موارد بشرية للشركات المتوسطة؟", "acceptedAnswer": {"@type": "Answer", "text": "أفضل نظام موارد بشرية للشركات المتوسطة يجمع إدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير في منصة واحدة سهلة الاستخدام."}},
-          {"@type": "Question", "name": "هل EMPID برنامج موارد بشرية أم نظام إدارة قوى عاملة؟", "acceptedAnswer": {"@type": "Answer", "text": "EMPID يجمع الاثنين: برنامج موارد بشرية لإدارة بيانات الموظفين ونظام إدارة قوى عاملة لتشغيل الحضور والإجازات والرواتب والموافقات يوميا."}},
-          {"@type": "Question", "name": "هل يمكن استبدال Excel في إدارة الموظفين؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يقلل EMPID الاعتماد على Excel من خلال ملفات موظفين مركزية وسجلات حضور وإجازات ورواتب وتقارير قابلة للمراجعة."}},
-          {"@type": "Question", "name": "هل يمكن استبدال WhatsApp في طلبات الإجازة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن تقديم طلبات الإجازة ومراجعتها واعتمادها داخل مسار واضح بدلا من ضياعها في المحادثات."}},
-          {"@type": "Question", "name": "هل يدعم EMPID الحضور والانصراف؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يدعم EMPID إدارة الحضور والانصراف وربط بيانات الحضور بملف الموظف والإجازات والرواتب والتقارير."}},
-          {"@type": "Question", "name": "هل يناسب EMPID شركات المقاولات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، EMPID مناسب لشركات المقاولات التي تدير موظفين وفرق عمل في مواقع ومشاريع متعددة."}},
-          {"@type": "Question", "name": "هل يناسب EMPID شركات الأمن والحراسة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد شركات الأمن على متابعة الحراس والمواقع والحضور والإجازات والموافقات والتقارير من منصة واحدة."}},
-          {"@type": "Question", "name": "هل يناسب EMPID العيادات والمراكز الطبية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن للعيادات استخدام EMPID لإدارة ملفات الموظفين والحضور والإجازات والوثائق والرواتب مع صلاحيات واضحة."}},
-          {"@type": "Question", "name": "هل يناسب EMPID المدارس الخاصة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد المدارس الخاصة على إدارة المعلمين والإداريين والحضور والإجازات والوثائق والرواتب من مكان واحد."}},
-          {"@type": "Question", "name": "ما الفرق بين نظام الموارد البشرية ونظام إدارة القوى العاملة؟", "acceptedAnswer": {"@type": "Answer", "text": "نظام الموارد البشرية يركز على بيانات وسياسات الموارد البشرية، بينما نظام إدارة القوى العاملة يركز على تشغيل الفرق يوميا مثل الحضور والإجازات والجداول والتقارير."}},
-          {"@type": "Question", "name": "هل يدعم النظام إدارة الفروع؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والفرق ومنح الصلاحيات المناسبة لكل مدير أو مسؤول."}},
-          {"@type": "Question", "name": "هل يدعم EMPID التقارير والتحليلات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد EMPID الإدارة على متابعة الحضور والإجازات والموظفين والرواتب والوثائق من خلال تقارير أوضح."}},
-          {"@type": "Question", "name": "هل يمكن استخدام EMPID في السعودية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، EMPID موجه للشركات في السعودية والخليج التي تحتاج نظام موارد بشرية عربي وإنجليزي للشركات المتوسطة."}},
-          {"@type": "Question", "name": "هل يمكن استخدام EMPID في الإمارات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن للشركات في دبي وأبوظبي والإمارات استخدام EMPID لإدارة الموظفين والحضور والإجازات والرواتب."}},
-          {"@type": "Question", "name": "هل يدعم EMPID اللغة الإنجليزية للفرق المختلطة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، تم تصميم EMPID للشركات التي تحتاج العربية والإنجليزية في بيئة عمل واحدة."}},
-          {"@type": "Question", "name": "هل يساعد EMPID على تقليل أخطاء الرواتب؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، من خلال ربط الرواتب ببيانات الموظفين والحضور والإجازات والموافقات تقل الحاجة إلى إدخال يدوي متكرر."}},
-          {"@type": "Question", "name": "هل يمكن للموظف الوصول إلى بوابة خدمة ذاتية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، بوابة الخدمة الذاتية تساعد الموظفين على تقديم الطلبات والوصول إلى المعلومات المناسبة."}},
-          {"@type": "Question", "name": "هل يمكن إدارة الوثائق والتنبيهات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يساعد EMPID على تنظيم وثائق الموظفين وإظهار تنبيهات للوثائق أو العمليات التي تحتاج متابعة."}},
-          {"@type": "Question", "name": "هل EMPID مناسب للشركات متعددة المواقع؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، EMPID مناسب للشركات التي لديها فروع أو مواقع أو فرق ميدانية وتحتاج رؤية مركزية للموظفين."}},
-          {"@type": "Question", "name": "ما الكلمات التي يغطيها EMPID؟", "acceptedAnswer": {"@type": "Answer", "text": "يغطي EMPID نظام موارد بشرية، نظام إدارة الموظفين، برنامج الحضور والانصراف، إدارة الإجازات، برنامج الرواتب، ومنصة إدارة القوى العاملة."}},
-          {"@type": "Question", "name": "هل أحتاج صفحة منفصلة لكل وحدة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، من الأفضل مستقبلا إنشاء صفحات منفصلة لإدارة الموظفين والحضور والرواتب والإجازات لزيادة فرص الظهور في Google."}},
-          {"@type": "Question", "name": "هل يمكن البدء بعرض تجريبي قبل الشراء؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكن حجز عرض تجريبي لمعرفة كيف يناسب EMPID حجم الشركة والقطاع والعمليات الحالية."}},
-          {"@type": "Question", "name": "هل EMPID بديل مناسب للأنظمة الكبيرة المعقدة؟", "acceptedAnswer": {"@type": "Answer", "text": "EMPID مناسب للشركات المتوسطة التي تريد نظاما واضحا وعمليا دون تعقيد زائد أو تطبيق طويل."}},
-          {"@type": "Question", "name": "هل يمكن استخدام EMPID كمنصة موارد بشرية مركزية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يجمع EMPID بيانات الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير في منصة واحدة."}}
-        ]
-      }
-    ]
-  }
-  </script>
+{
+    "@context":  "https://schema.org",
+    "@graph":  [
+                   {
+                       "@type":  "Organization",
+                       "@id":  "https://empid.com/#organization",
+                       "name":  "EMPID",
+                       "url":  "https://empid.com/",
+                       "logo":  "https://empid.com/assets/EMPID_Arabic_Transparent.png",
+                       "sameAs":  [
+                                      "https://www.linkedin.com/"
+                                  ],
+                       "areaServed":  [
+                                          "Saudi Arabia",
+                                          "United Arab Emirates",
+                                          "Qatar",
+                                          "Kuwait",
+                                          "Oman",
+                                          "Middle East"
+                                      ]
+                   },
+                   {
+                       "@type":  "Service",
+                       "@id":  "https://empid.com/#service",
+                       "name":  "EMPID نظام تشغيل إدارة القوى العاملة",
+                       "serviceType":  "نظام موارد بشرية وإدارة القوى العاملة",
+                       "provider":  {
+                                        "@id":  "https://empid.com/#organization"
+                                    },
+                       "areaServed":  [
+                                          "Saudi Arabia",
+                                          "United Arab Emirates",
+                                          "Qatar",
+                                          "Kuwait",
+                                          "Oman",
+                                          "Middle East"
+                                      ],
+                       "url":  "https://empid.com/",
+                       "image":  "https://empid.com/assets/EMPID_Arabic_Transparent.png",
+                       "description":  "خدمة برمجية لإدارة القوى العاملة تساعد الشركات المتنامية في الشرق الأوسط على إدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير."
+                   },
+                   {
+                       "@type":  "BreadcrumbList",
+                       "@id":  "https://empid.com/#breadcrumb",
+                       "itemListElement":  [
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  1,
+                                                   "name":  "Home",
+                                                   "item":  "https://empid.com/"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  2,
+                                                   "name":  "نظام موارد بشرية",
+                                                   "item":  "https://empid.com/#hr-software"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
+                                                   "name":  "FAQ",
+                                                   "item":  "https://empid.com/#faq"
+                                               }
+                                           ]
+                   },
+                   {
+                       "@type":  "FAQPage",
+                       "@id":  "https://empid.com/#faq-schema",
+                       "mainEntity":  [
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل EMPID مناسب للشركات أقل من 50 موظف؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "يمكن استخدامه، لكن القيمة الأكبر تظهر عادة عند الشركات التي لديها 50 موظفا أو أكثر."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم النظام اللغة العربية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، تم تصميم EMPID ليكون مناسبا للشركات العربية مع دعم العربية والإنجليزية."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن إدارة أكثر من فرع؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن إدارة الفرق والفروع والصلاحيات من مكان واحد."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يشمل الرواتب؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يحتوي EMPID على مسارات عمل خاصة بالرواتب وقسائم الرواتب والموافقات."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يستطيع الموظف تقديم طلب إجازة بنفسه؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، من خلال بوابة الخدمة الذاتية للموظف."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل النظام آمن؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يعتمد على صلاحيات وسجلات تدقيق وعزل بيانات وتشفير للبيانات الحساسة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "كم يستغرق الإعداد؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "يعتمد على حجم الشركة، لكن يمكن بدء تجربة أولية بسرعة بعد تجهيز بيانات الموظفين."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "ما هو أفضل نظام موارد بشرية للشركات المتوسطة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "أفضل نظام موارد بشرية للشركات المتوسطة يجمع إدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير في منصة واحدة سهلة الاستخدام."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل EMPID برنامج موارد بشرية أم نظام إدارة قوى عاملة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "EMPID يجمع الاثنين: برنامج موارد بشرية لإدارة بيانات الموظفين ونظام إدارة قوى عاملة لتشغيل الحضور والإجازات والرواتب والموافقات يوميا."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن استبدال Excel في إدارة الموظفين؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يقلل EMPID الاعتماد على Excel من خلال ملفات موظفين مركزية وسجلات حضور وإجازات ورواتب وتقارير قابلة للمراجعة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن استبدال WhatsApp في طلبات الإجازة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن تقديم طلبات الإجازة ومراجعتها واعتمادها داخل مسار واضح بدلا من ضياعها في المحادثات."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم EMPID الحضور والانصراف؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يدعم EMPID إدارة الحضور والانصراف وربط بيانات الحضور بملف الموظف والإجازات والرواتب والتقارير."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب EMPID شركات المقاولات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، EMPID مناسب لشركات المقاولات التي تدير موظفين وفرق عمل في مواقع ومشاريع متعددة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب EMPID شركات الأمن والحراسة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد شركات الأمن على متابعة الحراس والمواقع والحضور والإجازات والموافقات والتقارير من منصة واحدة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب EMPID العيادات والمراكز الطبية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن للعيادات استخدام EMPID لإدارة ملفات الموظفين والحضور والإجازات والوثائق والرواتب مع صلاحيات واضحة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يناسب EMPID المدارس الخاصة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد المدارس الخاصة على إدارة المعلمين والإداريين والحضور والإجازات والوثائق والرواتب من مكان واحد."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "ما الفرق بين نظام الموارد البشرية ونظام إدارة القوى العاملة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نظام الموارد البشرية يركز على بيانات وسياسات الموارد البشرية، بينما نظام إدارة القوى العاملة يركز على تشغيل الفرق يوميا مثل الحضور والإجازات والجداول والتقارير."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم النظام إدارة الفروع؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والفرق ومنح الصلاحيات المناسبة لكل مدير أو مسؤول."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم EMPID التقارير والتحليلات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد EMPID الإدارة على متابعة الحضور والإجازات والموظفين والرواتب والوثائق من خلال تقارير أوضح."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن استخدام EMPID في السعودية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، EMPID موجه للشركات في السعودية والخليج التي تحتاج نظام موارد بشرية عربي وإنجليزي للشركات المتوسطة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن استخدام EMPID في الإمارات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن للشركات في دبي وأبوظبي والإمارات استخدام EMPID لإدارة الموظفين والحضور والإجازات والرواتب."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يدعم EMPID اللغة الإنجليزية للفرق المختلطة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، تم تصميم EMPID للشركات التي تحتاج العربية والإنجليزية في بيئة عمل واحدة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يساعد EMPID على تقليل أخطاء الرواتب؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، من خلال ربط الرواتب ببيانات الموظفين والحضور والإجازات والموافقات تقل الحاجة إلى إدخال يدوي متكرر."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن للموظف الوصول إلى بوابة خدمة ذاتية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، بوابة الخدمة الذاتية تساعد الموظفين على تقديم الطلبات والوصول إلى المعلومات المناسبة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن إدارة الوثائق والتنبيهات؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يساعد EMPID على تنظيم وثائق الموظفين وإظهار تنبيهات للوثائق أو العمليات التي تحتاج متابعة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل EMPID مناسب للشركات متعددة المواقع؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، EMPID مناسب للشركات التي لديها فروع أو مواقع أو فرق ميدانية وتحتاج رؤية مركزية للموظفين."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "ما الكلمات التي يغطيها EMPID؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "يغطي EMPID نظام موارد بشرية، نظام إدارة الموظفين، برنامج الحضور والانصراف، إدارة الإجازات، برنامج الرواتب، ومنصة إدارة القوى العاملة."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل أحتاج صفحة منفصلة لكل وحدة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، من الأفضل مستقبلا إنشاء صفحات منفصلة لإدارة الموظفين والحضور والرواتب والإجازات لزيادة فرص الظهور في Google."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن البدء بعرض تجريبي قبل الشراء؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يمكن حجز عرض تجريبي لمعرفة كيف يناسب EMPID حجم الشركة والقطاع والعمليات الحالية."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل EMPID بديل مناسب للأنظمة الكبيرة المعقدة؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "EMPID مناسب للشركات المتوسطة التي تريد نظاما واضحا وعمليا دون تعقيد زائد أو تطبيق طويل."
+                                                                 }
+                                          },
+                                          {
+                                              "@type":  "Question",
+                                              "name":  "هل يمكن استخدام EMPID كمنصة موارد بشرية مركزية؟",
+                                              "acceptedAnswer":  {
+                                                                     "@type":  "Answer",
+                                                                     "text":  "نعم، يجمع EMPID بيانات الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير في منصة واحدة."
+                                                                 }
+                                          }
+                                      ]
+                   }
+               ]
+}
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -312,12 +526,12 @@
           <h2 data-i18n="benefits.title">نتائج واضحة لفريق الموارد البشرية والإدارة</h2>
         </div>
         <div class="card-grid benefits-grid">
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardOne">وفر وقت فريق الموارد البشرية</h3></article>
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardTwo">قلل أخطاء الرواتب</h3></article>
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardThree">تابع الحضور بوضوح</h3></article>
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardFour">نظم ملفات الموظفين</h3></article>
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardFive">امنح المديرين رؤية أفضل</h3></article>
-          <article class="feature-card reveal"><span>âœ“</span><h3 data-i18n="benefits.cardSix">أدر الفروع والفرق من مكان واحد</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardOne">وفر وقت فريق الموارد البشرية</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardTwo">قلل أخطاء الرواتب</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardThree">تابع الحضور بوضوح</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardFour">نظم ملفات الموظفين</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardFive">امنح المديرين رؤية أفضل</h3></article>
+          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardSix">أدر الفروع والفرق من مكان واحد</h3></article>
         </div>
       </div>
     </section>
@@ -477,7 +691,7 @@
               <p>إذا كنت تبحث عن <a href="/attendance-management/">نظام الحضور والانصراف</a> أو برنامج إدارة الحضور والانصراف لمنطقة الخليج، فإن EMPID يضع الحضور داخل منصة إدارة القوى العاملة وليس كأداة منفصلة. هذا يعني أن الحضور يصبح جزءاً من رحلة الموظف: من الدوام اليومي، إلى الإجازات، إلى الاستقطاعات أو الإضافات، إلى التقارير التي تساعد الإدارة على اتخاذ قرارات أفضل.</p>
             </div>
             <div class="lang-content lang-en" hidden>
-              <p>Attendance is one of the most sensitive daily workflows for companies with office and field teams. When attendance is recorded through WhatsApp messages, paper sheets, or Excel files, issues appear quickly: delayed updates, conflicting manager records, unclear lateness calculations, and missing timesheet details at month-end. EMPIDâ€™s attendance management system turns attendance into a reliable operational record that can support tracking, approvals, reports, and payroll.</p>
+              <p>Attendance is one of the most sensitive daily workflows for companies with office and field teams. When attendance is recorded through WhatsApp messages, paper sheets, or Excel files, issues appear quickly: delayed updates, conflicting manager records, unclear lateness calculations, and missing timesheet details at month-end. EMPID's attendance management system turns attendance into a reliable operational record that can support tracking, approvals, reports, and payroll.</p>
               <p>Good attendance management software is not only about clock-in and clock-out. Growing companies need flexible attendance policies by branch, site, shift, or team. They need to know who is present, late, absent, on leave, or working from another location. When attendance data connects with employee records, leave management, and payroll software, management sees the full picture instead of disconnected numbers. This helps reduce payroll mistakes and gives managers earlier visibility into coverage and discipline.</p>
               <p>EMPID is especially relevant for construction, security, logistics, schools, clinics, and service companies that manage teams across multiple sites. It supports branch and team management, permissions, and reporting so attendance does not remain trapped in individual spreadsheets. For mid-sized companies, reliable attendance tracking directly affects HR workload, payroll accuracy, and operational control.</p>
               <p>If you are looking for an <a href="/attendance-management/">Attendance Management System</a> in the Middle East, EMPID places attendance inside a wider Workforce Management System rather than treating it as a standalone tool. Attendance becomes part of the employee journey, from daily time tracking to leave balances, payroll adjustments, approvals, and management reports.</p>
@@ -515,7 +729,7 @@
               <p>إذا كانت شركتك تبحث عن <a href="/payroll-management/">برنامج الرواتب</a> أو نظام إدارة الرواتب لتقليل الأخطاء، فإن EMPID يقدم مساراً عملياً: تنظيم ملف الموظف، ضبط الحضور والانصراف، إدارة الإجازات والموافقات، ثم تحويل ذلك إلى بيانات رواتب أكثر جاهزية للمراجعة. هذا يقلل الضغط على نهاية الشهر ويمنح الإدارة ثقة أكبر في الأرقام.</p>
             </div>
             <div class="lang-content lang-en" hidden>
-              <p>Payroll is where earlier operational mistakes become visible. If employee data is outdated, attendance is inaccurate, or leave requests are not approved, month-end payroll becomes stressful and full of manual checks. EMPIDâ€™s payroll workflows reduce manual work by connecting payroll to employee records, attendance, leave, documents, and approvals. The goal is to help payroll officers work from unified data instead of collecting numbers from multiple sources.</p>
+              <p>Payroll is where earlier operational mistakes become visible. If employee data is outdated, attendance is inaccurate, or leave requests are not approved, month-end payroll becomes stressful and full of manual checks. EMPID's payroll workflows reduce manual work by connecting payroll to employee records, attendance, leave, documents, and approvals. The goal is to help payroll officers work from unified data instead of collecting numbers from multiple sources.</p>
               <p>Payroll software for mid-sized companies should support review workflows, approvals, payslips, reports, and a clear history of changes that affected pay. When HR can trace each deduction, addition, or adjustment, communication with management and employees becomes clearer. Approval history also reduces disputes and makes payroll more transparent.</p>
               <p>In Saudi Arabia, UAE, and the wider GCC, payroll needs vary based on company size, contract types, branches, and field teams. HR software needs flexible data management and permissions so each user only sees what they need. EMPID places payroll inside the Workforce Operating System so payroll becomes the outcome of accurate operational data, not a separate spreadsheet that must be repaired every month.</p>
               <p>If your company is looking for <a href="/payroll-management/">payroll software</a> that reduces mistakes, EMPID offers a practical path: organize employee profiles, improve attendance tracking, manage leave and approvals, and turn these inputs into cleaner payroll data. That reduces month-end pressure and gives management more confidence in the numbers.</p>
@@ -537,7 +751,7 @@
               <p>Workforce management is broader than traditional HR administration. An HRMS manages data and policies, while a Workforce Management System focuses on daily operations: who is working today, who is absent, which approvals are pending, which documents are expiring, what payroll status looks like, and which branches or teams need attention. EMPID uses the Workforce Operating System positioning because it connects these workflows instead of leaving each one in a separate tool.</p>
               <p>Mid-sized companies in the Middle East often manage both office employees and field teams. That makes daily operations more complex than maintaining an employee database. Companies need HR software that supports attendance management, leave management, payroll, documents, approvals, reports, and permissions. Management also needs dashboards that show current workforce status instead of waiting for late monthly reports.</p>
               <p>EMPID turns scattered operations into connected workflows. When an employee submits leave, the manager can understand team impact. When attendance issues appear at a branch or site, management can see them quickly. When a document is close to expiry, alerts help prevent late discovery. When payroll is due, the underlying data is already better organized.</p>
-              <p>If you are looking for a <a href="/workforce-management-system/">Workforce Management System</a> for a growing company, EMPIDâ€™s core value is operational clarity. It is not only an employee archive; it is a platform for managing people, time, payroll, documents, approvals, and reports from one secure place.</p>
+              <p>If you are looking for a <a href="/workforce-management-system/">Workforce Management System</a> for a growing company, EMPID's core value is operational clarity. It is not only an employee archive; it is a platform for managing people, time, payroll, documents, approvals, and reports from one secure place.</p>
             </div>
           </article>
 
@@ -892,4 +1106,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
