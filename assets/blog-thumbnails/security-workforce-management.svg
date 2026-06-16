@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">إدارة موظفي شركات الأمن والحراسة</title>
+  <desc id="desc">Professional EMPID article thumbnail for إدارة موظفي شركات الأمن والحراسة</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="54%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#dcecff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b5cab"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#b8cbe1" stroke-opacity="0.24"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#08243f" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <style>.arabic{font-family:'Tajawal','Noto Kufi Arabic',Arial,sans-serif;}</style>
+  <rect width="1200" height="630" rx="42" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="42" fill="url(#grid)"/>
+  <circle cx="1010" cy="118" r="155" fill="url(#accent)" opacity="0.14"/>
+  <circle cx="170" cy="530" r="215" fill="url(#accent)" opacity="0.12"/>
+  <path d="M0 496C134 446 286 480 430 430C574 380 684 304 850 322C1002 338 1094 416 1200 384V630H0Z" fill="url(#accent)" opacity="0.10"/>
+
+  <g transform="translate(112 72)">
+    <rect x="0" y="0" width="250" height="54" rx="27" fill="#ffffff" fill-opacity="0.80" stroke="#c8daef"/>
+    <text x="126" y="36" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" class="arabic" fill="#0b5cab" font-size="22" font-weight="900">شركات الأمن</text>
+  </g>
+  <g transform="translate(838 72)">
+    <rect x="0" y="0" width="250" height="54" rx="27" fill="#ffffff" fill-opacity="0.80" stroke="#c8daef"/>
+    <text x="126" y="36" text-anchor="middle" class="arabic" fill="#0b5cab" font-size="24" font-weight="900">EMPID</text>
+  </g>
+
+  <text x="600" y="192" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" class="arabic" fill="#07172c" font-size="62" font-weight="900">إدارة موظفي شركات الأمن</text>
+<text x="600" y="268" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" class="arabic" fill="#07172c" font-size="62" font-weight="900">والحراسة</text>
+  <text x="600" y="420" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" class="arabic" fill="#52657a" font-size="26" font-weight="700">إدارة الحراس والورديات الأمنية والحضور والعمل</text>
+<text x="600" y="458" text-anchor="middle" direction="rtl" unicode-bidi="plaintext" class="arabic" fill="#52657a" font-size="26" font-weight="700">الإضافي ومواقع العملاء لشركات الأمن والحراسة.</text>
+
+  <g transform="translate(170 492)" filter="url(#shadow)">
+    <rect x="0" y="0" width="860" height="78" rx="28" fill="#ffffff" fill-opacity="0.84" stroke="#c8daef"/>
+    <rect x="34" y="22" width="170" height="34" rx="17" fill="#eef4ff"/>
+    <rect x="232" y="22" width="170" height="34" rx="17" fill="#eef4fb"/>
+    <rect x="430" y="22" width="170" height="34" rx="17" fill="#eef4fb"/>
+    <circle cx="790" cy="39" r="21" fill="url(#accent)" opacity="0.18"/>
+    <path d="M779 40h22M790 29v22" stroke="#0b5cab" stroke-width="5" stroke-linecap="round" opacity="0.72"/>
+  </g>
+</svg>
