@@ -1,0 +1,16 @@
+{
+  "name": "empid-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "EMPID website and marketing assets with screenshot automation for product-flow thumbnails.",
+  "scripts": {
+    "screenshots:demo": "tsx tests/screenshots/screenshot-runner.ts --mode=desktop",
+    "screenshots:demo:mobile": "tsx tests/screenshots/screenshot-runner.ts --mode=mobile",
+    "verify:blog-thumbnails": "tsx tests/screenshots/retake-app-blog-thumbnails.ts --mode=verify"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "tsx": "^4.19.2"
+  }
+}

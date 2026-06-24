@@ -734,9 +734,113 @@ function addRelatedContentSystem() {
   article.insertAdjacentElement("afterend", cards);
 }
 
+function isScreenshotModeEnabled() {
+  if (typeof window === "undefined") return false;
+  try {
+    const search = new URLSearchParams(window.location.search);
+    if (search.get("screenshotMode") === "true") return true;
+    return localStorage.getItem("screenshotMode") === "true";
+  } catch {
+    return false;
+  }
+}
+
+function getScreenshotNotes() {
+  try {
+    const raw = localStorage.getItem("screenshotModeNotes");
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .map((entry) => {
+        if (!entry || typeof entry !== "object") return null;
+        const selector = String(entry.selector || "").trim();
+        const text = String(entry.text || "").trim();
+        return selector && text ? { selector, text } : null;
+      })
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+function buildScreenshotOverlay() {
+  const enabled = isScreenshotModeEnabled();
+  const showAnnotations = enabled && localStorage.getItem("screenshotModeShowAnnotations") === "true";
+  const previous = document.getElementById("empid-screenshot-overlay");
+  if (previous) previous.remove();
+  if (!showAnnotations) return;
+
+  const notes = getScreenshotNotes();
+  if (!notes.length) return;
+
+  const overlay = document.createElement("div");
+  overlay.id = "empid-screenshot-overlay";
+  overlay.style.position = "fixed";
+  overlay.style.inset = "0";
+  overlay.style.pointerEvents = "none";
+  overlay.style.zIndex = "2147483647";
+  overlay.setAttribute("aria-hidden", "true");
+
+  notes.forEach((note, index) => {
+    const element = document.querySelector(note.selector);
+    if (!(element instanceof Element)) return;
+    const rect = element.getBoundingClientRect();
+    const noteNode = document.createElement("div");
+    noteNode.style.position = "absolute";
+    noteNode.style.left = `${Math.max(12, rect.left + 12)}px`;
+    noteNode.style.top = `${Math.max(12, rect.top + 12)}px`;
+    noteNode.style.padding = "8px 10px";
+    noteNode.style.borderRadius = "10px";
+    noteNode.style.background = "rgba(7, 35, 82, 0.95)";
+    noteNode.style.border = "2px solid #ffd94a";
+    noteNode.style.color = "#ffffff";
+    noteNode.style.maxWidth = "320px";
+    noteNode.style.boxShadow = "0 8px 20px rgba(0,0,0,0.25)";
+    noteNode.style.font = "12px/1.35 Arial, sans-serif";
+
+    noteNode.textContent = `${index + 1}. ${note.text}`;
+    overlay.appendChild(noteNode);
+
+    const pin = document.createElement("div");
+    pin.textContent = `${index + 1}`;
+    pin.style.position = "absolute";
+    pin.style.left = `${Math.max(2, rect.left - 4)}px`;
+    pin.style.top = `${Math.max(2, rect.top - 4)}px`;
+    pin.style.width = "16px";
+    pin.style.height = "16px";
+    pin.style.borderRadius = "999px";
+    pin.style.background = "#ffd94a";
+    pin.style.border = "2px solid #072352";
+    pin.style.color = "#072352";
+    pin.style.font = "700 10px/12px Arial, sans-serif";
+    pin.style.textAlign = "center";
+    pin.style.lineHeight = "12px";
+    pin.style.display = "flex";
+    pin.style.alignItems = "center";
+    pin.style.justifyContent = "center";
+    pin.style.transform = "translate(-50%, -50%)";
+    pin.style.pointerEvents = "none";
+    overlay.appendChild(pin);
+  });
+
+  document.body.appendChild(overlay);
+}
+
+function bindScreenshotOverlay() {
+  window.addEventListener("empid:screenshot-mode", buildScreenshotOverlay);
+  window.addEventListener("resize", buildScreenshotOverlay);
+  window.addEventListener("scroll", buildScreenshotOverlay, { passive: true });
+  buildScreenshotOverlay();
+}
+
 addBreadcrumbs();
 addTrustStrip();
 normalizeDemoCtas();
 enhanceBlogIndex();
 addArticleSidebar();
 addRelatedContentSystem();
+
+if (window.location.pathname.startsWith("/")) {
+  bindScreenshotOverlay();
+}
