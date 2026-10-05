@@ -348,6 +348,19 @@ function translatePage(lang) {
     formSubject.value = dictionary["form.subject"];
   }
   localStorage.setItem("empid-language", lang);
+  // The homepage has its own search intent; other pages keep their existing copy.
+  if (document.body.classList.contains("homepage")) {
+    const title = lang === "ar"
+      ? "EMPID | نظام الموارد البشرية وإدارة القوى العاملة"
+      : "EMPID | HR Software & Workforce Management";
+    const description = lang === "ar"
+      ? "اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك."
+      : "Explore EMPID for employee records, attendance, leave, payroll and documents. Watch the Arabic product demo, browse practical guides or request a tailored demo.";
+    document.title = title;
+    if (metaDescription) metaDescription.setAttribute("content", description);
+    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach((meta) => meta.setAttribute("content", title));
+    document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach((meta) => meta.setAttribute("content", description));
+  }
 }
 
 function closeMobileMenu() {

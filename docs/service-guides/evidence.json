@@ -1,0 +1,180 @@
+[
+  {
+    "service": "employee-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/02-employees.png",
+      "../demo-ar/frames/03-profile.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "attendance-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/04-attendance.png",
+      "../demo-ar/frames/04-attendance-calendar.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "leave-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/05-leave.png",
+      "../demo-ar/frames/06-approvals.png",
+      "../demo-ar/frames/06-approvals-result.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "payroll-management",
+    "visual": "illustration",
+    "source_frames": [],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "document-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/08-documents.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "performance-management",
+    "visual": "illustration",
+    "source_frames": [],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "asset-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/assets.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "expense-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/expenses.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "reports-analytics",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/reports.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "employee-self-service",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/09-close.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "workforce-management-system",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/01-dashboard.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "project-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/07-projects.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "task-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "../demo-ar/frames/07-projects-tasks.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "time-tracking",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/time-tracking.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "contract-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/contracts.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "benefits-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/benefits.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "onboarding-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/onboarding.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "shift-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/shifts.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "notification-management",
+    "visual": "screenshot",
+    "source_frames": [
+      "raw/notifications.png"
+    ],
+    "duration_seconds": 24,
+    "audio": false
+  },
+  {
+    "service": "document-compliance",
+    "visual": "illustration",
+    "source_frames": [],
+    "duration_seconds": 24,
+    "audio": false
+  }
+]

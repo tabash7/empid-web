@@ -52,7 +52,9 @@ async function readBlogSlugs(blogDir: string) {
 async function verifyBlogScreenshots() {
   const files = await readBlogSlugs(BLOG_DIR);
   const screenshotPattern = /(?:https?:\/\/[^"']+)?\/assets\/blog-screenshots\/([a-z0-9-]+\.jpg)\b/gi;
+  const guidePattern = /(?:https?:\/\/[^"']+)?\/assets\/service-guides\/([a-z0-9-]+\/(?:poster\.jpg|step-[1-3]\.webp))\b/gi;
   const referenced = new Set<string>();
+  const guideReferences = new Set<string>();
   const missingReferences = new Map<string, string>();
 
   for (const slug of files) {
@@ -62,6 +64,12 @@ async function verifyBlogScreenshots() {
     screenshotPattern.lastIndex = 0;
     while ((m = screenshotPattern.exec(content)) !== null) {
       referenced.add(m[1]);
+      found = true;
+    }
+    guidePattern.lastIndex = 0;
+    while ((m = guidePattern.exec(content)) !== null) {
+      const reference = m[1];
+      if (reference) guideReferences.add(reference);
       found = true;
     }
     if (!found) {
@@ -81,6 +89,7 @@ async function verifyBlogScreenshots() {
   let ok = true;
   console.log(`Blog posts checked: ${files.length}`);
   console.log(`Referenced thumbnails: ${expected.length}`);
+  console.log(`Referenced service-guide images: ${guideReferences.size}`);
   console.log(`public/assets/blog-screenshots: ${screenshots1.length}`);
   console.log(`assets/blog-screenshots: ${screenshots2.length}`);
   console.log("----");
@@ -90,6 +99,14 @@ async function verifyBlogScreenshots() {
   const extra1 = screenshots1.filter((name) => !referenced.has(name));
   const extra2 = screenshots2.filter((name) => !referenced.has(name));
 
+  for (const reference of guideReferences) {
+    try {
+      await fs.access(path.join(process.cwd(), "assets/service-guides", reference));
+    } catch {
+      ok = false;
+      console.log(`Missing service-guide image: ${reference}`);
+    }
+  }
   if (missing1.length) {
     ok = false;
     console.log("Missing in public/assets/blog-screenshots:");

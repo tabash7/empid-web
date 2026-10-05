@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://empid.com/videos/employee-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/employee-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل إدارة الموظفين</video:title>
+      <video:description>يبدأ تنظيم الموارد البشرية من سجل يمكن الرجوع إليه، لا من جدول تتكرر نسخه لدى كل قسم. يربط ملف الموظف بياناته المهنية بالقسم والمدير والخدمات المرتبطة به، حتى يعرف الفريق أين يراجع المعلومة قبل تعديلها.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/employee-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/attendance-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/attendance-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الحضور والانصراف</video:title>
+      <video:description>سجل الحضور مفيد عندما يشرح اليوم، لا عندما يعرض وقتاً فقط. يحتاج الموظف إلى معرفة حالة حضوره، ويحتاج المراجع إلى التمييز بين يوم عمل عادي وإجازة وإدخال يدوي أو تأخر يستدعي المتابعة.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/attendance-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/leave-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/leave-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الإجازات والموافقات</video:title>
+      <video:description>طلب الإجازة يربط احتياج الموظف بقدرة الفريق على تغطية العمل. المسار الواضح يبين نوع الإجازة والفترة والسبب وحالة القرار، بدلاً من اعتبار رسالة قصيرة موافقة نهائية.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/leave-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/payroll-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/payroll-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الرواتب وقسائم الراتب</video:title>
+      <video:description>دورة الرواتب ليست شاشة إجمالي المبالغ فقط. تبدأ بفترة محددة ومدخلات معتمدة، ثم تمر بمراجعة العناصر والاستثناءات والقرار، قبل إتاحة المستندات للمستخدمين المخوّلين.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/payroll-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/document-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/document-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الوثائق والملفات</video:title>
+      <video:description>مستودع المستندات يصبح عملياً عندما يجيب عن أسئلة محددة: لمن هذا الملف؟ ما نوعه؟ هل روجع؟ وهل يحتاج إلى تجديد؟ حفظ نسخة PDF وحده لا يكفي لإدارة الوثائق طوال دورة الموظف.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/document-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/performance-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/performance-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الأداء والتقييم</video:title>
+      <video:description>تقييم الأداء يفيد الفريق عندما يوضح ما المطلوب تحقيقه وما الأدلة التي تشرح النتيجة. الدرجة دون سياق لا تخبر الموظف كيف يتحسن، وقد تخفي اختلافاً في توقعات المدير والموظف.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/performance-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/asset-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/asset-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الأصول والعهد</video:title>
+      <video:description>إدارة العهد تربط الجهاز أو الأصل بمن يستخدمه، وحالته، والأحداث التي مر بها. يختلف أصل متاح عن أصل معيّن أو قيد الصيانة، حتى لو كان كلاهما موجوداً في سجل الشركة.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/asset-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/expense-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/expense-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل المصروفات</video:title>
+      <video:description>المطالبة الجيدة تشرح لماذا صُرف المبلغ، وعلى أي نشاط، وبأي عملة، وما المستند الذي يثبته. وجود إيصال لا يساوي موافقة، والموافقة لا تعني أن التحويل المالي قد تم.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/expense-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/reports-analytics/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/reports-analytics/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل التقارير والتحليلات</video:title>
+      <video:description>قيمة التقرير تأتي من سؤال واضح، لا من عدد الأعمدة. يحتاج مدير التشغيل إلى قراءة مختلفة عن الموظف أو فريق المالية. حدد القرار الذي سيخدمه التقرير قبل اختيار القالب والفترة.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/reports-analytics/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/employee-self-service/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/employee-self-service/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الخدمة الذاتية للموظف</video:title>
+      <video:description>الخدمة الذاتية تعطي الموظف طريقاً واضحاً لبدء طلبه ومتابعته. لا تعني تحويل كل صلاحيات الموارد البشرية إلى حسابه، بل تقديم الإجراءات المناسبة له ضمن سياق شخصي يمكن فهمه.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/employee-self-service/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/workforce-management-system/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/workforce-management-system/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل إدارة القوى العاملة</video:title>
+      <video:description>تتكون إدارة القوى العاملة من علاقات مترابطة: موظف يتبع قسماً ومديراً، ووردية تشرح الدوام، وطلبات تنتظر مراجعة. فصل هذه السجلات يجعل صورة الفريق ناقصة حتى عندما تبدو كل خدمة منظمة وحدها.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/workforce-management-system/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/project-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/project-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل المشاريع</video:title>
+      <video:description>المشروع يجمع هدف العمل وفترته والموارد المرتبطة به. يحتاج المستخدم إلى فهم ما يستطيع قراءته داخل المشروع، ومن المسؤول عن مهمة محددة، وأين تُسجل الساعات التي تخص ذلك العمل.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/project-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/task-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/task-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل المهام وعبء العمل</video:title>
+      <video:description>المهمة توضح عملاً محدداً ومسؤولاً وحالة يمكن متابعتها. تساعد لوحة المهام المدير على معرفة ما يحتاج إجراءً، لكنها تحتاج تعريفاً واضحاً للأولوية والتأخر حتى لا تصبح قائمة طويلة بلا معنى.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/task-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/time-tracking/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/time-tracking/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل تتبع الوقت</video:title>
+      <video:description>إدخال الوقت يشرح النشاط الذي عمل عليه الموظف والفترة والمشروع المرتبط به. تقديم السجل ومراجعته مرحلتان منفصلتان عن إدخال ساعة جديدة، ويحتاج كل منهما إلى حالة واضحة.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/time-tracking/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/contract-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/contract-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل عقود الموظفين</video:title>
+      <video:description>سجل العقد يوضح العلاقة بين الموظف والمدة والحالة والوثيقة. تختلف مسودة العقد عن عقد نشط أو مجدد، ولذلك يجب أن تبقى هذه الحالات واضحة أثناء المراجعة.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/contract-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/benefits-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/benefits-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل مزايا الموظفين</video:title>
+      <video:description>الخطة المتاحة ليست بالضرورة ميزة مسجلاً فيها الموظف. يحتاج المستخدم إلى رؤية الفرق بين الخيارات المتاحة وتسجيلاته وحالة كل تسجيل وفترة التغطية.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/benefits-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/onboarding-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/onboarding-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل تأهيل الموظفين</video:title>
+      <video:description>التأهيل الجيد يبدأ قبل اليوم الأول، ويحدد ما يحتاجه الموظف كي يبدأ عمله. يجمع المهام والمستندات والتدريب والتجهيزات، مع مسؤول وموعد واضح لكل بند.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/onboarding-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/shift-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/shift-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الورديات وجداول العمل</video:title>
+      <video:description>الوردية تحدد وقت العمل وأيامه، بينما يحدد التعيين من يعمل وفق هذا الجدول ومتى. فصل التعريف عن التعيين يجعل تغيير الجدول قابلاً للمراجعة بدلاً من تعديل حضور كل موظف يدوياً.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/shift-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/notification-management/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/notification-management/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل الإشعارات والمتابعة</video:title>
+      <video:description>الإشعار المفيد يخبر المستخدم بما تغير ويأخذه إلى السجل المناسب. كثرة التنبيهات لا تعني جودة المتابعة إذا لم يعرف الموظف أي إجراء مطلوب منه أو كان الرابط غير متاح لحسابه.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/notification-management/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://empid.com/videos/document-compliance/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://empid.com/assets/service-guides/document-compliance/poster.jpg</video:thumbnail_loc>
+      <video:title>دليل امتثال المستندات</video:title>
+      <video:description>متطلب الوثيقة يحدد ما ينبغي توفره للموظف، بينما تصف الوثيقة المرفوعة ما هو موجود بالفعل. مقارنة الاثنين تساعد الفريق على معرفة النواقص والتجديدات المطلوبة دون قراءة كل ملف منفرداً.</video:description>
+      <video:content_loc>https://empid.com/assets/service-guides/document-compliance/guide.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+    </video:video>
+  </url>
+</urlset>

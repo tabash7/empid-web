@@ -1,1110 +1,131 @@
 ﻿<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+<html dir="rtl" lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="/assets/EMPID_Icon.png">
-  <link rel="apple-touch-icon" href="/assets/EMPID_Icon.png">
-  <title data-i18n="meta.title">EMPID | نظام موارد بشرية وإدارة موظفين وحضور ورواتب للشركات المتوسطة</title>
-  <meta name="description" content="EMPID نظام موارد بشرية ومنصة إدارة القوى العاملة للشركات المتوسطة في السعودية والخليج، لإدارة الموظفين والحضور والانصراف والإجازات والرواتب والوثائق والتقارير من مكان واحد.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#061a31">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="EMPID - نظام موارد بشرية وإدارة القوى العاملة">
-  <meta property="og:description" content="نظام إدارة الموظفين والحضور والانصراف والإجازات والرواتب للشركات المتوسطة في السعودية والخليج والشرق الأوسط.">
-  <meta property="og:url" content="https://empid.com/">
-  <meta property="og:site_name" content="EMPID">
-  <meta property="og:image" content="https://empid.com/assets/EMPID_Arabic_Transparent.png">
-  <meta property="og:image:alt" content="شعار EMPID لنظام تشغيل إدارة القوى العاملة">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EMPID - نظام موارد بشرية وإدارة القوى العاملة">
-  <meta name="twitter:description" content="نظام موارد بشرية لإدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير في الشرق الأوسط.">
-  <meta name="twitter:image" content="https://empid.com/assets/EMPID_Arabic_Transparent.png">
-  <!-- English meta description: EMPID is HR software and a Workforce Management System for employee management, attendance, leave, payroll, documents, approvals, and reports. -->
-  <link rel="canonical" href="https://empid.com/">
-  <link rel="alternate" hreflang="ar" href="https://empid.com/">
-  <link rel="alternate" hreflang="en" href="https://empid.com/?lang=en">
-  <link rel="alternate" hreflang="x-default" href="https://empid.com/">
-  <script type="application/ld+json">
-{
-    "@context":  "https://schema.org",
-    "@graph":  [
-                   {
-                       "@type":  "Organization",
-                       "@id":  "https://empid.com/#organization",
-                       "name":  "EMPID",
-                       "url":  "https://empid.com/",
-                       "logo":  "https://empid.com/assets/EMPID_Arabic_Transparent.png",
-                       "sameAs":  [
-                                      "https://www.linkedin.com/"
-                                  ],
-                       "areaServed":  [
-                                          "Saudi Arabia",
-                                          "United Arab Emirates",
-                                          "Qatar",
-                                          "Kuwait",
-                                          "Oman",
-                                          "Middle East"
-                                      ]
-                   },
-                   {
-                       "@type":  "Service",
-                       "@id":  "https://empid.com/#service",
-                       "name":  "EMPID نظام تشغيل إدارة القوى العاملة",
-                       "serviceType":  "نظام موارد بشرية وإدارة القوى العاملة",
-                       "provider":  {
-                                        "@id":  "https://empid.com/#organization"
-                                    },
-                       "areaServed":  [
-                                          "Saudi Arabia",
-                                          "United Arab Emirates",
-                                          "Qatar",
-                                          "Kuwait",
-                                          "Oman",
-                                          "Middle East"
-                                      ],
-                       "url":  "https://empid.com/",
-                       "image":  "https://empid.com/assets/EMPID_Arabic_Transparent.png",
-                       "description":  "خدمة برمجية لإدارة القوى العاملة تساعد الشركات المتنامية في الشرق الأوسط على إدارة الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير."
-                   },
-                   {
-                       "@type":  "BreadcrumbList",
-                       "@id":  "https://empid.com/#breadcrumb",
-                       "itemListElement":  [
-                                               {
-                                                   "@type":  "ListItem",
-                                                   "position":  1,
-                                                   "name":  "Home",
-                                                   "item":  "https://empid.com/"
-                                               },
-                                               {
-                                                   "@type":  "ListItem",
-                                                   "position":  2,
-                                                   "name":  "نظام موارد بشرية",
-                                                   "item":  "https://empid.com/#hr-software"
-                                               },
-                                               {
-                                                   "@type":  "ListItem",
-                                                   "position":  3,
-                                                   "name":  "FAQ",
-                                                   "item":  "https://empid.com/#faq"
-                                               }
-                                           ]
-                   },
-                   {
-                       "@type":  "FAQPage",
-                       "@id":  "https://empid.com/#faq-schema",
-                       "mainEntity":  [
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل EMPID مناسب للشركات أقل من 50 موظف؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "يمكن استخدامه، لكن القيمة الأكبر تظهر عادة عند الشركات التي لديها 50 موظفا أو أكثر."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يدعم النظام اللغة العربية؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، تم تصميم EMPID ليكون مناسبا للشركات العربية مع دعم العربية والإنجليزية."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن إدارة أكثر من فرع؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن إدارة الفرق والفروع والصلاحيات من مكان واحد."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يشمل الرواتب؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يحتوي EMPID على مسارات عمل خاصة بالرواتب وقسائم الرواتب والموافقات."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يستطيع الموظف تقديم طلب إجازة بنفسه؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، من خلال بوابة الخدمة الذاتية للموظف."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل النظام آمن؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يعتمد على صلاحيات وسجلات تدقيق وعزل بيانات وتشفير للبيانات الحساسة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "كم يستغرق الإعداد؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "يعتمد على حجم الشركة، لكن يمكن بدء تجربة أولية بسرعة بعد تجهيز بيانات الموظفين."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "ما هو أفضل نظام موارد بشرية للشركات المتوسطة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "أفضل نظام موارد بشرية للشركات المتوسطة يجمع إدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير في منصة واحدة سهلة الاستخدام."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل EMPID برنامج موارد بشرية أم نظام إدارة قوى عاملة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "EMPID يجمع الاثنين: برنامج موارد بشرية لإدارة بيانات الموظفين ونظام إدارة قوى عاملة لتشغيل الحضور والإجازات والرواتب والموافقات يوميا."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن استبدال Excel في إدارة الموظفين؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يقلل EMPID الاعتماد على Excel من خلال ملفات موظفين مركزية وسجلات حضور وإجازات ورواتب وتقارير قابلة للمراجعة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن استبدال WhatsApp في طلبات الإجازة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن تقديم طلبات الإجازة ومراجعتها واعتمادها داخل مسار واضح بدلا من ضياعها في المحادثات."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يدعم EMPID الحضور والانصراف؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يدعم EMPID إدارة الحضور والانصراف وربط بيانات الحضور بملف الموظف والإجازات والرواتب والتقارير."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يناسب EMPID شركات المقاولات؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، EMPID مناسب لشركات المقاولات التي تدير موظفين وفرق عمل في مواقع ومشاريع متعددة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يناسب EMPID شركات الأمن والحراسة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يساعد شركات الأمن على متابعة الحراس والمواقع والحضور والإجازات والموافقات والتقارير من منصة واحدة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يناسب EMPID العيادات والمراكز الطبية؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن للعيادات استخدام EMPID لإدارة ملفات الموظفين والحضور والإجازات والوثائق والرواتب مع صلاحيات واضحة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يناسب EMPID المدارس الخاصة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يساعد المدارس الخاصة على إدارة المعلمين والإداريين والحضور والإجازات والوثائق والرواتب من مكان واحد."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "ما الفرق بين نظام الموارد البشرية ونظام إدارة القوى العاملة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نظام الموارد البشرية يركز على بيانات وسياسات الموارد البشرية، بينما نظام إدارة القوى العاملة يركز على تشغيل الفرق يوميا مثل الحضور والإجازات والجداول والتقارير."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يدعم النظام إدارة الفروع؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والفرق ومنح الصلاحيات المناسبة لكل مدير أو مسؤول."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يدعم EMPID التقارير والتحليلات؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يساعد EMPID الإدارة على متابعة الحضور والإجازات والموظفين والرواتب والوثائق من خلال تقارير أوضح."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن استخدام EMPID في السعودية؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، EMPID موجه للشركات في السعودية والخليج التي تحتاج نظام موارد بشرية عربي وإنجليزي للشركات المتوسطة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن استخدام EMPID في الإمارات؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن للشركات في دبي وأبوظبي والإمارات استخدام EMPID لإدارة الموظفين والحضور والإجازات والرواتب."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يدعم EMPID اللغة الإنجليزية للفرق المختلطة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، تم تصميم EMPID للشركات التي تحتاج العربية والإنجليزية في بيئة عمل واحدة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يساعد EMPID على تقليل أخطاء الرواتب؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، من خلال ربط الرواتب ببيانات الموظفين والحضور والإجازات والموافقات تقل الحاجة إلى إدخال يدوي متكرر."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن للموظف الوصول إلى بوابة خدمة ذاتية؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، بوابة الخدمة الذاتية تساعد الموظفين على تقديم الطلبات والوصول إلى المعلومات المناسبة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن إدارة الوثائق والتنبيهات؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يساعد EMPID على تنظيم وثائق الموظفين وإظهار تنبيهات للوثائق أو العمليات التي تحتاج متابعة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل EMPID مناسب للشركات متعددة المواقع؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، EMPID مناسب للشركات التي لديها فروع أو مواقع أو فرق ميدانية وتحتاج رؤية مركزية للموظفين."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "ما الكلمات التي يغطيها EMPID؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "يغطي EMPID نظام موارد بشرية، نظام إدارة الموظفين، برنامج الحضور والانصراف، إدارة الإجازات، برنامج الرواتب، ومنصة إدارة القوى العاملة."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل أحتاج صفحة منفصلة لكل وحدة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، من الأفضل مستقبلا إنشاء صفحات منفصلة لإدارة الموظفين والحضور والرواتب والإجازات لزيادة فرص الظهور في Google."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن البدء بعرض تجريبي قبل الشراء؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يمكن حجز عرض تجريبي لمعرفة كيف يناسب EMPID حجم الشركة والقطاع والعمليات الحالية."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل EMPID بديل مناسب للأنظمة الكبيرة المعقدة؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "EMPID مناسب للشركات المتوسطة التي تريد نظاما واضحا وعمليا دون تعقيد زائد أو تطبيق طويل."
-                                                                 }
-                                          },
-                                          {
-                                              "@type":  "Question",
-                                              "name":  "هل يمكن استخدام EMPID كمنصة موارد بشرية مركزية؟",
-                                              "acceptedAnswer":  {
-                                                                     "@type":  "Answer",
-                                                                     "text":  "نعم، يجمع EMPID بيانات الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير في منصة واحدة."
-                                                                 }
-                                          }
-                                      ]
-                   }
-               ]
-}
-</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header" id="top">
-    <nav class="navbar container" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="EMPID home">
-        <span class="brand-logo-mark" aria-hidden="true">
-          <img src="assets/EMPID_Icon.png" alt="">
-        </span>
-        <span>
-          <strong>EMPID</strong>
-          <small data-i18n="brand.tagline">نظام تشغيل القوى العاملة</small>
-        </span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="nav.openMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-panel" id="nav-links">
-        <ul class="nav-links">
-          <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
-          <li><a href="#problems" data-i18n="nav.problems">المشاكل</a></li>
-          <li><a href="#solution" data-i18n="nav.solution">الحل</a></li>
-          <li><a href="#features" data-i18n="nav.features">المميزات</a></li>
-          <li><a href="#industries" data-i18n="nav.industries">القطاعات</a></li>
-          <li><a href="#security" data-i18n="nav.security">الأمان</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">الأسعار</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">الأسئلة</a></li>
-          <li><a href="/blog/" data-i18n="nav.blog">المدونة</a></li>
-        </ul>
-
-        <div class="nav-actions">
-          <div class="language-switcher" aria-label="Language switcher">
-            <button class="lang-btn active" type="button" data-lang="ar">العربية</button>
-            <button class="lang-btn" type="button" data-lang="en">English</button>
-          </div>
-          <a class="btn btn-small btn-primary" href="#contact" data-i18n="nav.demo">احجز عرضاً</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="hero-logo-card">
-            <img src="assets/EMPID_Arabic_Transparent.png" alt="EMPID نظام موارد بشرية وإدارة القوى العاملة">
-          </div>
-          <p class="eyebrow" data-i18n="hero.eyebrow">EMPID - نظام تشغيل إدارة القوى العاملة</p>
-          <h1 data-i18n="hero.title">أوقف إدارة الموظفين عبر Excel وWhatsApp</h1>
-          <p class="hero-text" data-i18n="hero.subtitle">EMPID يساعد الشركات المتوسطة على إدارة الحضور والإجازات والرواتب وملفات الموظفين والموافقات والتقارير من منصة واحدة آمنة وسهلة الاستخدام.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact" data-i18n="hero.primaryCta">احجز عرضاً تجريبياً</a>
-            <a class="btn btn-secondary" href="#solution" data-i18n="hero.secondaryCta">شاهد نظرة سريعة</a>
-          </div>
-          <div class="hero-proof" aria-label="Market fit">
-            <span data-i18n="hero.marketOne">السعودية</span>
-            <span data-i18n="hero.marketTwo">الإمارات</span>
-            <span data-i18n="hero.marketThree">قطر</span>
-            <span data-i18n="hero.marketFour">الكويت</span>
-            <span data-i18n="hero.marketFive">عُمان</span>
-          </div>
-        </div>
-
-        <div class="dashboard-shell reveal" aria-label="EMPID dashboard mockup">
-          <div class="dashboard-topbar">
-            <div>
-              <strong>EMPID</strong>
-              <span data-i18n="dashboard.workspace">لوحة إدارة القوى العاملة</span>
-            </div>
-            <span class="status-pill" data-i18n="dashboard.status">نشط الآن</span>
-          </div>
-          <div class="dashboard-grid">
-            <article class="metric-card">
-              <span data-i18n="dashboard.employees">الموظفون</span>
-              <strong>248</strong>
-              <small>+12%</small>
-            </article>
-            <article class="metric-card">
-              <span data-i18n="dashboard.attendance">الحضور اليوم</span>
-              <strong>221</strong>
-              <small>89%</small>
-            </article>
-            <article class="metric-card">
-              <span data-i18n="dashboard.leave">طلبات الإجازة</span>
-              <strong>18</strong>
-              <small data-i18n="dashboard.pending">قيد المراجعة</small>
-            </article>
-            <article class="metric-card">
-              <span data-i18n="dashboard.payroll">الرواتب</span>
-              <strong>97%</strong>
-              <small data-i18n="dashboard.ready">جاهزة</small>
-            </article>
-          </div>
-          <div class="dashboard-main">
-            <div class="chart-card">
-              <div class="card-heading">
-                <span data-i18n="dashboard.attendanceTrend">اتجاه الحضور</span>
-                <strong>92%</strong>
-              </div>
-              <div class="bar-chart" aria-hidden="true">
-                <span style="height: 58%"></span>
-                <span style="height: 72%"></span>
-                <span style="height: 66%"></span>
-                <span style="height: 84%"></span>
-                <span style="height: 78%"></span>
-                <span style="height: 92%"></span>
-              </div>
-            </div>
-            <div class="alerts-card">
-              <div class="card-heading">
-                <span data-i18n="dashboard.alerts">التنبيهات</span>
-                <strong>5</strong>
-              </div>
-              <ul>
-                <li data-i18n="dashboard.alertOne">وثائق تحتاج تجديد</li>
-                <li data-i18n="dashboard.alertTwo">موافقات رواتب معلقة</li>
-                <li data-i18n="dashboard.alertThree">طلبات إجازة جديدة</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust section-sm">
-      <div class="container">
-        <h2 data-i18n="trust.title">مصمم للشركات المتوسطة في الخليج والشرق الأوسط</h2>
-        <div class="trust-points">
-          <span data-i18n="trust.pointOne">دعم العربية والإنجليزية</span>
-          <span data-i18n="trust.pointTwo">مناسب لـ 50-300 موظف</span>
-          <span data-i18n="trust.pointThree">إدارة الفروع والفرق</span>
-          <span data-i18n="trust.pointFour">صلاحيات وأمان متقدم</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="problems">
-      <div class="container split-layout">
-        <div class="section-copy reveal">
-          <p class="eyebrow" data-i18n="problems.eyebrow">المشكلة</p>
-          <h2 data-i18n="problems.title">هل أصبحت إدارة الموارد البشرية أصعب مع نمو فريقك؟</h2>
-        </div>
-        <div class="problem-list reveal">
-          <article><span>01</span><p data-i18n="problems.itemOne">بيانات الموظفين موزعة بين ملفات Excel</p></article>
-          <article><span>02</span><p data-i18n="problems.itemTwo">طلبات الإجازة تضيع بين WhatsApp والبريد</p></article>
-          <article><span>03</span><p data-i18n="problems.itemThree">صعوبة متابعة الحضور والتأخير</p></article>
-          <article><span>04</span><p data-i18n="problems.itemFour">أخطاء تظهر عند إعداد الرواتب</p></article>
-          <article><span>05</span><p data-i18n="problems.itemFive">ملفات الموظفين والوثائق غير منظمة</p></article>
-          <article><span>06</span><p data-i18n="problems.itemSix">الإدارة لا تملك رؤية واضحة لحالة الفريق</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="solution">
-      <div class="container centered reveal">
-        <p class="eyebrow" data-i18n="solution.eyebrow">الحل</p>
-        <h2 data-i18n="solution.title">منصة واحدة لإدارة عمليات الموظفين</h2>
-        <p class="positioning-line" data-i18n="solution.positioning">EMPID ليس مجرد نظام موارد بشرية. EMPID هو نظام تشغيل لإدارة القوى العاملة.</p>
-        <p data-i18n="solution.text">EMPID يجمع العمليات اليومية للموارد البشرية في مكان واحد، من ملف الموظف إلى الحضور والإجازات والرواتب والتقارير، حتى تستطيع الشركة العمل بوضوح وسرعة وبدون فوضى.</p>
-      </div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="benefits.eyebrow">القيمة</p>
-          <h2 data-i18n="benefits.title">نتائج واضحة لفريق الموارد البشرية والإدارة</h2>
-        </div>
-        <div class="card-grid benefits-grid">
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardOne">وفر وقت فريق الموارد البشرية</h3></article>
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardTwo">قلل أخطاء الرواتب</h3></article>
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardThree">تابع الحضور بوضوح</h3></article>
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardFour">نظم ملفات الموظفين</h3></article>
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardFive">امنح المديرين رؤية أفضل</h3></article>
-          <article class="feature-card reveal"><span>&#10003;</span><h3 data-i18n="benefits.cardSix">أدر الفروع والفرق من مكان واحد</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="modules">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="modules.eyebrow">الوحدات</p>
-          <h2 data-i18n="modules.title">كل ما تحتاجه لإدارة القوى العاملة</h2>
-        </div>
-        <div class="module-grid">
-          <article class="module-card reveal"><a href="/employee-management/"><h3 data-i18n="modules.employee">إدارة الموظفين</h3></a></article>
-          <article class="module-card reveal"><a href="/attendance-management/"><h3 data-i18n="modules.attendance">الحضور والانصراف</h3></a></article>
-          <article class="module-card reveal"><a href="/leave-management/"><h3 data-i18n="modules.leave">الإجازات والموافقات</h3></a></article>
-          <article class="module-card reveal"><a href="/payroll-management/"><h3 data-i18n="modules.payroll">الرواتب</h3></a></article>
-          <article class="module-card reveal"><h3 data-i18n="modules.documents">الوثائق والملفات</h3></article>
-          <article class="module-card reveal"><h3 data-i18n="modules.performance">الأداء والتقييم</h3></article>
-          <article class="module-card reveal"><h3 data-i18n="modules.assets">الأصول</h3></article>
-          <article class="module-card reveal"><h3 data-i18n="modules.expenses">المصروفات</h3></article>
-          <article class="module-card reveal"><h3 data-i18n="modules.reports">التقارير والتحليلات</h3></article>
-          <article class="module-card reveal"><a href="/employee-self-service/"><h3 data-i18n="modules.portal">بوابة الخدمة الذاتية</h3></a></article>
-          <article class="module-card reveal"><a href="/workforce-management-system/"><h3 data-i18n="modules.workforce">إدارة القوى العاملة</h3></a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="industries">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="industries.eyebrow">القطاعات</p>
-          <h2 data-i18n="industries.title">مصمم للشركات التي لديها فرق ميدانية وإدارية</h2>
-        </div>
-        <div class="industry-grid">
-          <article class="industry-card reveal"><a href="/construction-hr-software/"><span>01</span><h3 data-i18n="industries.construction">شركات المقاولات</h3></a></article>
-          <article class="industry-card reveal"><a href="/security-workforce-management/"><span>02</span><h3 data-i18n="industries.security">شركات الأمن والحراسة</h3></a></article>
-          <article class="industry-card reveal"><a href="/logistics-workforce-management/"><span>03</span><h3 data-i18n="industries.logistics">الخدمات اللوجستية والنقل</h3></a></article>
-          <article class="industry-card reveal"><a href="/healthcare-hr-software/"><span>04</span><h3 data-i18n="industries.healthcare">العيادات والمراكز الطبية</h3></a></article>
-          <article class="industry-card reveal"><a href="/private-school-hr-software/"><span>05</span><h3 data-i18n="industries.schools">المدارس الخاصة</h3></a></article>
-          <article class="industry-card reveal"><span>06</span><h3 data-i18n="industries.services">شركات الخدمات والتشغيل</h3></article>
-          <article class="industry-card reveal"><span>07</span><h3 data-i18n="industries.tech">شركات التقنية</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="security">
-      <div class="container security-grid">
-        <div class="reveal">
-          <p class="eyebrow" data-i18n="security.eyebrow">الأمان</p>
-          <h2 data-i18n="security.title">أمان مصمم لبيانات الموظفين الحساسة</h2>
-          <p data-i18n="security.text">بيانات الموظفين والرواتب والوثائق تحتاج حماية قوية. لذلك يعتمد EMPID على صلاحيات دقيقة، سجلات تدقيق، عزل بيانات العملاء، دعم المصادقة الثنائية، وتشفير البيانات الحساسة.</p>
-          <p class="technical-note" data-i18n="security.note">مبني على تقنيات حديثة وبنية سحابية قابلة للتوسع لدعم الأداء العالي والأمان واستمرارية التشغيل.</p>
-        </div>
-        <div class="security-list reveal">
-          <span data-i18n="security.role">صلاحيات حسب الدور</span>
-          <span data-i18n="security.audit">سجلات تدقيق</span>
-          <span data-i18n="security.tenant">عزل بيانات العملاء</span>
-          <span data-i18n="security.twoFactor">جاهزية المصادقة الثنائية</span>
-          <span data-i18n="security.encryption">تشفير البيانات الحساسة</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-band">
-      <div class="container cta-grid reveal">
-        <div>
-          <p class="eyebrow" data-i18n="demo.eyebrow">عرض تجريبي</p>
-          <h2 data-i18n="demo.title">شاهد كيف يمكن لشركة لديها 100 موظف إدارة كل شيء من مكان واحد</h2>
-          <p data-i18n="demo.text">في عرض مدته 15 دقيقة، نستعرض كيف يمكن إدارة الحضور والإجازات والرواتب وملفات الموظفين بدون Excel وبدون فوضى.</p>
-        </div>
-        <a class="btn btn-primary" href="#contact" data-i18n="demo.button">احجز عرضاً تجريبياً</a>
-      </div>
-    </section>
-
-    <section class="section" id="pricing">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="pricing.eyebrow">الأسعار</p>
-          <h2 data-i18n="pricing.title">خطط مرنة حسب حجم الشركة</h2>
-        </div>
-        <div class="pricing-grid">
-          <article class="pricing-card reveal">
-            <h3>النمو</h3>
-            <p data-i18n="pricing.growth">للشركات من 50 إلى 100 موظف</p>
-            <a href="#contact" data-i18n="pricing.cta">اطلب الأسعار</a>
-          </article>
-          <article class="pricing-card featured reveal">
-            <h3>الأعمال</h3>
-            <p data-i18n="pricing.business">للشركات من 101 إلى 300 موظف</p>
-            <a href="#contact" data-i18n="pricing.cta">اطلب الأسعار</a>
-          </article>
-          <article class="pricing-card reveal">
-            <h3>الشركات الكبيرة</h3>
-            <p data-i18n="pricing.enterprise">للشركات الأكبر أو متعددة الفروع</p>
-            <a href="#contact" data-i18n="pricing.cta">اطلب الأسعار</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint seo-hub" id="hr-software">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">
-            <span class="lang-content lang-ar">دليل حلول الموارد البشرية</span>
-            <span class="lang-content lang-en" hidden>HR Software Guide</span>
-          </p>
-          <h2>
-            <span class="lang-content lang-ar">محتوى تفصيلي يساعد الشركات على اختيار نظام موارد بشرية مناسب</span>
-            <span class="lang-content lang-en" hidden>In-depth content for choosing the right HR software</span>
-          </h2>
-          <p>
-            <span class="lang-content lang-ar">تغطي هذه الأقسام أهم كلمات البحث حول نظام إدارة الموظفين، برنامج الحضور والانصراف، إدارة الإجازات، برنامج الرواتب، وإدارة القوى العاملة للشركات المتوسطة في الشرق الأوسط.</span>
-            <span class="lang-content lang-en" hidden>These sections cover HRMS, employee management software, attendance management, leave management, payroll software, and workforce management for growing Middle East companies.</span>
-          </p>
-        </div>
-
-        <div class="internal-links reveal" aria-label="SEO internal links">
-          <a href="/employee-management/">إدارة الموظفين</a>
-          <a href="/attendance-management/">الحضور والانصراف</a>
-          <a href="/leave-management/">إدارة الإجازات</a>
-          <a href="/payroll-management/">إدارة الرواتب</a>
-          <a href="/hrms-saudi-arabia/">نظام موارد بشرية في السعودية</a>
-          <a href="/workforce-management-system/">إدارة القوى العاملة</a>
-          <a href="/construction-hr-software/">موارد بشرية لشركات المقاولات</a>
-          <a href="/security-workforce-management/">إدارة شركات الأمن والحراسة</a>
-        </div>
-
-        <div class="seo-article-list">
-          <article class="seo-article reveal" id="employee-management">
-            <h3>
-              <span class="lang-content lang-ar">نظام إدارة الموظفين وبرنامج إدارة الموظفين</span>
-              <span class="lang-content lang-en" hidden>Employee Management Software</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>عندما تنمو الشركة من عشرات الموظفين إلى 50 أو 100 أو 300 موظف، تصبح إدارة بيانات الموظفين عبر ملفات Excel والمجلدات والبريد الإلكتروني عبئاً تشغيلياً حقيقياً. نظام إدارة الموظفين في EMPID يساعد الشركات على بناء مصدر واحد للحقيقة لكل بيانات الموظف: المعلومات الشخصية، بيانات الوظيفة، الفرع، القسم، المدير المباشر، العقود، الوثائق، الراتب، حالة الدوام، وأي ملاحظات إدارية مهمة. بدلاً من البحث في أكثر من ملف أو سؤال أكثر من شخص، يستطيع فريق الموارد البشرية والإدارة الوصول إلى ملف الموظف من منصة واحدة منظمة.</p>
-              <p>هذا النوع من برنامج إدارة الموظفين لا يخدم قسم الموارد البشرية فقط. المديرون يحتاجون رؤية واضحة للفريق، ومسؤولو الرواتب يحتاجون بيانات دقيقة، والموظفون يحتاجون قناة سهلة لطلب الإجازات وتحديث المعلومات واستعراض الوثائق. لذلك يتم وضع إدارة الموظفين داخل نظام موارد بشرية متكامل وليس كقاعدة بيانات منفصلة. عندما يكون ملف الموظف متصلاً بالحضور والانصراف والإجازات والرواتب والموافقات، تقل الأخطاء وتصبح التقارير أكثر موثوقية.</p>
-              <p>EMPID مناسب للشركات المتوسطة التي تريد نظام شؤون الموظفين باللغة العربية والإنجليزية، مع صلاحيات واضحة لكل دور. يمكن للإدارة تقسيم الموظفين حسب الفروع والمواقع والفرق، وتحديد من يستطيع رؤية البيانات الحساسة، ومن يستطيع اعتماد الطلبات، ومن يستطيع الوصول إلى تقارير الموارد البشرية. هذا مهم للشركات في السعودية والإمارات ودول الخليج، حيث تتداخل الفرق المكتبية والميدانية وتحتاج الإدارة إلى رؤية موحدة دون تعقيد زائد.</p>
-              <p>إذا كانت شركتك تبحث عن <a href="/employee-management/">نظام إدارة الموظفين</a> أو برنامج الموارد البشرية الذي يقلل الاعتماد على Excel، فإن EMPID يقدم الأساس التشغيلي لإدارة بيانات الموظفين بطريقة أكثر دقة. الهدف ليس فقط حفظ المعلومات، بل تحويل ملف الموظف إلى مركز عمليات يرتبط بالحضور، الإجازات، الرواتب، الوثائق، الموافقات، والتنبيهات، بحيث تعمل الشركة بوضوح وسرعة وثقة أكبر.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>As a company grows from a small team into 50, 100, or 300 employees, employee data becomes harder to manage through spreadsheets, shared folders, and email threads. EMPID works as employee management software that creates one reliable source of truth for every employee profile: personal data, job information, branch, department, manager, contracts, documents, salary details, attendance status, and operational notes. Instead of searching across files or asking multiple people, HR and management can work from one organized platform.</p>
-              <p>Employee management software should not only serve HR. Managers need visibility into their teams, payroll officers need accurate data, and employees need a simple way to request leave, update information, and access documents. That is why EMPID connects employee records to attendance management, leave management, payroll software, approvals, and reporting. When the employee profile becomes connected to daily operations, mistakes decrease and workforce reports become more reliable.</p>
-              <p>EMPID is designed for growing companies in Saudi Arabia, UAE, Qatar, Kuwait, Oman, and the wider Middle East that need Arabic and English support with clear permissions. Admins can organize employees by branch, site, team, and role, while controlling who can view sensitive data, approve requests, or access HR reports. This is especially important for companies with both office and field teams.</p>
-              <p>If your company is evaluating <a href="/employee-management/">employee management software</a> or an HRMS to replace Excel, EMPID gives you the operational foundation to manage employee data with more accuracy. The goal is not only to store information; it is to turn each employee profile into an operating hub connected to attendance, leave, payroll, documents, approvals, alerts, and analytics.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="attendance-management">
-            <h3>
-              <span class="lang-content lang-ar">نظام الحضور والانصراف وبرنامج الحضور والانصراف</span>
-              <span class="lang-content lang-en" hidden>Attendance Management System</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>الحضور والانصراف من أكثر العمليات اليومية حساسية في الشركات التي لديها فرق ميدانية ومكتبية. عندما يتم تسجيل الحضور عبر رسائل WhatsApp أو كشوف يدوية أو ملفات Excel، تظهر مشاكل متكررة: تأخير في تحديث البيانات، اختلاف بين سجلات المدير والموارد البشرية، صعوبة حساب التأخير، وضياع تفاصيل الدوام عند نهاية الشهر. نظام الحضور والانصراف في EMPID يهدف إلى تحويل الحضور من عملية يدوية إلى سجل تشغيلي واضح يمكن الاعتماد عليه في المتابعة والتقارير والرواتب.</p>
-              <p>برنامج الحضور والانصراف الجيد لا يقتصر على تسجيل وقت الدخول والخروج. الشركات تحتاج سياسات دوام مرنة حسب الفرع أو الموقع أو نوع الشفت، وتحتاج رؤية يومية لمن حضر ومن تأخر ومن غاب ومن يعمل في موقع مختلف. عندما ترتبط بيانات الحضور بملف الموظف والإجازات والرواتب، تصبح الإدارة قادرة على فهم الصورة الكاملة بدلاً من التعامل مع أرقام منفصلة. هذا يقلل الأخطاء عند إعداد الرواتب ويمنح المديرين مؤشرات مبكرة حول الالتزام والتغطية التشغيلية.</p>
-              <p>EMPID مناسب للشركات التي تعمل في المقاولات، الأمن، الخدمات اللوجستية، المدارس، العيادات، وشركات التشغيل؛ وهي قطاعات تحتاج متابعة دقيقة للحضور في مواقع متعددة. يمكن للنظام أن يدعم إدارة الفروع والفرق والصلاحيات، وأن يجعل تقارير الحضور والانصراف متاحة للإدارة بدلاً من انتظار تجميع البيانات يدوياً في نهاية الأسبوع أو الشهر. بالنسبة للشركات المتوسطة، هذا الفرق ينعكس مباشرة على الوقت، الانضباط، ودقة الرواتب.</p>
-              <p>إذا كنت تبحث عن <a href="/attendance-management/">نظام الحضور والانصراف</a> أو برنامج إدارة الحضور والانصراف لمنطقة الخليج، فإن EMPID يضع الحضور داخل منصة إدارة القوى العاملة وليس كأداة منفصلة. هذا يعني أن الحضور يصبح جزءاً من رحلة الموظف: من الدوام اليومي، إلى الإجازات، إلى الاستقطاعات أو الإضافات، إلى التقارير التي تساعد الإدارة على اتخاذ قرارات أفضل.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Attendance is one of the most sensitive daily workflows for companies with office and field teams. When attendance is recorded through WhatsApp messages, paper sheets, or Excel files, issues appear quickly: delayed updates, conflicting manager records, unclear lateness calculations, and missing timesheet details at month-end. EMPID's attendance management system turns attendance into a reliable operational record that can support tracking, approvals, reports, and payroll.</p>
-              <p>Good attendance management software is not only about clock-in and clock-out. Growing companies need flexible attendance policies by branch, site, shift, or team. They need to know who is present, late, absent, on leave, or working from another location. When attendance data connects with employee records, leave management, and payroll software, management sees the full picture instead of disconnected numbers. This helps reduce payroll mistakes and gives managers earlier visibility into coverage and discipline.</p>
-              <p>EMPID is especially relevant for construction, security, logistics, schools, clinics, and service companies that manage teams across multiple sites. It supports branch and team management, permissions, and reporting so attendance does not remain trapped in individual spreadsheets. For mid-sized companies, reliable attendance tracking directly affects HR workload, payroll accuracy, and operational control.</p>
-              <p>If you are looking for an <a href="/attendance-management/">Attendance Management System</a> in the Middle East, EMPID places attendance inside a wider Workforce Management System rather than treating it as a standalone tool. Attendance becomes part of the employee journey, from daily time tracking to leave balances, payroll adjustments, approvals, and management reports.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="leave-management">
-            <h3>
-              <span class="lang-content lang-ar">إدارة الإجازات وطلبات الموافقة</span>
-              <span class="lang-content lang-en" hidden>Leave Management Software</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>إدارة الإجازات تبدو بسيطة في الشركات الصغيرة، لكنها تصبح معقدة عندما يزيد عدد الموظفين والفروع والمديرين. الطلبات قد تصل عبر WhatsApp أو البريد أو مكالمة مباشرة، ثم يحتاج فريق الموارد البشرية إلى تتبع الرصيد، نوع الإجازة، موافقة المدير، تأثير الغياب على الشفت، وربط الإجازة بالرواتب. بدون نظام واضح، تضيع الطلبات أو تتأخر الموافقات أو تظهر اختلافات في رصيد الموظف. EMPID يساعد الشركات على تنظيم إدارة الإجازات داخل منصة موارد بشرية واحدة.</p>
-              <p>برنامج إدارة الإجازات الفعال يجب أن يدعم سياسات متعددة، أرصدة إجازات، مسارات موافقة، إشعارات، وسجل واضح لكل طلب. الموظف يحتاج طريقة سهلة لتقديم الطلب، والمدير يحتاج رؤية سريعة لحالة الفريق قبل الموافقة، وفريق الموارد البشرية يحتاج بيانات دقيقة للتقارير والرواتب. عندما تكون الإجازات مرتبطة بالحضور والانصراف وملف الموظف، تصبح القرارات أسرع وأكثر عدلاً، ويقل الاعتماد على المحادثات المتفرقة.</p>
-              <p>في شركات المقاولات والأمن والمدارس والعيادات، غياب موظف واحد قد يؤثر على التغطية التشغيلية. لذلك تحتاج الإدارة إلى معرفة من سيكون خارج العمل، ومتى، وما إذا كان هناك تعارض مع جدول الفريق. EMPID يوفر إطاراً يساعد على إدارة هذه التفاصيل من مكان واحد، مع دعم العربية والإنجليزية والصلاحيات المناسبة للشركات المتوسطة.</p>
-              <p>إذا كانت شركتك تبحث عن <a href="/leave-management/">إدارة الإجازات</a> أو برنامج إدارة الإجازات، فالقيمة الحقيقية ليست فقط في استقبال الطلبات، بل في ربط الإجازات بالعمليات اليومية. EMPID يجعل طلب الإجازة جزءاً من نظام شؤون الموظفين: طلب، موافقة، تحديث رصيد، انعكاس على الحضور، وتأثير واضح على التقارير والرواتب.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Leave management feels simple in small teams, but it becomes complex as employee count, branches, and approval layers grow. Requests may arrive through WhatsApp, email, or direct calls, while HR still needs to track balances, leave types, manager approvals, shift coverage, and payroll impact. Without a clear system, requests get lost, approvals are delayed, and balances become disputed. EMPID organizes leave management inside one HR software platform.</p>
-              <p>Effective leave management software should support policies, balances, approval workflows, notifications, and a clear history for every request. Employees need an easy way to submit requests, managers need visibility before approval, and HR needs accurate data for reporting and payroll. When leave is connected with attendance, employee records, and payroll, decisions become faster and more consistent.</p>
-              <p>In construction, security, schools, clinics, and service companies, one absence can affect operational coverage. Management needs to know who will be away, when, and whether the absence conflicts with the team schedule. EMPID gives companies a structured way to manage these details from one place, with Arabic and English support and role-based permissions for mid-sized organizations.</p>
-              <p>If your company is looking for <a href="/leave-management/">leave management software</a>, the real value is not only receiving requests. It is connecting leave to daily workforce operations. EMPID turns each leave request into part of the HRMS workflow: request, approval, balance update, attendance impact, and clear reporting for payroll and management.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="payroll-management">
-            <h3>
-              <span class="lang-content lang-ar">نظام إدارة الرواتب وبرنامج الرواتب</span>
-              <span class="lang-content lang-en" hidden>Payroll Software</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>الرواتب هي النقطة التي تظهر فيها أخطاء العمليات السابقة. إذا كانت بيانات الموظفين غير محدثة، أو الحضور غير دقيق، أو الإجازات غير معتمدة، فإن إعداد الرواتب يصبح عملية مرهقة ومليئة بالمراجعات. نظام إدارة الرواتب في EMPID يركز على تقليل العمل اليدوي قبل نهاية الشهر من خلال ربط الرواتب ببيانات الموظفين والحضور والإجازات والموافقات. الهدف هو مساعدة مسؤول الرواتب على العمل من بيانات موحدة بدلاً من تجميع الأرقام من أكثر من مصدر.</p>
-              <p>برنامج الرواتب للشركات المتوسطة يجب أن يوفر مسارات مراجعة واعتماد، قسائم رواتب، تقارير، وإمكانية تتبع التغييرات التي أثرت على الراتب. عندما يعرف فريق الموارد البشرية مصدر كل خصم أو إضافة أو تعديل، يصبح التواصل مع الإدارة والموظفين أوضح. كما أن وجود سجل للموافقات يقلل النزاعات ويجعل العملية أكثر شفافية.</p>
-              <p>في أسواق مثل السعودية والإمارات ودول الخليج، تختلف احتياجات الرواتب حسب حجم الشركة، نوع العقود، الفروع، والفرق الميدانية. لذلك يحتاج نظام الموارد البشرية إلى مرونة في إدارة البيانات والصلاحيات، حتى لا يرى كل مستخدم إلا ما يحتاجه. EMPID يضع الرواتب ضمن منصة إدارة القوى العاملة، بحيث تكون الرواتب نتيجة طبيعية لبيانات دقيقة وليست ملفاً منفصلاً يتم إصلاحه يدوياً كل شهر.</p>
-              <p>إذا كانت شركتك تبحث عن <a href="/payroll-management/">برنامج الرواتب</a> أو نظام إدارة الرواتب لتقليل الأخطاء، فإن EMPID يقدم مساراً عملياً: تنظيم ملف الموظف، ضبط الحضور والانصراف، إدارة الإجازات والموافقات، ثم تحويل ذلك إلى بيانات رواتب أكثر جاهزية للمراجعة. هذا يقلل الضغط على نهاية الشهر ويمنح الإدارة ثقة أكبر في الأرقام.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Payroll is where earlier operational mistakes become visible. If employee data is outdated, attendance is inaccurate, or leave requests are not approved, month-end payroll becomes stressful and full of manual checks. EMPID's payroll workflows reduce manual work by connecting payroll to employee records, attendance, leave, documents, and approvals. The goal is to help payroll officers work from unified data instead of collecting numbers from multiple sources.</p>
-              <p>Payroll software for mid-sized companies should support review workflows, approvals, payslips, reports, and a clear history of changes that affected pay. When HR can trace each deduction, addition, or adjustment, communication with management and employees becomes clearer. Approval history also reduces disputes and makes payroll more transparent.</p>
-              <p>In Saudi Arabia, UAE, and the wider GCC, payroll needs vary based on company size, contract types, branches, and field teams. HR software needs flexible data management and permissions so each user only sees what they need. EMPID places payroll inside the Workforce Operating System so payroll becomes the outcome of accurate operational data, not a separate spreadsheet that must be repaired every month.</p>
-              <p>If your company is looking for <a href="/payroll-management/">payroll software</a> that reduces mistakes, EMPID offers a practical path: organize employee profiles, improve attendance tracking, manage leave and approvals, and turn these inputs into cleaner payroll data. That reduces month-end pressure and gives management more confidence in the numbers.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="workforce-management-system">
-            <h3>
-              <span class="lang-content lang-ar">إدارة القوى العاملة ومنصة الموارد البشرية</span>
-              <span class="lang-content lang-en" hidden>Workforce Management System</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>إدارة القوى العاملة تختلف عن إدارة الموارد البشرية التقليدية. نظام الموارد البشرية يهتم بالبيانات والسياسات، بينما نظام إدارة القوى العاملة يركز على تشغيل الفريق يومياً: من يعمل اليوم، من غائب، من يحتاج موافقة، أي وثيقة قاربت على الانتهاء، ما حالة الرواتب، وأين توجد الفروع أو الفرق التي تحتاج متابعة. EMPID يستخدم مفهوم نظام تشغيل إدارة القوى العاملة لأنه يربط هذه العمليات في منصة واحدة بدلاً من ترك كل عملية في أداة منفصلة.</p>
-              <p>الشركات المتوسطة في الشرق الأوسط غالباً لديها مزيج من الموظفين الإداريين والفرق الميدانية. هذا يجعل الإدارة اليومية أكثر تعقيداً من مجرد قاعدة بيانات موظفين. تحتاج الشركة إلى برنامج موارد بشرية يدعم الحضور والانصراف، الإجازات، الرواتب، الوثائق، الموافقات، التقارير، والصلاحيات. كما تحتاج الإدارة إلى لوحات متابعة تساعدها على رؤية الوضع الحالي بدلاً من انتظار تقارير شهرية متأخرة.</p>
-              <p>EMPID يساعد على تحويل العمليات المتفرقة إلى تدفق عمل مترابط. عندما يقدم الموظف طلب إجازة، يرى المدير التأثير على الفريق. عندما يتأخر موظف أو تغيب مجموعة في موقع معين، يمكن للإدارة معرفة ذلك بسرعة. عندما تقترب وثيقة من الانتهاء، يظهر تنبيه بدلاً من اكتشاف المشكلة بعد فوات الأوان. وعندما يحين وقت الرواتب، تكون البيانات الأساسية أكثر تنظيماً.</p>
-              <p>إذا كنت تبحث عن <a href="/workforce-management-system/">نظام إدارة القوى العاملة</a> أو منصة الموارد البشرية للشركات المتوسطة، فالقيمة الأساسية في EMPID هي الوضوح التشغيلي. النظام لا يحاول أن يكون مجرد أرشيف للموظفين، بل منصة تساعد الشركة على إدارة الناس والوقت والرواتب والوثائق والموافقات من مكان واحد.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Workforce management is broader than traditional HR administration. An HRMS manages data and policies, while a Workforce Management System focuses on daily operations: who is working today, who is absent, which approvals are pending, which documents are expiring, what payroll status looks like, and which branches or teams need attention. EMPID uses the Workforce Operating System positioning because it connects these workflows instead of leaving each one in a separate tool.</p>
-              <p>Mid-sized companies in the Middle East often manage both office employees and field teams. That makes daily operations more complex than maintaining an employee database. Companies need HR software that supports attendance management, leave management, payroll, documents, approvals, reports, and permissions. Management also needs dashboards that show current workforce status instead of waiting for late monthly reports.</p>
-              <p>EMPID turns scattered operations into connected workflows. When an employee submits leave, the manager can understand team impact. When attendance issues appear at a branch or site, management can see them quickly. When a document is close to expiry, alerts help prevent late discovery. When payroll is due, the underlying data is already better organized.</p>
-              <p>If you are looking for a <a href="/workforce-management-system/">Workforce Management System</a> for a growing company, EMPID's core value is operational clarity. It is not only an employee archive; it is a platform for managing people, time, payroll, documents, approvals, and reports from one secure place.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="construction-hr-software">
-            <h3>
-              <span class="lang-content lang-ar">برنامج موارد بشرية لشركات المقاولات</span>
-              <span class="lang-content lang-en" hidden>HR Software For Construction Companies</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>شركات المقاولات تحتاج نظام موارد بشرية يراعي طبيعة العمل في المواقع، وليس فقط مكاتب الإدارة. الموظفون والعمال قد يتوزعون بين مشاريع متعددة، وتختلف أوقات الدوام، وتظهر الحاجة إلى متابعة الحضور، الغياب، التأخير، الوثائق، الإجازات، والسلف أو التعديلات المرتبطة بالرواتب. عندما تتم هذه العمليات عبر Excel وWhatsApp، يصبح من الصعب معرفة الحالة الحقيقية للقوى العاملة في كل مشروع.</p>
-              <p>EMPID يساعد شركات المقاولات على بناء رؤية موحدة للموظفين والفرق والمواقع. يمكن ربط الموظفين بالفروع أو المشاريع أو الأقسام، وتنظيم ملفاتهم ووثائقهم، ومتابعة طلبات الإجازة والموافقات، وتجهيز بيانات الرواتب بناءً على معلومات أكثر دقة. هذا مهم لأن الأخطاء في الحضور أو الرواتب لا تؤثر فقط على الإدارة، بل تؤثر على ثقة الموظفين واستمرارية العمل في المواقع.</p>
-              <p>برنامج إدارة الموظفين لشركات المقاولات يجب أن يساعد الإدارة على معرفة عدد الموظفين المتاحين، من يحتاج متابعة، وأي وثائق أو موافقات معلقة. كما يجب أن يجعل المعلومات متاحة للمديرين بصلاحيات واضحة، بدلاً من إرسال ملفات حساسة عبر قنوات غير منظمة. EMPID يوفر إطاراً مناسباً للشركات المتوسطة التي تريد الانتقال من المتابعة اليدوية إلى منصة إدارة القوى العاملة.</p>
-              <p>إذا كنت تبحث عن <a href="/construction-hr-software/">برنامج موارد بشرية لشركات المقاولات</a> أو نظام شؤون موظفين لشركة مقاولات في السعودية أو الخليج، فإن EMPID يقدم تركيزاً عملياً على الحضور والانصراف، إدارة الإجازات، ملفات الموظفين، الوثائق، الرواتب، والتقارير التشغيلية التي يحتاجها المديرون يومياً.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Construction companies need HR software that understands site-based operations, not only office administration. Employees and workers may be distributed across projects, working hours may vary, and management needs to track attendance, absence, lateness, documents, leave, approvals, and payroll-related adjustments. When these workflows happen through Excel and WhatsApp, it becomes difficult to know the real workforce status for each project.</p>
-              <p>EMPID helps construction companies build a unified view of employees, teams, branches, and sites. Employees can be organized by project, department, or location. Documents can be kept in order. Leave requests and approvals can be tracked. Payroll data can be prepared from more accurate operational information. This matters because attendance and payroll mistakes affect employee trust and site continuity.</p>
-              <p>Employee management software for construction companies should help management understand available headcount, pending actions, and expiring documents. It should also provide managers with controlled access instead of sending sensitive files through unstructured channels. EMPID gives mid-sized construction companies a practical path from manual HR tracking to a Workforce Management System.</p>
-              <p>If you are looking for <a href="/construction-hr-software/">HR software for construction companies</a> in Saudi Arabia or the GCC, EMPID focuses on attendance management, leave management, employee files, documents, payroll workflows, and operational reports that managers need every day.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="security-workforce-management">
-            <h3>
-              <span class="lang-content lang-ar">نظام موارد بشرية لشركات الأمن والحراسة</span>
-              <span class="lang-content lang-en" hidden>HR Software For Security Companies</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>شركات الأمن والحراسة تعتمد على الانضباط، الجداول، التغطية، والقدرة على معرفة حالة الأفراد في مواقع متعددة. أي تأخير أو غياب غير واضح قد يسبب مشكلة تشغيلية مباشرة. لذلك تحتاج شركات الأمن إلى نظام حضور وانصراف وبرنامج إدارة موظفين يربط الحراس بالمواقع والفرق والمشرفين، ويساعد الإدارة على متابعة الالتزام، الإجازات، الوثائق، والرواتب بطريقة منظمة.</p>
-              <p>EMPID يقدم منصة مناسبة لشركات الأمن المتوسطة التي تريد تقليل الاعتماد على مكالمات المشرفين ومجموعات WhatsApp. يمكن استخدام النظام لتنظيم ملفات الموظفين، متابعة طلبات الإجازة، معرفة الطلبات المعلقة، وإعداد تقارير تساعد الإدارة على فهم حالة القوى العاملة. عندما تكون البيانات في مكان واحد، يصبح من الأسهل معرفة أي موقع يحتاج دعم أو أي طلب يحتاج موافقة.</p>
-              <p>برنامج الموارد البشرية لشركات الأمن يجب أن يدعم الصلاحيات بوضوح. المشرف قد يحتاج رؤية فريقه فقط، ومسؤول الموارد البشرية يحتاج رؤية أوسع، والإدارة تحتاج تقارير إجمالية. هذه الطبقات مهمة لحماية بيانات الموظفين والرواتب والوثائق. EMPID يضع الصلاحيات والأمان ضمن التصميم الأساسي، حتى تتمكن الشركة من إدارة البيانات الحساسة بثقة أكبر.</p>
-              <p>إذا كنت تبحث عن <a href="/security-workforce-management/">برنامج موارد بشرية لشركات الأمن والحراسة</a> أو نظام إدارة القوى العاملة لشركة أمن في الرياض أو جدة أو دبي، فإن EMPID يركز على العمليات التي تهم هذا القطاع: الحضور والانصراف، الجداول، الإجازات، الوثائق، الموافقات، الرواتب، والتقارير التي تمنح الإدارة رؤية يومية واضحة.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Security companies depend on discipline, schedules, coverage, and the ability to know staff status across multiple sites. Any unclear absence or delay can become an immediate operational issue. Security companies need attendance management software and employee management software that connects guards to sites, teams, and supervisors while helping management track attendance, leave, documents, and payroll in an organized way.</p>
-              <p>EMPID is suited for mid-sized security companies that want to reduce reliance on supervisor calls and WhatsApp groups. The platform helps organize employee files, track leave requests, monitor pending approvals, and produce reports that show workforce status. When data is in one place, it becomes easier to know which site needs support or which request needs action.</p>
-              <p>HR software for security companies must support clear permissions. A supervisor may only need access to their team, HR may need wider access, and management may need consolidated reports. These layers protect sensitive employee, payroll, and document data. EMPID builds permissions and security into the operating model so companies can manage sensitive workforce data with more confidence.</p>
-              <p>If you are looking for <a href="/security-workforce-management/">HR software for security companies</a> in Riyadh, Jeddah, Dubai, or the wider GCC, EMPID focuses on the workflows that matter: attendance, shifts, leave, documents, approvals, payroll, and daily workforce visibility.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="healthcare-hr-software">
-            <h3>
-              <span class="lang-content lang-ar">برنامج موارد بشرية للعيادات والشركات الصحية</span>
-              <span class="lang-content lang-en" hidden>HR Software For Healthcare Companies</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>العيادات والمراكز الطبية تحتاج إدارة دقيقة للموظفين لأن العمل يعتمد على التغطية، التراخيص، الوثائق، الجداول، والحضور. فريق العيادة قد يشمل أطباء، ممرضين، استقبال، إدارة، محاسبة، وفنيين، وكل مجموعة لها احتياجات مختلفة في الدوام والإجازات والوثائق. عندما تكون البيانات موزعة بين ملفات ومحادثات، يصبح من الصعب على الإدارة معرفة حالة الفريق أو الاستعداد لنقص مفاجئ.</p>
-              <p>EMPID يساعد العيادات والشركات الصحية على تنظيم ملفات الموظفين والوثائق الحساسة، متابعة الحضور والانصراف، إدارة الإجازات والموافقات، وتجهيز بيانات الرواتب من مكان واحد. كما يساعد المديرين على رؤية الوضع الحالي للفريق بدلاً من الاعتماد على تحديثات يدوية. هذا مناسب للعيادات التي لديها أكثر من فرع أو فرق تعمل في أوقات مختلفة.</p>
-              <p>نظام الموارد البشرية للقطاع الصحي يجب أن يركز على الأمان والصلاحيات. بيانات الموظفين والرواتب والوثائق تحتاج حماية واضحة، ولا يجب أن تكون متاحة لكل مستخدم. EMPID يدعم نموذج صلاحيات يساعد على تحديد من يرى ماذا، ومن يعتمد الطلبات، ومن يصل إلى التقارير. هذه النقطة مهمة للشركات الصحية التي تريد نظاماً عملياً دون تعريض البيانات الحساسة للفوضى.</p>
-              <p>إذا كنت تبحث عن برنامج إدارة الموظفين للعيادات أو <a href="/employee-management/">برنامج موارد بشرية للقطاع الصحي</a> في السعودية أو الإمارات، فإن EMPID يوفر أساساً مناسباً لإدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير من منصة واحدة تدعم اللغة العربية والإنجليزية.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Clinics and healthcare companies need accurate employee management because operations depend on coverage, licenses, documents, schedules, and attendance. A clinic team may include doctors, nurses, reception, administration, accounting, and technicians, each with different attendance, leave, and document needs. When data is scattered across files and conversations, management struggles to understand team status or prepare for sudden gaps.</p>
-              <p>EMPID helps clinics and healthcare companies organize employee files and sensitive documents, track attendance, manage leave and approvals, and prepare payroll data from one place. It also gives managers visibility into current team status instead of relying on manual updates. This is useful for clinics with multiple branches or teams working different schedules.</p>
-              <p>HR software for healthcare companies must take security and permissions seriously. Employee, payroll, and document data should not be available to every user. EMPID supports a permissions model that helps define who can see data, approve requests, and access reports. This matters for healthcare organizations that need practical operations without exposing sensitive data to messy processes.</p>
-              <p>If you are looking for employee management software for clinics or <a href="/employee-management/">HR software for healthcare companies</a> in Saudi Arabia or the UAE, EMPID provides a strong foundation for managing employees, attendance, leave, payroll, documents, approvals, and reports from one Arabic and English platform.</p>
-            </div>
-          </article>
-
-          <article class="seo-article reveal" id="schools-hr-software">
-            <h3>
-              <span class="lang-content lang-ar">نظام موارد بشرية للمدارس الخاصة</span>
-              <span class="lang-content lang-en" hidden>HR Software For Schools</span>
-            </h3>
-            <div class="lang-content lang-ar">
-              <p>المدارس الخاصة لديها طبيعة تشغيلية مختلفة عن الشركات التقليدية. هناك معلمون، إداريون، مشرفون، موظفو استقبال، سائقون، وعمال خدمات، ولكل مجموعة جداول ومسؤوليات مختلفة. إدارة الحضور والإجازات والوثائق والرواتب عبر ملفات منفصلة تجعل العمل اليومي أكثر صعوبة، خصوصاً عند وجود أكثر من فرع أو عدد كبير من الموظفين. لذلك تحتاج المدارس إلى نظام موارد بشرية يساعدها على تنظيم بيانات الموظفين والعمليات اليومية بطريقة واضحة.</p>
-              <p>EMPID يساعد المدارس الخاصة على إدارة ملفات الموظفين، متابعة الحضور والانصراف، تنظيم طلبات الإجازة والموافقات، وحفظ الوثائق المهمة. كما يساعد الإدارة على معرفة حالة الفريق بسرعة: من غائب، من لديه طلب معلق، وأي وثيقة تحتاج تحديث. هذه الرؤية تقلل الاعتماد على المتابعة اليدوية وتساعد الإدارة على التركيز على التشغيل والتعليم بدلاً من مطاردة البيانات.</p>
-              <p>برنامج الموارد البشرية للمدارس يجب أن يكون سهل الاستخدام ويدعم اللغة العربية والإنجليزية، لأن المستخدمين قد يختلفون في الخلفيات والمهام. كما يجب أن يدعم الصلاحيات بحيث يرى المدير أو المشرف البيانات المناسبة فقط. EMPID مصمم للشركات والمؤسسات المتوسطة التي تحتاج منصة واضحة دون تعقيد أنظمة المؤسسات الكبيرة.</p>
-              <p>إذا كنت تبحث عن برنامج موارد بشرية للمدارس أو <a href="/employee-management/">نظام إدارة الموظفين</a> للمدارس الخاصة في السعودية أو الإمارات أو الخليج، فإن EMPID يجمع إدارة الموظفين، الحضور والانصراف، الإجازات، الرواتب، الوثائق، والموافقات في نظام واحد يساعد الإدارة على العمل بثقة أكبر.</p>
-            </div>
-            <div class="lang-content lang-en" hidden>
-              <p>Private schools operate differently from traditional companies. They manage teachers, administrators, supervisors, reception staff, drivers, and service workers, each with different schedules and responsibilities. Managing attendance, leave, documents, and payroll through separate files makes daily work harder, especially with multiple branches or a large employee base. Schools need HR software that organizes employee data and daily operations clearly.</p>
-              <p>EMPID helps private schools manage employee profiles, attendance, leave requests, approvals, and important documents. It also helps management quickly understand team status: who is absent, which requests are pending, and which documents need updates. This visibility reduces manual follow-up and helps administrators focus on operations and education instead of chasing data.</p>
-              <p>HR software for schools should be easy to use and support Arabic and English because users may have different backgrounds and responsibilities. It should also support permissions so principals, supervisors, and HR admins only see the right level of information. EMPID is built for mid-sized organizations that need a clear platform without the complexity of enterprise systems.</p>
-              <p>If you are looking for HR software for schools or <a href="/employee-management/">employee management software</a> for private schools in Saudi Arabia, UAE, or the GCC, EMPID brings employee management, attendance, leave, payroll, documents, and approvals into one system that helps management operate with more confidence.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="local-seo">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">
-            <span class="lang-content lang-ar">الأسواق المحلية</span>
-            <span class="lang-content lang-en" hidden>Local SEO</span>
-          </p>
-          <h2>
-            <span class="lang-content lang-ar">نظام موارد بشرية للشركات في السعودية والإمارات</span>
-            <span class="lang-content lang-en" hidden>HR software for companies in Saudi Arabia and the UAE</span>
-          </h2>
-        </div>
-        <div class="local-grid">
-          <article class="module-card reveal"><a href="/hrms-saudi-arabia/"><h3><span class="lang-content lang-ar">السعودية</span><span class="lang-content lang-en" hidden>Saudi Arabia</span></h3><p><span class="lang-content lang-ar">EMPID مناسب للشركات المتوسطة في السعودية التي تبحث عن نظام موارد بشرية ونظام إدارة الموظفين والحضور والانصراف والرواتب باللغة العربية.</span><span class="lang-content lang-en" hidden>EMPID is built for mid-sized companies in Saudi Arabia looking for Arabic HRMS, employee management, attendance, and payroll workflows.</span></p></a></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">الرياض</span><span class="lang-content lang-en" hidden>Riyadh</span></h3><p><span class="lang-content lang-ar">للشركات في الرياض التي تدير فرقاً متعددة وفروعاً أو مواقع تشغيلية، يساعد EMPID على تنظيم بيانات الموظفين والإجازات والرواتب.</span><span class="lang-content lang-en" hidden>For Riyadh companies managing multiple teams, branches, or sites, EMPID helps organize employee data, leave, payroll, and reports.</span></p></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">جدة</span><span class="lang-content lang-en" hidden>Jeddah</span></h3><p><span class="lang-content lang-ar">يدعم EMPID الشركات في جدة التي تريد تقليل الاعتماد على Excel وWhatsApp في إدارة الحضور وطلبات الإجازة وملفات الموظفين.</span><span class="lang-content lang-en" hidden>EMPID supports Jeddah companies that want to reduce Excel and WhatsApp usage for attendance, leave requests, and employee files.</span></p></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">الدمام</span><span class="lang-content lang-en" hidden>Dammam</span></h3><p><span class="lang-content lang-ar">للشركات التشغيلية والصناعية والخدمية في الدمام، يوفر EMPID منصة لإدارة القوى العاملة والوثائق والتقارير من مكان واحد.</span><span class="lang-content lang-en" hidden>For operational, industrial, and service companies in Dammam, EMPID provides one platform for workforce management, documents, and reports.</span></p></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">الإمارات</span><span class="lang-content lang-en" hidden>UAE</span></h3><p><span class="lang-content lang-ar">EMPID يدعم الشركات في الإمارات التي تحتاج برنامج موارد بشرية عربي وإنجليزي لإدارة الموظفين والحضور والرواتب والفروع.</span><span class="lang-content lang-en" hidden>EMPID supports UAE companies that need Arabic and English HR software for employee management, attendance, payroll, and branches.</span></p></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">دبي</span><span class="lang-content lang-en" hidden>Dubai</span></h3><p><span class="lang-content lang-ar">للشركات في دبي التي تنمو بسرعة، يساعد EMPID على بناء نظام تشغيل للقوى العاملة بدلاً من العمليات اليدوية المتفرقة.</span><span class="lang-content lang-en" hidden>For fast-growing Dubai companies, EMPID helps build a workforce operating system instead of scattered manual HR processes.</span></p></article>
-          <article class="module-card reveal"><h3><span class="lang-content lang-ar">أبوظبي</span><span class="lang-content lang-en" hidden>Abu Dhabi</span></h3><p><span class="lang-content lang-ar">للشركات في أبوظبي، يقدم EMPID طريقة منظمة لإدارة شؤون الموظفين والإجازات والرواتب والموافقات والتقارير.</span><span class="lang-content lang-en" hidden>For Abu Dhabi companies, EMPID provides an organized way to manage employees, leave, payroll, approvals, and reports.</span></p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="comparisons">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">
-            <span class="lang-content lang-ar">العائد والتحويل</span>
-            <span class="lang-content lang-en" hidden>ROI and Conversion</span>
-          </p>
-          <h2>
-            <span class="lang-content lang-ar">لماذا تستبدل الشركات Excel وWhatsApp ببرنامج موارد بشرية؟</span>
-            <span class="lang-content lang-en" hidden>Why companies replace Excel and WhatsApp with HR software</span>
-          </h2>
-        </div>
-        <div class="comparison-grid">
-          <article class="feature-card reveal"><span>1</span><h3>EMPID vs Excel</h3><p><span class="lang-content lang-ar">Excel مناسب للبداية، لكنه يصبح خطراً عندما تتوزع بيانات الموظفين والحضور والرواتب بين أكثر من ملف. EMPID يجمع البيانات ويجعلها قابلة للتتبع والمراجعة.</span><span class="lang-content lang-en" hidden>Excel works at the start, but it becomes risky when employee, attendance, and payroll data spread across many files. EMPID centralizes data and makes it easier to review.</span></p></article>
-          <article class="feature-card reveal"><span>2</span><h3>EMPID vs WhatsApp</h3><p><span class="lang-content lang-ar">WhatsApp سريع للمحادثة، لكنه ضعيف كأداة موافقات وسجلات. EMPID يحول الطلبات إلى مسارات واضحة مع حالة وتاريخ ومسؤولية.</span><span class="lang-content lang-en" hidden>WhatsApp is fast for conversation, but weak for approvals and records. EMPID turns requests into clear workflows with status, history, and ownership.</span></p></article>
-          <article class="feature-card reveal"><span>3</span><h3>EMPID vs Manual HR</h3><p><span class="lang-content lang-ar">العمليات اليدوية تستهلك وقت الموارد البشرية وتزيد أخطاء الرواتب. EMPID يساعد على توحيد العمل وتقليل التكرار وتحسين الرؤية الإدارية.</span><span class="lang-content lang-en" hidden>Manual HR consumes time and increases payroll mistakes. EMPID helps standardize workflows, reduce repeated work, and improve management visibility.</span></p></article>
-        </div>
-        <div class="roi-grid">
-          <article class="pricing-card reveal"><h3>Case Study</h3><p><span class="lang-content lang-ar">شركة افتراضية لديها 120 موظفاً كانت تجمع الحضور والإجازات والرواتب يدوياً. بعد استخدام EMPID، أصبحت الطلبات أوضح، وقلت مراجعات نهاية الشهر، وتحسنت رؤية الإدارة للفروع.</span><span class="lang-content lang-en" hidden>A sample company with 120 employees used to collect attendance, leave, and payroll manually. With EMPID, requests became clearer, month-end checks decreased, and branch visibility improved.</span></p></article>
-          <article class="pricing-card reveal"><h3>Customer Results</h3><p><span class="lang-content lang-ar">النتائج المتوقعة: وقت أقل في تجميع البيانات، أخطاء أقل في الرواتب، متابعة أسرع للوثائق، وموافقات أوضح بين الموظفين والمديرين والموارد البشرية.</span><span class="lang-content lang-en" hidden>Expected outcomes: less time collecting data, fewer payroll mistakes, faster document follow-up, and clearer approvals between employees, managers, and HR.</span></p></article>
-          <article class="pricing-card reveal"><h3>ROI</h3><p><span class="lang-content lang-ar">العائد يظهر عندما يقل الوقت الإداري الأسبوعي، وتنخفض أخطاء الرواتب، وتصبح التقارير جاهزة دون بناء ملفات جديدة في كل مرة.</span><span class="lang-content lang-en" hidden>ROI appears when weekly admin time drops, payroll mistakes decrease, and reports are available without rebuilding spreadsheets every time.</span></p></article>
-          <article class="pricing-card reveal"><h3>Trust</h3><p><span class="lang-content lang-ar">EMPID يركز على الشركات المتوسطة في الشرق الأوسط، ويدعم العربية والإنجليزية، والصلاحيات، وحماية بيانات الموظفين الحساسة.</span><span class="lang-content lang-en" hidden>EMPID focuses on mid-sized Middle East companies, with Arabic and English support, permissions, and protection for sensitive employee data.</span></p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="faq">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="faq.eyebrow">الأسئلة الشائعة</p>
-          <h2 data-i18n="faq.title">إجابات سريعة قبل العرض التجريبي</h2>
-        </div>
-        <div class="faq-list">
-          <details class="reveal" open>
-            <summary data-i18n="faq.qOne">هل EMPID مناسب للشركات أقل من 50 موظف؟</summary>
-            <p data-i18n="faq.aOne">يمكن استخدامه، لكن القيمة الأكبر تظهر عادةً عند الشركات التي لديها 50 موظفاً أو أكثر.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qTwo">هل يدعم النظام اللغة العربية؟</summary>
-            <p data-i18n="faq.aTwo">نعم، تم تصميم EMPID ليكون مناسباً للشركات العربية مع دعم العربية والإنجليزية.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qThree">هل يمكن إدارة أكثر من فرع؟</summary>
-            <p data-i18n="faq.aThree">نعم، يمكن إدارة الفرق والفروع والصلاحيات من مكان واحد.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qFour">هل يشمل الرواتب؟</summary>
-            <p data-i18n="faq.aFour">نعم، يحتوي EMPID على workflows خاصة بالرواتب وقسائم الرواتب والموافقات.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qFive">هل يستطيع الموظف تقديم طلب إجازة بنفسه؟</summary>
-            <p data-i18n="faq.aFive">نعم، من خلال بوابة الخدمة الذاتية للموظف.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qSix">هل النظام آمن؟</summary>
-            <p data-i18n="faq.aSix">نعم، يعتمد على صلاحيات، سجلات تدقيق، عزل بيانات، وتشفير للبيانات الحساسة.</p>
-          </details>
-          <details class="reveal">
-            <summary data-i18n="faq.qSeven">كم يستغرق الإعداد؟</summary>
-            <p data-i18n="faq.aSeven">يعتمد على حجم الشركة، لكن يمكن بدء تجربة أولية بسرعة بعد تجهيز بيانات الموظفين.</p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">ما هو أفضل نظام موارد بشرية للشركات المتوسطة؟</span><span class="lang-content lang-en" hidden>What is the best HRMS for mid-sized companies?</span></summary>
-            <p><span class="lang-content lang-ar">أفضل نظام موارد بشرية للشركات المتوسطة هو النظام الذي يجمع إدارة الموظفين والحضور والإجازات والرواتب والوثائق والتقارير في منصة واحدة سهلة الاستخدام.</span><span class="lang-content lang-en" hidden>The best HRMS for mid-sized companies brings employee records, attendance, leave, payroll, documents, and reports into one easy platform.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل EMPID برنامج موارد بشرية أم نظام إدارة قوى عاملة؟</span><span class="lang-content lang-en" hidden>Is EMPID HR software or a workforce management system?</span></summary>
-            <p><span class="lang-content lang-ar">EMPID يجمع الاثنين: هو برنامج موارد بشرية لإدارة بيانات الموظفين، ونظام إدارة قوى عاملة لتشغيل الحضور والإجازات والرواتب والموافقات يومياً.</span><span class="lang-content lang-en" hidden>EMPID is both: HR software for employee data and a workforce management system for daily attendance, leave, payroll, and approvals.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن استبدال Excel في إدارة الموظفين؟</span><span class="lang-content lang-en" hidden>Can EMPID replace Excel for employee management?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، EMPID يقلل الاعتماد على Excel من خلال ملفات موظفين مركزية وسجلات حضور وإجازات ورواتب وتقارير قابلة للمراجعة.</span><span class="lang-content lang-en" hidden>Yes. EMPID reduces dependence on Excel with centralized employee profiles, attendance records, leave workflows, payroll data, and reports.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن استبدال WhatsApp في طلبات الإجازة؟</span><span class="lang-content lang-en" hidden>Can EMPID replace WhatsApp for leave requests?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، بدلاً من ضياع الطلبات في المحادثات، يمكن تقديم طلبات الإجازة ومراجعتها واعتمادها داخل مسار واضح.</span><span class="lang-content lang-en" hidden>Yes. Instead of losing requests in chats, employees can submit leave requests and managers can review and approve them in a clear workflow.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يدعم EMPID الحضور والانصراف؟</span><span class="lang-content lang-en" hidden>Does EMPID support attendance management?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يدعم EMPID إدارة الحضور والانصراف وربط بيانات الحضور بملف الموظف والإجازات والرواتب والتقارير.</span><span class="lang-content lang-en" hidden>Yes. EMPID supports attendance management and connects attendance data with employee records, leave, payroll, and reports.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يناسب EMPID شركات المقاولات؟</span><span class="lang-content lang-en" hidden>Is EMPID suitable for construction companies?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، EMPID مناسب لشركات المقاولات التي تدير موظفين وفرقاً في مواقع ومشاريع متعددة وتحتاج متابعة الحضور والوثائق والرواتب.</span><span class="lang-content lang-en" hidden>Yes. EMPID suits construction companies managing employees across sites and projects with attendance, documents, leave, and payroll needs.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يناسب EMPID شركات الأمن والحراسة؟</span><span class="lang-content lang-en" hidden>Is EMPID suitable for security companies?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يساعد EMPID شركات الأمن على متابعة الحراس والمواقع والحضور والإجازات والموافقات والتقارير من منصة واحدة.</span><span class="lang-content lang-en" hidden>Yes. EMPID helps security companies track guards, sites, attendance, leave, approvals, and reports from one platform.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يناسب EMPID العيادات والمراكز الطبية؟</span><span class="lang-content lang-en" hidden>Is EMPID suitable for clinics and healthcare centers?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يمكن للعيادات استخدام EMPID لإدارة ملفات الموظفين والحضور والإجازات والوثائق والرواتب مع صلاحيات واضحة.</span><span class="lang-content lang-en" hidden>Yes. Clinics can use EMPID to manage employee files, attendance, leave, documents, and payroll with clear permissions.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يناسب EMPID المدارس الخاصة؟</span><span class="lang-content lang-en" hidden>Is EMPID suitable for private schools?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يساعد المدارس الخاصة على إدارة المعلمين والإداريين والحضور والإجازات والوثائق والرواتب من مكان واحد.</span><span class="lang-content lang-en" hidden>Yes. EMPID helps private schools manage teachers, administrators, attendance, leave, documents, and payroll from one place.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">ما الفرق بين نظام الموارد البشرية ونظام إدارة القوى العاملة؟</span><span class="lang-content lang-en" hidden>What is the difference between HRMS and a Workforce Management System?</span></summary>
-            <p><span class="lang-content lang-ar">نظام الموارد البشرية يركز على بيانات وسياسات الموارد البشرية، بينما نظام إدارة القوى العاملة يركز على تشغيل الفرق يومياً مثل الحضور والإجازات والجداول والتقارير.</span><span class="lang-content lang-en" hidden>An HRMS manages HR data and policies, while a Workforce Management System focuses on daily workforce operations such as attendance, leave, schedules, and reporting.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يدعم النظام إدارة الفروع؟</span><span class="lang-content lang-en" hidden>Does EMPID support branch management?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يمكن تنظيم الموظفين حسب الفروع والمواقع والفرق ومنح الصلاحيات المناسبة لكل مدير أو مسؤول.</span><span class="lang-content lang-en" hidden>Yes. Employees can be organized by branch, site, and team, with permissions for each manager or admin.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يدعم EMPID التقارير والتحليلات؟</span><span class="lang-content lang-en" hidden>Does EMPID include reports and analytics?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يساعد EMPID الإدارة على متابعة الحضور والإجازات والموظفين والرواتب والوثائق من خلال تقارير أوضح.</span><span class="lang-content lang-en" hidden>Yes. EMPID helps management track attendance, leave, employees, payroll, and documents through clearer reports.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن استخدام EMPID في السعودية؟</span><span class="lang-content lang-en" hidden>Can EMPID be used in Saudi Arabia?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، EMPID موجه للشركات في السعودية والخليج التي تحتاج نظام موارد بشرية عربي وإنجليزي للشركات المتوسطة.</span><span class="lang-content lang-en" hidden>Yes. EMPID is built for companies in Saudi Arabia and the GCC that need Arabic and English HR software for mid-sized teams.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن استخدام EMPID في الإمارات؟</span><span class="lang-content lang-en" hidden>Can EMPID be used in the UAE?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يمكن للشركات في دبي وأبوظبي والإمارات استخدام EMPID لإدارة الموظفين والحضور والإجازات والرواتب.</span><span class="lang-content lang-en" hidden>Yes. Companies in Dubai, Abu Dhabi, and the UAE can use EMPID for employee management, attendance, leave, and payroll workflows.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يدعم EMPID اللغة الإنجليزية للفرق المختلطة؟</span><span class="lang-content lang-en" hidden>Does EMPID support English for mixed teams?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، تم تصميم الصفحة والمنصة لتخاطب الشركات التي تحتاج العربية والإنجليزية في بيئة عمل واحدة.</span><span class="lang-content lang-en" hidden>Yes. EMPID is positioned for companies that need Arabic and English support in one work environment.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يساعد EMPID على تقليل أخطاء الرواتب؟</span><span class="lang-content lang-en" hidden>Can EMPID reduce payroll mistakes?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، من خلال ربط الرواتب ببيانات الموظفين والحضور والإجازات والموافقات، تقل الحاجة إلى إدخال يدوي متكرر.</span><span class="lang-content lang-en" hidden>Yes. By connecting payroll with employee data, attendance, leave, and approvals, EMPID reduces repeated manual entry.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن للموظف الوصول إلى بوابة خدمة ذاتية؟</span><span class="lang-content lang-en" hidden>Does EMPID include employee self-service?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، بوابة الخدمة الذاتية تساعد الموظفين على تقديم الطلبات والوصول إلى المعلومات المناسبة دون الرجوع الدائم للموارد البشرية.</span><span class="lang-content lang-en" hidden>Yes. Employee self-service helps employees submit requests and access appropriate information without always contacting HR.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن إدارة الوثائق والتنبيهات؟</span><span class="lang-content lang-en" hidden>Can EMPID manage documents and alerts?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يساعد EMPID على تنظيم وثائق الموظفين وإظهار تنبيهات للوثائق أو العمليات التي تحتاج متابعة.</span><span class="lang-content lang-en" hidden>Yes. EMPID helps organize employee documents and show alerts for documents or workflows that need follow-up.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل EMPID مناسب للشركات متعددة المواقع؟</span><span class="lang-content lang-en" hidden>Is EMPID suitable for multi-site companies?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، EMPID مناسب للشركات التي لديها فروع أو مواقع أو فرق ميدانية وتحتاج رؤية مركزية للموظفين.</span><span class="lang-content lang-en" hidden>Yes. EMPID is suitable for companies with branches, sites, or field teams that need centralized workforce visibility.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">ما الكلمات التي يغطيها EMPID؟</span><span class="lang-content lang-en" hidden>Which HR keywords does EMPID cover?</span></summary>
-            <p><span class="lang-content lang-ar">يغطي EMPID نظام موارد بشرية، نظام إدارة الموظفين، برنامج الحضور والانصراف، إدارة الإجازات، برنامج الرواتب، ومنصة إدارة القوى العاملة.</span><span class="lang-content lang-en" hidden>EMPID covers HRMS, HR Software, Employee Management Software, Attendance Management System, Leave Management Software, Payroll Software, and Workforce Management System.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل أحتاج صفحة منفصلة لكل وحدة؟</span><span class="lang-content lang-en" hidden>Should each module have its own SEO page?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، من الأفضل مستقبلاً إنشاء صفحات منفصلة لإدارة الموظفين والحضور والرواتب والإجازات لزيادة فرص الظهور في Google.</span><span class="lang-content lang-en" hidden>Yes. Creating separate pages for employee management, attendance, payroll, and leave improves organic visibility over time.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن البدء بعرض تجريبي قبل الشراء؟</span><span class="lang-content lang-en" hidden>Can we start with a demo before buying?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يمكن حجز عرض تجريبي لمعرفة كيف يناسب EMPID حجم الشركة والقطاع والعمليات الحالية.</span><span class="lang-content lang-en" hidden>Yes. You can book a demo to see how EMPID fits your company size, industry, and current workflows.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل EMPID بديل مناسب للأنظمة الكبيرة المعقدة؟</span><span class="lang-content lang-en" hidden>Is EMPID an alternative to complex enterprise systems?</span></summary>
-            <p><span class="lang-content lang-ar">EMPID مناسب للشركات المتوسطة التي تريد نظاماً واضحاً وعملياً دون تعقيد زائد أو تطبيق طويل.</span><span class="lang-content lang-en" hidden>EMPID is suited for mid-sized companies that want a clear, practical system without heavy enterprise complexity.</span></p>
-          </details>
-          <details class="reveal">
-            <summary><span class="lang-content lang-ar">هل يمكن استخدام EMPID كمنصة موارد بشرية مركزية؟</span><span class="lang-content lang-en" hidden>Can EMPID be used as a central HR platform?</span></summary>
-            <p><span class="lang-content lang-ar">نعم، يجمع EMPID بيانات الموظفين والحضور والإجازات والرواتب والوثائق والموافقات والتقارير في منصة واحدة.</span><span class="lang-content lang-en" hidden>Yes. EMPID brings employee data, attendance, leave, payroll, documents, approvals, and reports into one platform.</span></p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section final-cta">
-      <div class="container centered reveal">
-        <h2 data-i18n="final.title">جاهز لاستبدال Excel وWhatsApp بمنصة واحدة؟</h2>
-        <p data-i18n="final.text">ابدأ بمحادثة قصيرة واكتشف هل EMPID مناسب لشركتك.</p>
-        <a class="btn btn-primary" href="#contact" data-i18n="final.button">احجز عرضاً الآن</a>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container contact-grid">
-        <div class="section-copy reveal">
-          <p class="eyebrow" data-i18n="contact.eyebrow">تواصل معنا</p>
-          <h2 data-i18n="contact.title">اطلب عرضاً تجريبياً لمنصة EMPID</h2>
-          <p data-i18n="contact.text">املأ البيانات وسيصل طلبك مباشرة إلى فريق EMPID.</p>
-        </div>
-        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xojbopbz" method="POST" novalidate>
-          <input type="hidden" name="subject" id="form-subject" value="طلب عرض تجريبي لمنصة EMPID">
-          <div class="form-row">
-            <label for="name" data-i18n="form.name">الاسم</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="form-row">
-            <label for="company" data-i18n="form.company">اسم الشركة</label>
-            <input id="company" name="company" type="text" autocomplete="organization" required>
-          </div>
-          <div class="form-row">
-            <label for="email" data-i18n="form.email">البريد الإلكتروني</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="form-row">
-            <label for="phone" data-i18n="form.phone">الهاتف / WhatsApp</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-          <div class="form-row">
-            <label for="country" data-i18n="form.country">الدولة</label>
-            <input id="country" name="country" type="text" autocomplete="country-name" required>
-          </div>
-          <div class="form-row">
-            <label for="employees" data-i18n="form.employees">عدد الموظفين</label>
-            <input id="employees" name="employees" type="number" min="1" inputmode="numeric" required>
-          </div>
-          <div class="form-row form-wide">
-            <label for="message" data-i18n="form.message">الرسالة</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-          </div>
-          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
-          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
-          <button class="btn btn-primary form-wide" type="submit" data-i18n="form.submit">إرسال الطلب</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#home" aria-label="EMPID home">
-          <span class="brand-logo-mark" aria-hidden="true">
-            <img src="assets/EMPID_Icon.png" alt="">
-          </span>
-          <span>
-            <strong>EMPID</strong>
-            <small data-i18n="footer.title">نظام تشغيل إدارة القوى العاملة</small>
-          </span>
-        </a>
-        <p data-i18n="footer.text">منصة لإدارة الموظفين والحضور والإجازات والرواتب للشركات المتوسطة في الشرق الأوسط.</p>
-      </div>
-      <div class="footer-links">
-        <a href="/privacy.html" data-i18n="footer.privacy">الخصوصية</a>
-        <a href="/terms.html" data-i18n="footer.terms">الشروط</a>
-        <a href="/hrms-saudi-arabia/">السعودية</a>
-        <a href="/blog/">المدونة</a>
-        <a href="#contact" data-i18n="footer.contact">تواصل</a>
-        <a href="https://www.linkedin.com/" rel="noopener" target="_blank" data-i18n="footer.linkedin">LinkedIn</a>
-      </div>
-      <div class="footer-latest">
-        <h2>أحدث المقالات</h2>
-        <a href="/blog/best-hrms-saudi-arabia.html">أفضل نظام موارد بشرية للشركات السعودية</a>
-        <a href="/blog/attendance-management-system.html">نظام الحضور والانصراف للشركات</a>
-        <a href="/blog/how-to-choose-hrms.html">كيف تختار نظام موارد بشرية</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/EMPID_Icon.png" rel="icon" type="image/png"/>
+<link href="/assets/EMPID_Icon.png" rel="apple-touch-icon"/>
+<title>EMPID | نظام الموارد البشرية وإدارة القوى العاملة</title>
+<meta content="اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="#061a31" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="EMPID | نظام الموارد البشرية وإدارة القوى العاملة" property="og:title"/>
+<meta content="اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك." property="og:description"/>
+<meta content="https://empid.com/" property="og:url"/>
+<meta content="EMPID" property="og:site_name"/>
+<meta content="https://empid.com/assets/service-guides/workforce-management-system/poster.jpg" property="og:image"/>
+<meta content="EMPID — دليل إدارة القوى العاملة بالعربية" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="EMPID | نظام الموارد البشرية وإدارة القوى العاملة" name="twitter:title"/>
+<meta content="اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك." name="twitter:description"/>
+<meta content="https://empid.com/assets/service-guides/workforce-management-system/poster.jpg" name="twitter:image"/>
+<!-- English meta description: EMPID is HR software and a Workforce Management System for employee management, attendance, leave, payroll, documents, approvals, and reports. -->
+<link href="https://empid.com/" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="/homepage.css?v=20261005-2" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://empid.com/#organization", "name": "EMPID", "url": "https://empid.com/", "logo": "https://empid.com/assets/EMPID_Icon.png"}, {"@type": "WebSite", "@id": "https://empid.com/#website", "name": "EMPID", "url": "https://empid.com/", "publisher": {"@id": "https://empid.com/#organization"}}, {"@type": "WebPage", "@id": "https://empid.com/#webpage", "url": "https://empid.com/", "name": "EMPID | نظام الموارد البشرية وإدارة القوى العاملة", "description": "اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك.", "inLanguage": "ar", "isPartOf": {"@id": "https://empid.com/#website"}}, {"@type": "SoftwareApplication", "name": "EMPID", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://empid.com/", "description": "اكتشف EMPID لإدارة الموظفين والحضور والإجازات والرواتب والوثائق. شاهد عرضاً عربياً وصوراً من النظام، واستكشف أدلة الخدمات أو اطلب عرضاً يناسب شركتك."}]}</script></head>
+<body class="homepage"><a class="home-skip" href="#main-content"><span class="lang-content lang-ar">انتقل إلى المحتوى</span><span class="lang-content lang-en" hidden="">Skip to content</span></a>
+<header class="site-header" id="top">
+<nav aria-label="Primary navigation" class="navbar container">
+<a aria-label="EMPID home" class="brand" href="#home">
+<span aria-hidden="true" class="brand-logo-mark">
+<img alt="" src="assets/EMPID_Icon.png"/>
+</span>
+<span>
+<strong>EMPID</strong>
+<small data-i18n="brand.tagline">نظام تشغيل القوى العاملة</small>
+</span>
+</a>
+<button aria-controls="nav-links" aria-expanded="false" class="menu-toggle" data-i18n-aria="nav.openMenu" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-panel" id="nav-links">
+<ul class="nav-links"><a class="" href="#solution"><span class="lang-content lang-ar">طريقة العمل</span><span class="lang-content lang-en" hidden="">Workflows</span></a><a class="" href="#features"><span class="lang-content lang-ar">الخدمات</span><span class="lang-content lang-en" hidden="">Services</span></a><a class="" href="#security"><span class="lang-content lang-ar">الصلاحيات</span><span class="lang-content lang-en" hidden="">Permissions</span></a><a class="" href="#demo"><span class="lang-content lang-ar">العرض</span><span class="lang-content lang-en" hidden="">Demo</span></a><a class="" href="/blog/"><span class="lang-content lang-ar">مركز المعرفة</span><span class="lang-content lang-en" hidden="">Guides</span></a></ul>
+<div class="nav-actions">
+<div aria-label="Language switcher" class="language-switcher">
+<button class="lang-btn active" data-lang="ar" type="button">العربية</button>
+<button class="lang-btn" data-lang="en" type="button">English</button>
+</div>
+<a class="btn btn-small btn-primary" data-i18n="nav.demo" href="#contact">احجز عرضاً</a>
+</div>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<section class="home-hero" id="home"><div class="container">
+<p class="home-kicker"><span class="lang-content lang-ar">إدارة الموارد البشرية والقوى العاملة</span><span class="lang-content lang-en" hidden="">Human resources &amp; workforce management</span></p>
+<h1><b dir="ltr">EMPID</b><br/><span class="lang-content lang-ar">نظام الموارد البشرية لشركتك</span><span class="lang-content lang-en" hidden="">HR software for your workforce</span></h1>
+<p class="home-lead"><span class="lang-content lang-ar">من ملف الموظف إلى يوم العمل. اجمع الحضور والإجازات والوثائق والرواتب في مسارات مترابطة، مع رؤية واضحة لكل دور.</span><span class="lang-content lang-en" hidden="">From employee records to the working day. Bring attendance, leave, documents and payroll into connected workflows, with clarity for every role.</span></p>
+<div class="home-actions"><a class="btn btn-primary" href="#contact"><span class="lang-content lang-ar">اطلب عرضاً لشركتك</span><span class="lang-content lang-en" hidden="">Request your demo</span></a><a class="btn btn-secondary" href="#demo"><span class="lang-content lang-ar">شاهد النظام بالعربية</span><span class="lang-content lang-en" hidden="">Watch the Arabic demo</span></a></div>
+<figure class="home-product"><img alt="لوحة تحكم EMPID بالعربية — بيانات تجريبية مصطنعة" fetchpriority="high" height="892" src="/assets/homepage/dashboard.webp" width="1585"/><figcaption><span class="lang-content lang-ar">صورة من النظام • شركة وبيانات تجريبية مصطنعة</span><span class="lang-content lang-en" hidden="">Actual application capture • fictional company and pilot data</span></figcaption></figure>
+</div></section>
+<section class="home-context"><div class="container"><p><span class="lang-content lang-ar">منصة واحدة. أدوار واضحة. عمل مترابط.</span><span class="lang-content lang-en" hidden="">One platform. Clear roles. Connected work.</span></p><div><span class="lang-content lang-ar">الموظف · المدير · الموارد البشرية · المالية</span><span class="lang-content lang-en" hidden="">Employee · Manager · HR · Finance</span></div></div></section>
+<section class="home-section" id="solution"><span id="problems"></span><div class="container"><div class="home-section-heading"><h2><span class="lang-content lang-ar">ابدأ بالعمليات التي يعيشها فريقك كل يوم</span><span class="lang-content lang-en" hidden="">Start with your team's everyday workflows</span></h2><p><span class="lang-content lang-ar">استكشف الخطوات والتفاصيل من داخل النظام، قبل اختيار ما يناسب شركتك.</span><span class="lang-content lang-en" hidden="">Explore workflows and details inside the application before choosing what fits your business.</span></p></div><div class="home-workflows"><article class="home-workflow"><a href="/employee-management/"><img alt="ملف واحد للموظف — مثال من بيانات العرض التجريبي" height="1080" loading="lazy" src="/assets/service-guides/employee-management/step-1.webp" width="1920"/><h3><span class="lang-content lang-ar">ملف واحد للموظف</span><span class="lang-content lang-en" hidden="">One employee record</span></h3></a><p><span class="lang-content lang-ar">اربط بيانات العمل والوثائق والخدمات بملف يمكن الرجوع إليه.</span><span class="lang-content lang-en" hidden="">Connect work information, documents and related services in one record.</span></p><a class="home-text-link" href="/employee-management/"><span class="lang-content lang-ar">استكشف الخدمة ←</span><span class="lang-content lang-en" hidden="">Explore the service →</span></a></article><article class="home-workflow"><a href="/attendance-management/"><img alt="رؤية أوضح ليوم العمل — مثال من بيانات العرض التجريبي" height="1080" loading="lazy" src="/assets/service-guides/attendance-management/step-1.webp" width="1920"/><h3><span class="lang-content lang-ar">رؤية أوضح ليوم العمل</span><span class="lang-content lang-en" hidden="">A clearer working day</span></h3></a><p><span class="lang-content lang-ar">راجع الحضور والأوقات والاستثناءات مع تقويم وسجل تفصيلي.</span><span class="lang-content lang-en" hidden="">Review attendance, times and exceptions with a calendar and detailed history.</span></p><a class="home-text-link" href="/attendance-management/"><span class="lang-content lang-ar">استكشف الخدمة ←</span><span class="lang-content lang-en" hidden="">Explore the service →</span></a></article><article class="home-workflow"><a href="/leave-management/"><img alt="طلب واضح وقرار موثّق — مثال من بيانات العرض التجريبي" height="1080" loading="lazy" src="/assets/service-guides/leave-management/step-1.webp" width="1920"/><h3><span class="lang-content lang-ar">طلب واضح وقرار موثّق</span><span class="lang-content lang-en" hidden="">Clear requests, recorded decisions</span></h3></a><p><span class="lang-content lang-ar">تابع نوع الإجازة والفترة والرصيد ومسار المراجعة.</span><span class="lang-content lang-en" hidden="">Follow leave type, dates, balance and the review workflow.</span></p><a class="home-text-link" href="/leave-management/"><span class="lang-content lang-ar">استكشف الخدمة ←</span><span class="lang-content lang-en" hidden="">Explore the service →</span></a></article></div></div></section>
+<section class="home-section home-band" id="features"><span id="local-seo"></span><span id="industries"></span><span id="modules"></span><div class="container"><div class="home-section-heading"><h2><span class="lang-content lang-ar">خدمات متصلة حول ملف الموظف</span><span class="lang-content lang-en" hidden="">Connected services around the employee record</span></h2><p><span class="lang-content lang-ar">تصفح كل خدمة مع صور إرشادية وخطوات عملية وفيديو عربي قصير.</span><span class="lang-content lang-en" hidden="">Browse each service with guided screenshots, practical steps and a short Arabic video.</span></p></div><div class="home-services"><a class="home-service-link" href="/employee-management/"><span class="lang-content lang-ar">إدارة الموظفين</span><span class="lang-content lang-en" hidden="">Employee records</span></a><a class="home-service-link" href="/attendance-management/"><span class="lang-content lang-ar">الحضور والانصراف</span><span class="lang-content lang-en" hidden="">Attendance</span></a><a class="home-service-link" href="/leave-management/"><span class="lang-content lang-ar">الإجازات والموافقات</span><span class="lang-content lang-en" hidden="">Leave &amp; approvals</span></a><a class="home-service-link" href="/payroll-management/"><span class="lang-content lang-ar">الرواتب وقسائم الراتب</span><span class="lang-content lang-en" hidden="">Payroll &amp; payslips</span></a><a class="home-service-link" href="/document-management/"><span class="lang-content lang-ar">الوثائق والملفات</span><span class="lang-content lang-en" hidden="">Document management</span></a><a class="home-service-link" href="/performance-management/"><span class="lang-content lang-ar">الأداء والتقييم</span><span class="lang-content lang-en" hidden="">Performance</span></a><a class="home-service-link" href="/asset-management/"><span class="lang-content lang-ar">الأصول والعهد</span><span class="lang-content lang-en" hidden="">Assets</span></a><a class="home-service-link" href="/expense-management/"><span class="lang-content lang-ar">المصروفات</span><span class="lang-content lang-en" hidden="">Expenses</span></a><a class="home-service-link" href="/reports-analytics/"><span class="lang-content lang-ar">التقارير والتحليلات</span><span class="lang-content lang-en" hidden="">Reports &amp; analytics</span></a><a class="home-service-link" href="/employee-self-service/"><span class="lang-content lang-ar">الخدمة الذاتية للموظف</span><span class="lang-content lang-en" hidden="">Employee self-service</span></a><a class="home-service-link" href="/workforce-management-system/"><span class="lang-content lang-ar">إدارة القوى العاملة</span><span class="lang-content lang-en" hidden="">Workforce management</span></a><a class="home-service-link" href="/project-management/"><span class="lang-content lang-ar">المشاريع</span><span class="lang-content lang-en" hidden="">Projects</span></a><a class="home-service-link" href="/task-management/"><span class="lang-content lang-ar">المهام وعبء العمل</span><span class="lang-content lang-en" hidden="">Tasks</span></a><a class="home-service-link" href="/time-tracking/"><span class="lang-content lang-ar">تتبع الوقت</span><span class="lang-content lang-en" hidden="">Time tracking</span></a><a class="home-service-link" href="/contract-management/"><span class="lang-content lang-ar">عقود الموظفين</span><span class="lang-content lang-en" hidden="">Contracts</span></a><a class="home-service-link" href="/benefits-management/"><span class="lang-content lang-ar">مزايا الموظفين</span><span class="lang-content lang-en" hidden="">Benefits</span></a><a class="home-service-link" href="/onboarding-management/"><span class="lang-content lang-ar">تأهيل الموظفين</span><span class="lang-content lang-en" hidden="">Onboarding</span></a><a class="home-service-link" href="/shift-management/"><span class="lang-content lang-ar">الورديات وجداول العمل</span><span class="lang-content lang-en" hidden="">Shift management</span></a><a class="home-service-link" href="/notification-management/"><span class="lang-content lang-ar">الإشعارات والمتابعة</span><span class="lang-content lang-en" hidden="">Notifications</span></a><a class="home-service-link" href="/document-compliance/"><span class="lang-content lang-ar">امتثال المستندات</span><span class="lang-content lang-en" hidden="">Document compliance</span></a></div><div class="home-actions"><a class="btn btn-secondary" href="/services/"><span class="lang-content lang-ar">تصفح جميع أدلة الخدمات</span><span class="lang-content lang-en" hidden="">Browse all service guides</span></a></div></div></section>
+<section class="home-section" id="security"><div class="container home-security"><div><h2><span class="lang-content lang-ar">الوصول المناسب لكل مسؤولية</span><span class="lang-content lang-en" hidden="">Access that matches responsibility</span></h2><p><span class="lang-content lang-ar">ملفات الموظفين تحتاج إلى حدود واضحة، وليس مجرد شاشة جميلة. راجع أدوار فريقك ونطاق الوصول ومسارات الموافقات أثناء إعداد مساحة العمل.</span><span class="lang-content lang-en" hidden="">Employee information needs clear boundaries, not just a polished screen. Review roles, access scopes and approval workflows when setting up your workspace.</span></p><a class="home-text-link" href="/document-management/"><span class="lang-content lang-ar">تعرف على إدارة الوثائق والوصول إليها</span><span class="lang-content lang-en" hidden="">Explore document management and access</span></a></div><dl><div><dt><span class="lang-content lang-ar">مساحة العمل</span><span class="lang-content lang-en" hidden="">Workspace</span></dt><dd><span class="lang-content lang-ar">بيانات مرتبطة بالشركة ونطاق المستخدم.</span><span class="lang-content lang-en" hidden="">Information scoped to the company and authorized user.</span></dd></div><div><dt><span class="lang-content lang-ar">الأدوار والصلاحيات</span><span class="lang-content lang-en" hidden="">Roles &amp; permissions</span></dt><dd><span class="lang-content lang-ar">تمييز القراءة عن التعديل والمراجعة والاعتماد.</span><span class="lang-content lang-en" hidden="">Separate viewing, editing, reviewing and approval.</span></dd></div><div><dt><span class="lang-content lang-ar">الوثائق الخاصة</span><span class="lang-content lang-en" hidden="">Private documents</span></dt><dd><span class="lang-content lang-ar">الوصول إلى الملف يمر عبر التحقق من الصلاحيات.</span><span class="lang-content lang-en" hidden="">File access passes through authorization checks.</span></dd></div></dl></div></section>
+<section class="home-section home-band" id="demo"><div class="container"><div class="home-section-heading"><h2><span class="lang-content lang-ar">شاهد EMPID أثناء العمل</span><span class="lang-content lang-en" hidden="">See EMPID in action</span></h2><p><span class="lang-content lang-ar">جولة عربية بصوت توضيحي عبر الموظفين والحضور والإجازات والموافقات والمشاريع والوثائق. جميع البيانات مصطنعة لأغراض العرض.</span><span class="lang-content lang-en" hidden="">An Arabic narrated tour through employee records, attendance, leave, approvals, projects and documents. All data is fictional and used for demonstration.</span></p></div><video aria-label="EMPID — عرض توضيحي عربي" controls="" playsinline="" poster="/assets/demo-ar/empid-ar-demo-poster.jpg" preload="none"><source src="/assets/demo-ar/empid-ar-demo.mp4" type="video/mp4"/><track default="" kind="captions" label="العربية" src="/assets/demo-ar/empid-ar-demo.vtt" srclang="ar"/></video><div class="home-actions"><a class="home-text-link" href="/videos/"><span class="lang-content lang-ar">شاهد شرحاً قصيراً لكل خدمة</span><span class="lang-content lang-en" hidden="">Watch short service walkthroughs</span></a></div></div></section>
+<section class="home-section" id="knowledge"><div class="container"><div class="home-section-heading"><h2><span class="lang-content lang-ar">أدلة تساعدك على تنظيم العمل</span><span class="lang-content lang-en" hidden="">Guides for better organized work</span></h2><a class="home-text-link" href="/blog/"><span class="lang-content lang-ar">تصفح مركز المعرفة ←</span><span class="lang-content lang-en" hidden="">Explore the knowledge hub →</span></a></div><div class="home-articles"><article class="home-article"><p class="home-kicker"><span class="lang-content lang-ar">دليل عملي</span><span class="lang-content lang-en" hidden="">Practical guide</span></p><h3><span class="lang-content lang-ar">ملف الموظف الرقمي: ما البيانات التي تحتاجها الموارد البشرية؟</span><span class="lang-content lang-en" hidden="">What belongs in an employee record?</span></h3><p><span class="lang-content lang-ar">يبدأ تنظيم الموارد البشرية من سجل يمكن الرجوع إليه، لا من جدول تتكرر نسخه لدى كل قسم. يربط ملف الموظف بياناته المهنية بالقسم والمدير والخدمات المرتبطة به، حتى يعرف الفريق…</span><span class="lang-content lang-en" hidden="">Organize essential employee information and clarify who maintains it.</span></p><a class="home-text-link" href="/blog/employee-records-guide.html"><span class="lang-content lang-ar">اقرأ الدليل ←</span><span class="lang-content lang-en" hidden="">Read the Arabic guide →</span></a></article><article class="home-article"><p class="home-kicker"><span class="lang-content lang-ar">دليل عملي</span><span class="lang-content lang-en" hidden="">Practical guide</span></p><h3><span class="lang-content lang-ar">سجل الحضور والانصراف: كيف تراجع ساعات العمل والاستثناءات؟</span><span class="lang-content lang-en" hidden="">How to review attendance exceptions</span></h3><p><span class="lang-content lang-ar">سجل الحضور مفيد عندما يشرح اليوم، لا عندما يعرض وقتاً فقط. يحتاج الموظف إلى معرفة حالة حضوره، ويحتاج المراجع إلى التمييز بين يوم عمل عادي وإجازة وإدخال يدوي أو تأخر يستدع…</span><span class="lang-content lang-en" hidden="">Understand working hours, company timezone and the details behind attendance records.</span></p><a class="home-text-link" href="/blog/attendance-management-system.html"><span class="lang-content lang-ar">اقرأ الدليل ←</span><span class="lang-content lang-en" hidden="">Read the Arabic guide →</span></a></article><article class="home-article"><p class="home-kicker"><span class="lang-content lang-ar">دليل عملي</span><span class="lang-content lang-en" hidden="">Practical guide</span></p><h3><span class="lang-content lang-ar">طلبات الإجازة وأرصدة الموظفين: دليل مراجعة الطلب من البداية إلى القرار</span><span class="lang-content lang-en" hidden="">From leave request to decision</span></h3><p><span class="lang-content lang-ar">طلب الإجازة يربط احتياج الموظف بقدرة الفريق على تغطية العمل. المسار الواضح يبين نوع الإجازة والفترة والسبب وحالة القرار، بدلاً من اعتبار رسالة قصيرة موافقة نهائية.…</span><span class="lang-content lang-en" hidden="">Review balances, dates and approval responsibilities with a practical example.</span></p><a class="home-text-link" href="/blog/leave-management.html"><span class="lang-content lang-ar">اقرأ الدليل ←</span><span class="lang-content lang-en" hidden="">Read the Arabic guide →</span></a></article></div></div></section>
+<section class="home-section home-band" id="faq"><div class="container home-faq"><h2><span class="lang-content lang-ar">أسئلة قبل أن تبدأ</span><span class="lang-content lang-en" hidden="">Before you get started</span></h2><div><details><summary><span class="lang-content lang-ar">ما هو EMPID؟</span><span class="lang-content lang-en" hidden="">What is EMPID?</span></summary><p><span class="lang-content lang-ar">EMPID منصة لإدارة الموارد البشرية والقوى العاملة، تربط ملفات الموظفين بالحضور والإجازات والوثائق والرواتب والمشاريع والخدمات المرتبطة بها.</span><span class="lang-content lang-en" hidden="">EMPID is a workforce and HR platform connecting employee records with attendance, leave, documents, payroll, projects and related services.</span></p></details><details><summary><span class="lang-content lang-ar">هل يدعم العربية والإنجليزية؟</span><span class="lang-content lang-en" hidden="">Does it support Arabic and English?</span></summary><p><span class="lang-content lang-ar">يدعم النظام واجهة عربية من اليمين إلى اليسار وواجهة إنجليزية. يمكنك مشاهدة أمثلة عربية حقيقية من بيئة العرض في أدلة الخدمات.</span><span class="lang-content lang-en" hidden="">The application supports Arabic RTL and English interfaces. The service guides show Arabic examples captured from the demo environment.</span></p></details><details><summary><span class="lang-content lang-ar">كيف تعمل صلاحيات المستخدمين؟</span><span class="lang-content lang-en" hidden="">How do user permissions work?</span></summary><p><span class="lang-content lang-ar">يرتبط الوصول بدور المستخدم ونطاقه داخل مساحة العمل. يختلف ما يستطيع الموظف أو المدير أو مسؤول الشركة عرضه وتنفيذه بحسب الصلاحيات المعتمدة.</span><span class="lang-content lang-en" hidden="">Access depends on a user's role and scope within the workspace. Employee, manager and administrator actions depend on the configured permissions.</span></p></details><details><summary><span class="lang-content lang-ar">هل الأسماء والأرقام في العرض بيانات عملاء؟</span><span class="lang-content lang-en" hidden="">Is the demo showing customer data?</span></summary><p><span class="lang-content lang-ar">لا. الصور والفيديو تستخدم شركة وموظفين وبيانات تجريبية مصطنعة، ولا تمثل بيانات عملاء أو نتائج مضمونة.</span><span class="lang-content lang-en" hidden="">No. Images and video use fictional company, employee and pilot data. They are not customer data or guaranteed outcomes.</span></p></details><details><summary><span class="lang-content lang-ar">كيف أختار الخدمات المناسبة لشركتي؟</span><span class="lang-content lang-en" hidden="">How do I choose the right services?</span></summary><p><span class="lang-content lang-ar">ابدأ بالخدمات الأساسية لفريقك، وراجع عدد الموظفين ومسارات الموافقات والسياسات الحالية. اطلب عرضاً لمناقشة احتياجاتك والتكلفة والتكاملات قبل اتخاذ القرار.</span><span class="lang-content lang-en" hidden="">Start with your team's core workflows, employee count, approval paths and policies. Request a demo to discuss requirements, pricing and integrations before deciding.</span></p></details></div></div></section>
+<section class="home-section" id="contact"><span id="pricing"></span><div class="container contact-grid"><div class="section-copy"><p class="home-kicker"><span class="lang-content lang-ar">الخطوة التالية</span><span class="lang-content lang-en" hidden="">Your next step</span></p><h2><span class="lang-content lang-ar">لنناقش احتياجات شركتك</span><span class="lang-content lang-en" hidden="">Let's discuss your business</span></h2><p><span class="lang-content lang-ar">أخبرنا بحجم فريقك والخدمات التي تحتاجها. سنناقش معك النطاق المناسب والتكلفة وخطوات الإعداد في عرض مخصص.</span><span class="lang-content lang-en" hidden="">Tell us your team size and the services you need. We'll discuss scope, pricing and setup in a tailored demonstration.</span></p><p class="home-note"><span class="lang-content lang-ar">لا ترسل كلمات مرور أو وثائق موظفين في هذا النموذج.</span><span class="lang-content lang-en" hidden="">Do not send passwords or employee documents through this form.</span></p></div><form action="https://formspree.io/f/xojbopbz" class="contact-form" id="contact-form" method="POST" novalidate="">
+<input id="form-subject" name="subject" type="hidden" value="طلب عرض تجريبي لمنصة EMPID"/>
+<div class="form-row">
+<label data-i18n="form.name" for="name">الاسم</label>
+<input autocomplete="name" id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="form.company" for="company">اسم الشركة</label>
+<input autocomplete="organization" id="company" name="company" required="" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="form.email" for="email">البريد الإلكتروني</label>
+<input autocomplete="email" id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-row">
+<label data-i18n="form.phone" for="phone">الهاتف / WhatsApp</label>
+<input autocomplete="tel" id="phone" name="phone" required="" type="tel"/>
+</div>
+<div class="form-row">
+<label data-i18n="form.country" for="country">الدولة</label>
+<input autocomplete="country-name" id="country" name="country" required="" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="form.employees" for="employees">عدد الموظفين</label>
+<input id="employees" inputmode="numeric" min="1" name="employees" required="" type="number"/>
+</div>
+<div class="form-row form-wide">
+<label data-i18n="form.message" for="message">الرسالة</label>
+<textarea id="message" name="message" rows="5"></textarea>
+</div>
+<p aria-live="polite" class="form-error" id="form-error" role="alert"></p>
+<p aria-live="polite" class="form-success" id="form-success" role="status"></p>
+<button class="btn btn-primary form-wide" data-i18n="form.submit" type="submit">إرسال الطلب</button>
+</form></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<a aria-label="EMPID home" class="brand footer-brand" href="#home">
+<span aria-hidden="true" class="brand-logo-mark">
+<img alt="" src="assets/EMPID_Icon.png"/>
+</span>
+<span>
+<strong>EMPID</strong>
+<small data-i18n="footer.title">نظام تشغيل إدارة القوى العاملة</small>
+</span>
+</a>
+<p data-i18n="footer.text">منصة لإدارة الموظفين والحضور والإجازات والرواتب للشركات المتوسطة في الشرق الأوسط.</p>
+</div>
+<div class="footer-links"><a class="" href="/privacy.html"><span class="lang-content lang-ar">الخصوصية</span><span class="lang-content lang-en" hidden="">Privacy</span></a><a class="" href="/terms.html"><span class="lang-content lang-ar">الشروط</span><span class="lang-content lang-en" hidden="">Terms</span></a><a class="" href="/services/"><span class="lang-content lang-ar">أدلة الخدمات</span><span class="lang-content lang-en" hidden="">Service guides</span></a><a class="" href="/blog/"><span class="lang-content lang-ar">مركز المعرفة</span><span class="lang-content lang-en" hidden="">Knowledge hub</span></a><a class="" href="#contact"><span class="lang-content lang-ar">تواصل معنا</span><span class="lang-content lang-en" hidden="">Contact us</span></a></div>
+<div class="footer-latest"><h2><span class="lang-content lang-ar">استكشف EMPID</span><span class="lang-content lang-en" hidden="">Explore EMPID</span></h2><a class="" href="/employee-management/"><span class="lang-content lang-ar">ملفات الموظفين</span><span class="lang-content lang-en" hidden="">Employee records</span></a><a class="" href="/attendance-management/"><span class="lang-content lang-ar">الحضور والانصراف</span><span class="lang-content lang-en" hidden="">Attendance</span></a><a class="" href="/videos/"><span class="lang-content lang-ar">الشروحات العربية</span><span class="lang-content lang-en" hidden="">Arabic walkthroughs</span></a></div>
+</div>
+</footer>
+<script src="script.js?v=20261005-homepage"></script>
 </body>
 </html>
-
-

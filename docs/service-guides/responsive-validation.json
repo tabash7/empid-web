@@ -1,0 +1,442 @@
+[
+  {
+    "h1": "نظام إدارة الموظفين في بيئة تشغيلية عربية",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/employee-management/",
+    "width": 390
+  },
+  {
+    "h1": "نظام حضور وانصراف واضح للفرق الميدانية",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/attendance-management/",
+    "width": 390
+  },
+  {
+    "h1": "برنامج إدارة الإجازات لعمليات يومية أكثر انضباطًا",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/leave-management/",
+    "width": 390
+  },
+  {
+    "h1": "إدارة رواتب دقيقة قبل إقفال الشهر",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/payroll-management/",
+    "width": 390
+  },
+  {
+    "h1": "الوثائق والملفات",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/document-management/",
+    "width": 390
+  },
+  {
+    "h1": "الأداء والتقييم",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/performance-management/",
+    "width": 390
+  },
+  {
+    "h1": "الأصول والعهد",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/asset-management/",
+    "width": 390
+  },
+  {
+    "h1": "المصروفات",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/expense-management/",
+    "width": 390
+  },
+  {
+    "h1": "التقارير والتحليلات",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/reports-analytics/",
+    "width": 390
+  },
+  {
+    "h1": "بوابة الخدمة الذاتية للموظفين لتقليل الطلبات اليدوية",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/employee-self-service/",
+    "width": 390
+  },
+  {
+    "h1": "إدارة القوى العاملة كنظام تشغيل شامل للشركات المتوسطة",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/workforce-management-system/",
+    "width": 390
+  },
+  {
+    "h1": "المشاريع",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/project-management/",
+    "width": 390
+  },
+  {
+    "h1": "المهام وعبء العمل",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/task-management/",
+    "width": 390
+  },
+  {
+    "h1": "تتبع الوقت",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/time-tracking/",
+    "width": 390
+  },
+  {
+    "h1": "عقود الموظفين",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/contract-management/",
+    "width": 390
+  },
+  {
+    "h1": "مزايا الموظفين",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/benefits-management/",
+    "width": 390
+  },
+  {
+    "h1": "تأهيل الموظفين",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/onboarding-management/",
+    "width": 390
+  },
+  {
+    "h1": "الورديات وجداول العمل",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/shift-management/",
+    "width": 390
+  },
+  {
+    "h1": "الإشعارات والمتابعة",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/notification-management/",
+    "width": 390
+  },
+  {
+    "h1": "امتثال المستندات",
+    "overflow": 0,
+    "scrollWidth": 375,
+    "steps": 3,
+    "url": "/document-compliance/",
+    "width": 390
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/employee-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/attendance-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/leave-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/payroll-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/document-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/performance-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/asset-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/expense-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/reports-analytics/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/employee-self-service/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/workforce-management-system/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/project-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/task-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/time-tracking/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/contract-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/benefits-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/onboarding-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/shift-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/notification-management/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 753,
+    "steps": 3,
+    "url": "/document-compliance/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/employee-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/attendance-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/leave-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/payroll-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/document-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/performance-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/asset-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/expense-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/reports-analytics/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/employee-self-service/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/workforce-management-system/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/project-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/task-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/time-tracking/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/contract-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/benefits-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/onboarding-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/shift-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/notification-management/",
+    "width": 1440
+  },
+  {
+    "overflow": 0,
+    "scrollWidth": 1425,
+    "steps": 3,
+    "url": "/document-compliance/",
+    "width": 1440
+  }
+]

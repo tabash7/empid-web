@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01-dashboard",
+    "title": "يوم عمل أكثر وضوحاً",
+    "start": 0.0,
+    "duration": 23.14
+  },
+  {
+    "id": "02-employees",
+    "title": "إدارة الموظفين",
+    "start": 23.14,
+    "duration": 22.92
+  },
+  {
+    "id": "03-profile",
+    "title": "ملف الموظف",
+    "start": 46.06,
+    "duration": 23.35
+  },
+  {
+    "id": "04-attendance",
+    "title": "الحضور اليومي",
+    "start": 69.41,
+    "duration": 23.04
+  },
+  {
+    "id": "05-leave",
+    "title": "طلب الإجازة",
+    "start": 92.44999999999999,
+    "duration": 24.29
+  },
+  {
+    "id": "06-approvals",
+    "title": "مراجعة الطلبات",
+    "start": 116.73999999999998,
+    "duration": 23.04
+  },
+  {
+    "id": "07-projects",
+    "title": "المشاريع والمهام",
+    "start": 139.77999999999997,
+    "duration": 21.5
+  },
+  {
+    "id": "08-documents",
+    "title": "المستندات",
+    "start": 161.27999999999997,
+    "duration": 22.34
+  },
+  {
+    "id": "09-close",
+    "title": "EMPID",
+    "start": 183.61999999999998,
+    "duration": 20.54
+  }
+]

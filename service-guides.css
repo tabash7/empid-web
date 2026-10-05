@@ -1,0 +1,43 @@
+.guide-page { color: var(--ink); background: var(--white); font-family: var(--font-arabic); letter-spacing: 0; }
+.guide-skip { position: absolute; top: -80px; padding: 12px; background: var(--white); color: var(--ink); z-index: 100; }
+.guide-skip:focus { top: 8px; }
+.guide-header { border-bottom: 1px solid var(--line); background: var(--white); }
+.guide-header .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 18px; }
+.guide-brand { font-family: var(--font-latin); font-size: 24px; font-weight: 800; color: var(--navy); }
+.guide-header nav, .guide-footer nav, .guide-related { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.guide-header a, .guide-main a, .guide-footer a, .guided-service a { color: var(--teal-dark); text-decoration: underline; text-underline-offset: 4px; }
+.guide-main { padding-block: 40px 64px; min-width: 0; }
+.guide-main h1 { font-size: 32px; line-height: 1.5; margin: 16px 0 24px; }
+.guide-main h2, .guided-service h2 { font-size: 24px; line-height: 1.5; margin: 24px 0 16px; }
+.guide-main h3 { font-size: 20px; line-height: 1.6; }
+.guide-main p, .guide-main li, .guided-service p { line-height: 1.95; font-size: 18px; }
+.guide-main p, .guide-main h1, .guide-main h2, .guide-main li, .service-guide-card { overflow-wrap: anywhere; }
+.guide-lead { max-width: 850px; }
+.guide-note { color: var(--muted); font-size: 15px !important; }
+.guide-article { max-width: 980px; margin-inline: auto; }
+.guide-article > p, .guide-article > ol { max-width: 780px; }
+.guided-service { padding-block: 32px; border-top: 1px solid var(--line); margin-top: 32px; min-width: 0; }
+.guide-figures { display: grid; gap: 24px; }
+.guide-figures figure { margin: 0; }
+.guide-figures img, .guide-video { width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border: 1px solid var(--line); background: var(--navy); border-radius: 6px; }
+.guide-figures figcaption { padding-block: 10px; line-height: 1.8; font-size: 17px; }
+.guide-figures figcaption span { color: var(--teal-dark); font-weight: 700; }
+.guide-button { display: inline-block; padding: 12px 20px; border: 1px solid var(--teal-dark); border-radius: 6px; margin: 8px 0; }
+.guide-related { padding-block: 20px; border-top: 1px solid var(--line); }
+.guide-footer { border-top: 1px solid var(--line); padding-block: 32px; }
+.service-guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-block: 32px; }
+.service-guide-card { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--white); }
+.service-guide-card > a { display: block; }
+.service-guide-card img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: var(--bg); }
+.service-guide-card h2 { font-size: 20px; margin: 16px; }
+.service-guide-card p { font-size: 16px; margin: 16px; }
+.service-guide-card[hidden] { display: none; }
+.guide-search-label { display: block; margin-top: 24px; font-weight: 700; }
+.guide-search { width: 100%; max-width: 560px; padding: 12px; border: 1px solid var(--line); border-radius: 6px; font: inherit; margin-top: 8px; }
+.guide-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; }
+.guide-pagination button { padding: 10px 20px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
+.guide-pagination button:disabled { opacity: .5; cursor: default; }
+.guide-pagination a { display: inline-block; padding: 10px 20px; border: 1px solid var(--line); border-radius: 6px; }
+.guide-page :focus-visible, .guided-service a:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+@media (max-width: 900px) { .service-guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .guide-header .container { align-items: flex-start; flex-direction: column; gap: 12px; } .guide-header nav { gap: 12px 18px; } .guide-main { padding-block: 24px 40px; } .guide-main h1 { font-size: 26px; } .guide-main h2, .guided-service h2 { font-size: 22px; } .guide-main p, .guide-main li { font-size: 17px; } .service-guide-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; } }

@@ -1,0 +1,50 @@
+[
+  {
+    "cards": 9,
+    "scrollWidth": 375,
+    "url": "/blog/page/2/",
+    "width": 390
+  },
+  {
+    "cards": 9,
+    "scrollWidth": 375,
+    "url": "/blog/page/3/",
+    "width": 390
+  },
+  {
+    "cards": 9,
+    "scrollWidth": 375,
+    "url": "/blog/page/4/",
+    "width": 390
+  },
+  {
+    "cards": 3,
+    "scrollWidth": 375,
+    "url": "/blog/page/5/",
+    "width": 390
+  },
+  {
+    "cards": 9,
+    "scrollWidth": 1425,
+    "url": "/blog/page/2/",
+    "width": 1440
+  },
+  {
+    "cards": 9,
+    "scrollWidth": 1425,
+    "url": "/blog/page/3/",
+    "width": 1440
+  },
+  {
+    "cards": 9,
+    "scrollWidth": 1425,
+    "url": "/blog/page/4/",
+    "width": 1440
+  },
+  {
+    "cards": 3,
+    "scrollWidth": 1425,
+    "url": "/blog/page/5/",
+    "width": 1440
+  }
+]

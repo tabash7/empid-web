@@ -1,0 +1,214 @@
+[
+  {
+    "brokenImages": [],
+    "clippedControls": [],
+    "h1": 1,
+    "language": "ar",
+    "overflow": false,
+    "sections": [
+      {
+        "id": "home",
+        "width": 345
+      },
+      {
+        "id": "",
+        "width": 345
+      },
+      {
+        "id": "solution",
+        "width": 345
+      },
+      {
+        "id": "features",
+        "width": 345
+      },
+      {
+        "id": "security",
+        "width": 345
+      },
+      {
+        "id": "demo",
+        "width": 345
+      },
+      {
+        "id": "knowledge",
+        "width": 345
+      },
+      {
+        "id": "faq",
+        "width": 345
+      },
+      {
+        "id": "contact",
+        "width": 345
+      }
+    ],
+    "width": 360
+  },
+  {
+    "brokenImages": [],
+    "clippedControls": [],
+    "h1": 1,
+    "language": "ar",
+    "overflow": false,
+    "sections": [
+      {
+        "id": "home",
+        "width": 375
+      },
+      {
+        "id": "",
+        "width": 375
+      },
+      {
+        "id": "solution",
+        "width": 375
+      },
+      {
+        "id": "features",
+        "width": 375
+      },
+      {
+        "id": "security",
+        "width": 375
+      },
+      {
+        "id": "demo",
+        "width": 375
+      },
+      {
+        "id": "knowledge",
+        "width": 375
+      },
+      {
+        "id": "faq",
+        "width": 375
+      },
+      {
+        "id": "contact",
+        "width": 375
+      }
+    ],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "clippedControls": [],
+    "h1": 1,
+    "language": "ar",
+    "overflow": false,
+    "sections": [
+      {
+        "id": "home",
+        "width": 753
+      },
+      {
+        "id": "",
+        "width": 753
+      },
+      {
+        "id": "solution",
+        "width": 753
+      },
+      {
+        "id": "features",
+        "width": 753
+      },
+      {
+        "id": "security",
+        "width": 753
+      },
+      {
+        "id": "demo",
+        "width": 753
+      },
+      {
+        "id": "knowledge",
+        "width": 753
+      },
+      {
+        "id": "faq",
+        "width": 753
+      },
+      {
+        "id": "contact",
+        "width": 753
+      }
+    ],
+    "width": 768
+  },
+  {
+    "brokenImages": [],
+    "clippedControls": [],
+    "h1": 1,
+    "language": "ar",
+    "overflow": false,
+    "sections": [
+      {
+        "id": "home",
+        "width": 1425
+      },
+      {
+        "id": "",
+        "width": 1425
+      },
+      {
+        "id": "solution",
+        "width": 1425
+      },
+      {
+        "id": "features",
+        "width": 1425
+      },
+      {
+        "id": "security",
+        "width": 1425
+      },
+      {
+        "id": "demo",
+        "width": 1425
+      },
+      {
+        "id": "knowledge",
+        "width": 1425
+      },
+      {
+        "id": "faq",
+        "width": 1425
+      },
+      {
+        "id": "contact",
+        "width": 1425
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "clippedControls": [],
+    "language": "en",
+    "overflow": false,
+    "title": "EMPID | HR Software & Workforce Management",
+    "width": 360
+  },
+  {
+    "clippedControls": [],
+    "language": "en",
+    "overflow": false,
+    "title": "EMPID | HR Software & Workforce Management",
+    "width": 390
+  },
+  {
+    "clippedControls": [],
+    "language": "en",
+    "overflow": false,
+    "title": "EMPID | HR Software & Workforce Management",
+    "width": 768
+  },
+  {
+    "clippedControls": [],
+    "language": "en",
+    "overflow": false,
+    "title": "EMPID | HR Software & Workforce Management",
+    "width": 1440
+  }
+]

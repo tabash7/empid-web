@@ -1,0 +1,88 @@
+/* Homepage-only composition; shared service and article styles stay unchanged. */
+.homepage { background: #fff; color: var(--ink); }
+.homepage *, .homepage *::before, .homepage *::after { letter-spacing: 0; }
+.homepage .container { width: min(1200px, calc(100% - 64px)); }
+.homepage .site-header { background: #fff; border-bottom: 1px solid var(--line); box-shadow: none; }
+.homepage .navbar { min-height: 76px; }
+.homepage .nav-links { gap: 24px; }
+.homepage .btn { border-radius: 6px; min-height: 46px; padding: 12px 22px; }
+.homepage .btn-primary { background: var(--teal); color: #fff; box-shadow: none; }
+.homepage .btn-secondary { background: #fff; border: 1px solid var(--line); color: var(--ink); }
+.homepage a:focus-visible, .homepage button:focus-visible, .homepage summary:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+.home-skip { position: fixed; inset-block-start: 8px; inset-inline-start: 8px; transform: translateY(-180%); background: #fff; color: var(--ink); padding: 12px; z-index: 2000; }
+.home-skip:focus { transform: none; }
+.home-hero { padding-top: 45px; overflow: hidden; text-align: center; }
+.home-kicker { font-size: 14px; font-weight: 700; color: var(--teal-dark); margin: 0 0 16px; }
+.home-hero h1 { font-size: 44px; line-height: 1.22; font-weight: 700; margin: 0 0 20px; }
+.home-hero h1 b { font-family: var(--font-latin); font-size: 54px; }
+.home-lead { max-width: 660px; margin: 0 auto; color: var(--muted); font-size: 19px; line-height: 1.8; }
+.home-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.home-product { margin: 30px auto 0; max-width: 1100px; }
+.home-product img { width: 100%; height: 290px; object-fit: cover; object-position: top; display: block; border: 1px solid var(--line); border-radius: 6px 6px 0 0; }
+.home-product figcaption { font-size: 12px; padding: 8px; color: var(--muted); }
+.home-context { background: #edf7f3; border-block: 1px solid #dbece4; padding: 21px 0; }
+.home-context .container { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+.home-context p { font-weight: 700; margin: 0; }
+.home-context div div { font-size: 14px; color: #355f51; }
+.home-section { padding: 76px 0; scroll-margin-top: 95px; }
+.home-band { background: #f6f8fa; border-block: 1px solid #e4e9ef; }
+.home-section-heading { margin-bottom: 30px; max-width: 760px; }
+.home-section h2 { font-size: 30px; line-height: 1.4; margin: 0 0 14px; }
+.home-section h3 { font-size: 20px; line-height: 1.5; margin: 18px 0 10px; }
+.home-section p { color: var(--muted); line-height: 1.9; }
+.home-workflows, .home-articles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.home-workflow { min-width: 0; }
+.home-workflow img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; }
+.home-workflow a, .home-article a { color: inherit; }
+.homepage .home-text-link { color: var(--teal-dark); font-weight: 700; text-decoration: none; }
+.home-text-link:hover { text-decoration: underline; }
+.home-services { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 28px; }
+.home-service-link { display: block; padding: 18px 0; border-bottom: 1px solid var(--line); color: var(--ink); font-weight: 600; line-height: 1.6; }
+.home-service-link:hover { color: var(--teal-dark); }
+.home-security { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+.home-security dl { margin: 0; }
+.home-security dl div { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.home-security dt { font-weight: 700; margin-bottom: 6px; }
+.home-security dd { color: var(--muted); margin: 0; line-height: 1.7; }
+.homepage video { display: block; width: 100%; max-width: 1000px; aspect-ratio: 16 / 9; margin-inline: auto; background: #0d2038; border-radius: 6px; }
+.home-article { padding: 24px; border: 1px solid var(--line); border-radius: 6px; }
+.home-article .home-kicker { margin-bottom: 0; color: var(--teal-dark); }
+.home-faq { display: grid; grid-template-columns: 1fr 2fr; gap: 70px; }
+.homepage .home-faq details { border: 0; border-bottom: 1px solid var(--line); padding: 20px 0; background: transparent; box-shadow: none; border-radius: 0; }
+.homepage .home-faq summary { padding: 0; font-weight: 700; cursor: pointer; line-height: 1.7; }
+.homepage .home-faq details p { margin: 15px 0 0; padding: 0; }
+.homepage .contact-grid { gap: 70px; grid-template-columns: 1fr 1.3fr; }
+.homepage .contact-form { border: 0; border-radius: 0; box-shadow: none; background: transparent; padding: 0; }
+.homepage .contact-form input, .homepage .contact-form textarea { background: #fff; color: var(--ink); border: 1px solid #9faec0; border-radius: 6px; min-width: 0; }
+.homepage .contact-form input[type="email"], .homepage .contact-form input[type="tel"] { direction: ltr; }
+.homepage .home-note { font-size: 14px; }
+.homepage .site-footer { background: #f6f8fa; color: var(--ink); border-top: 1px solid var(--line); }
+.homepage .site-footer a, .homepage .site-footer p, .homepage .site-footer small { color: var(--muted); }
+.homepage .site-footer .brand strong { color: var(--ink); }
+.homepage .site-footer h2 { font-size: 16px; }
+.homepage [hidden] { display: none !important; }
+@media (max-width: 1050px) {
+  .homepage .container { width: calc(100% - 40px); }
+  .home-services { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .home-security, .home-faq, .homepage .contact-grid { gap: 35px; }
+}
+@media (max-width: 700px) {
+  .homepage .container { width: calc(100% - 32px); }
+  .home-hero { padding-top: 32px; }
+  .home-hero h1 { font-size: 29px; }
+  .home-hero h1 b { font-size: 40px; }
+  .home-lead { font-size: 16px; line-height: 1.8; }
+  .home-actions { gap: 10px; }
+  .home-product { margin-top: 24px; }
+  .home-product img { height: auto; aspect-ratio: 16 / 9; }
+  .home-context .container { align-items: start; flex-direction: column; gap: 6px; }
+  .home-context { padding: 18px 0; }
+  .home-section { padding: 48px 0; }
+  .home-section h2 { font-size: 25px; }
+  .home-workflows, .home-articles, .home-security, .home-faq, .homepage .contact-grid { grid-template-columns: 1fr; gap: 26px; }
+  .home-services { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+  .home-service-link { font-size: 15px; }
+  .home-faq details { padding: 18px 0; }
+  .homepage .contact-form { grid-template-columns: 1fr; }
+  .homepage .site-footer .footer-grid { grid-template-columns: 1fr; }
+}

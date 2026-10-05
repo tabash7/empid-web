@@ -1,3 +1,7 @@
 node_modules/
+.tools/
 tests/screenshots/output/
+docs/service-guides/render-cache/
+docs/service-guides/preview-server*.log
+docs/service-guides/__pycache__/
 
