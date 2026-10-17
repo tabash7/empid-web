@@ -4,4 +4,5 @@ tests/screenshots/output/
 docs/service-guides/render-cache/
 docs/service-guides/preview-server*.log
 docs/service-guides/__pycache__/
+docs/homepage/__pycache__/
 

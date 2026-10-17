@@ -82,7 +82,7 @@ The static website does not define lint/typecheck/build scripts.
 1. Review the Arabic copy and all captured demo screens before public release.
 2. Deploy only public pages/media; exclude `.git`, `.kilo`, `node_modules`, test
    outputs, source capture directories, caches and internal documentation.
-3. Configure HTTPS and one canonical host (`https://empid.com`). Redirect the
+3. Configure HTTPS and one canonical host (`https://www.empid.com`). Redirect the
    other host and old blog aliases at the hosting/CDN layer when possible.
    Set article/video publication dates to the actual release date when publishing.
 4. Ensure MP4/VTT/WebP have correct content types and long-lived cache headers.

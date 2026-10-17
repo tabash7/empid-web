@@ -15,7 +15,7 @@ class HomepageAcceptance(unittest.TestCase):
         self.assertEqual(len(self.page.select("h1")), 1)
         self.assertIn("EMPID", self.page.h1.get_text())
         self.assertIn("الموارد البشرية", self.page.title.get_text())
-        self.assertEqual(self.page.select_one('link[rel="canonical"]')["href"], "https://empid.com/")
+        self.assertEqual(self.page.select_one('link[rel="canonical"]')["href"], "https://www.empid.com/")
         self.assertFalse(self.page.select("link[hreflang]"))
         self.assertEqual(self.page.select_one('meta[property="og:title"]')["content"], self.page.title.get_text())
 

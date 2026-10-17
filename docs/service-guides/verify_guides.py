@@ -48,7 +48,7 @@ for path in paths:
         if url in canonical_urls:
             failures.append(f"{relative}: duplicate canonical {url}")
         canonical_urls[url] = relative
-        expected = "https://empid.com/" + relative.replace("index.html", "")
+        expected = "https://www.empid.com/" + relative.replace("index.html", "")
         if url != expected:
             failures.append(f"{relative}: canonical points to {url}, expected {expected}")
         for og in soup.select('meta[property="og:url"]'):

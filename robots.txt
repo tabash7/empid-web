@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://empid.com/sitemap.xml
+Sitemap: https://www.empid.com/sitemap.xml
 
 Disallow: /docs/
 Disallow: /tests/
 Disallow: /src/
-Sitemap: https://empid.com/video-sitemap.xml
+Sitemap: https://www.empid.com/video-sitemap.xml

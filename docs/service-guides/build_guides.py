@@ -17,7 +17,7 @@ import imageio_ffmpeg
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 DATA = json.loads((HERE / "services.json").read_text(encoding="utf-8"))
-BASE = "https://empid.com"
+BASE = "https://www.empid.com"
 DATE = "2026-10-05"
 FONT = "C:/Windows/Fonts/arial.ttf"
 BOLD = "C:/Windows/Fonts/arialbd.ttf"
@@ -185,7 +185,7 @@ def normalize_blog(path):
     for tag in soup.select('meta[property="og:url"]'):
         tag["content"] = url
     for tag in soup.select('meta[property="og:image"], meta[name="twitter:image"]'):
-        tag["content"] = tag.get("content", "").replace("https://www.empid.com/", BASE + "/")
+        tag["content"] = tag.get("content", "").replace("https://empid.com/", BASE + "/")
     for tag in soup.select('script[type="application/ld+json"]'):
         if tag.string:
             payload = json.loads(tag.string)
@@ -195,7 +195,7 @@ def normalize_blog(path):
                 if isinstance(value, list):
                     return [repair(item) for item in value]
                 if isinstance(value, str):
-                    value = value.replace("https://www.empid.com/", BASE + "/")
+                    value = value.replace("https://empid.com/", BASE + "/")
                     return value.replace(BASE + "/blog/" + path.stem + "/", url)
                 return value
             tag.string = json.dumps(repair(payload), ensure_ascii=False)
@@ -326,7 +326,7 @@ def main():
     ET.indent(video_tree, space="  ")
     video_tree.write(ROOT / "video-sitemap.xml", encoding="utf-8", xml_declaration=True)
     robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
-    for directive in ["Disallow: /docs/", "Disallow: /tests/", "Disallow: /src/", "Sitemap: https://empid.com/video-sitemap.xml"]:
+    for directive in ["Disallow: /docs/", "Disallow: /tests/", "Disallow: /src/", "Sitemap: https://www.empid.com/video-sitemap.xml"]:
         if directive not in robots:
             robots += "\n" + directive
     write(ROOT / "robots.txt", robots.strip() + "\n")

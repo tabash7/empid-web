@@ -105,16 +105,16 @@ def build():
         node.decompose()
     soup.title.string = TITLE
     soup.title.attrs.pop("data-i18n", None)
-    for attr, key, value in [("name", "description", DESCRIPTION), ("property", "og:title", TITLE), ("property", "og:description", DESCRIPTION), ("name", "twitter:title", TITLE), ("name", "twitter:description", DESCRIPTION), ("property", "og:image", "https://empid.com/assets/service-guides/workforce-management-system/poster.jpg"), ("name", "twitter:image", "https://empid.com/assets/service-guides/workforce-management-system/poster.jpg"), ("property", "og:image:alt", "EMPID — دليل إدارة القوى العاملة بالعربية")]:
+    for attr, key, value in [("name", "description", DESCRIPTION), ("property", "og:title", TITLE), ("property", "og:description", DESCRIPTION), ("name", "twitter:title", TITLE), ("name", "twitter:description", DESCRIPTION), ("property", "og:image", "https://www.empid.com/assets/service-guides/workforce-management-system/poster.jpg"), ("name", "twitter:image", "https://www.empid.com/assets/service-guides/workforce-management-system/poster.jpg"), ("property", "og:image:alt", "EMPID — دليل إدارة القوى العاملة بالعربية")]:
         soup.find("meta", attrs={attr: key})["content"] = value
     for old_style in soup.select('link[href^="/homepage.css"]'):
         old_style.decompose()
     soup.head.append(soup.new_tag("link", rel="stylesheet", href="/homepage.css?v=20261005-2"))
     schema = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Organization", "@id": "https://empid.com/#organization", "name": "EMPID", "url": "https://empid.com/", "logo": "https://empid.com/assets/EMPID_Icon.png"},
-        {"@type": "WebSite", "@id": "https://empid.com/#website", "name": "EMPID", "url": "https://empid.com/", "publisher": {"@id": "https://empid.com/#organization"}},
-        {"@type": "WebPage", "@id": "https://empid.com/#webpage", "url": "https://empid.com/", "name": TITLE, "description": DESCRIPTION, "inLanguage": "ar", "isPartOf": {"@id": "https://empid.com/#website"}},
-        {"@type": "SoftwareApplication", "name": "EMPID", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://empid.com/", "description": DESCRIPTION},
+        {"@type": "Organization", "@id": "https://www.empid.com/#organization", "name": "EMPID", "url": "https://www.empid.com/", "logo": "https://www.empid.com/assets/EMPID_Icon.png"},
+        {"@type": "WebSite", "@id": "https://www.empid.com/#website", "name": "EMPID", "url": "https://www.empid.com/", "publisher": {"@id": "https://www.empid.com/#organization"}},
+        {"@type": "WebPage", "@id": "https://www.empid.com/#webpage", "url": "https://www.empid.com/", "name": TITLE, "description": DESCRIPTION, "inLanguage": "ar", "isPartOf": {"@id": "https://www.empid.com/#website"}},
+        {"@type": "SoftwareApplication", "name": "EMPID", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://www.empid.com/", "description": DESCRIPTION},
     ]}
     node = soup.new_tag("script", type="application/ld+json")
     node.string = json.dumps(schema, ensure_ascii=False)
